@@ -3,260 +3,637 @@
 
 <head>
   <title>IEEE ISCAS 2026 | Become a Sponsor</title>
-  <script>
-    fetch('../include/header_1.html')
-            .then(response => response.text())
-            .then(data => {
-              document.querySelector('#header').innerHTML = data;
-            });
-  </script>
-<div id="header"></div>
-</head>
+  <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">  
+    <meta name="description" content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
+    <meta name="keywords" content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
+    
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.jpg" rel="icon">
+    <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
 
+    <!-- Vendor CSS Files -->
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../style.min.css" rel="stylesheet">
+
+    <!-- Hero css -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      .company-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 0 40px;
+      }
+
+      .carousel-container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+      }
+
+      .carousel-item {
+        flex: 0 0 25%;
+        padding: 0 10px;
+      }
+
+      .company-card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .company-card img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .prev-arrow {
+        left: 0;
+      }
+
+      .next-arrow {
+        right: 0;
+      }
+
+      .carousel-arrow i {
+        font-size: 20px;
+        color: #333;
+      }
+    </style>
+</head>
 <body>
-<script>
-  fetch('../include/menu_1.html')
-          .then(response => response.text())
-          .then(data => {
-            document.querySelector('#menu').innerHTML = data;
-          });
-</script>
-<div id="menu"></div>
-<main id="main">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">      
+      <a href="../" class="logo me-auto"><img src="../logo.jpg" alt="logo.jpg"></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#about"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../about/about-news.php">News Release</a></li>
+              <li><a href="../about/index.html">About ISCAS</a></li>
+              <li><a href="../about/welcome-message.php">Welcome Message</a></li>
+              <li><a href="https://www.meet-in-shanghai.net/en/" target="_blank">About Shanghai <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://ieee-cas.org/" target="_blank">CAS Society <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://www.ieee.org/about/corporate/governance/index.html" target="_blank">IEEE Policies <i class="bi bi-link-45deg"></i></a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#services"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="program/ISCAS_2024_Final_Program.pdf?v=20240519" target="_blank">Final Program Book <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="program/ISCAS_2024_Program_At_a_Glance.pdf?v=20240513" target="_blank">Program At a Glance <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="#speaker">Keynote Speakers</a></li>
+              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=1" target="_blank">Lecture Schedule <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=2" target="_blank">Poster Schedule <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://epapers2.org/iscas2024/ESR/session_index.php" target="_blank">Session List <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="program/Tutorial.php" target="_blank">Tutorial Overview</a></li>
+              <li><a href="program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop on Digital Healthcare</a></li>
+              <li><a href="program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS</a></li>
+              <li><a href="program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum</a></li>
+              <li><a href="program/WiCAS-YP.php" target="_blank">Event: WiCAS-YPCAS</a></li>
+              <li><a href="about/about-welcome-reception.php">Welcome Reception</a></li>
+              <li><a href="about/about-farewell-reception.php">Farewell Reception</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href=""><span>Authors</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="authors/author-instructions.php">Author Instructions</a></li>
+              <li><a href="authors/journal-special-issue.php">Journal Special Issue</a></li>
+              <li><a href="authors/oral-presentation-guidelines.php">Oral Presentation Guidelines</a></li>
+              <li><a href="authors/poster-guidelines.php">Poster Guidelines</a></li>
+              <li><a href="https://epapers2.org/iscas2024" target="_blank">Submission Site <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="authors/cass-student-travel-grants.php">CASS Student Travel Grants</a></li>
+              <li><a href="authors/iscas-2026-student-travel-grant.php">ISCAS 2026 Student Travel Grants</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#cta"><span>Call for Participation</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="cfp/Call_for_Participation_ISCAS_2024.pdf" target="_blank">Call for Participation (flyer) <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/CFP_ISCAS_2024.pdf" target="_blank">Call for Papers <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/CFP_ISCAS_2024_Tutorial.pdf" target="_blank">Call for Tutorials <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/CFP_ISCAS_2024_Special_Sessions.pdf" target="_blank">Call for Special Sessions <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/ISCAS2024_Flexible_CrossSociety_SS_CallforAbstract_JFlex.pdf" target="_blank">Call for CAS/EDS Cross-Society Special Session Papers <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/Grand_Challenge_on_Neural_Network-based_Video_Coding_ISCAS_2024.pdf" target="_blank">Grand Challenge on Neural Network-based Video Coding <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/CFP_ISCAS_2024_Live_Demos.pdf" target="_blank">Call for Live Demonstrations <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="cfp/Expo_n_Spnsr_Prospectus_ISCAS_2024.pdf" target="_blank">Exhibition &amp; Sponsorship Prospectus <i class="bi bi-file-pdf"></i></a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#cliens"><span>Sponsors & Exhibitors</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Sponsor/index.html">Become a Sponsor</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#team"><span>Organizing Committee</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="committee/index.html">List of Committee</a></li>
+            </ul>
+          </li>  
+          <li class="dropdown"><a href="#contact"><span>Contact</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#contact">Conference Venue</a></li>
+              <li><a href="about/about-accommodation.php">Accommodation</a></li>
+              <li><a href="https://www.meet-in-shanghai.net/en" target="_blank">Transportation <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://www.visaforchina.org/" target="_blank">Visa Requirement <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://www.meet-in-shanghai.net/en" target="_blank">Local Activities <i class="bi bi-link-45deg"></i></a></li>
+            </ul>
+          </li>
+          <li><a href="../registration/" target="_blank" class="getstarted">Registration</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section class="inner-page">
+    <section id="breadcrumbs" class="breadcrumbs sponsor-header">
       <div class="container">
         <ol>
           <li><a href="../">Home</a></li>
           <li><a href="../#cliens">Sponsors</a></li>
         </ol>
         <h2>Become a Sponsor</h2>
-        <h3 class="text-muted">Exhibit or become a patron at IEEE ISCAS 2026. Network with top leaders, learn industry trends. Contact us now!</h3>
+        <h3>Exhibit or become a patron at IEEE ISCAS 2026. Network with top leaders, learn industry<br>trends. Contact us now!</h3>
       </div>
+      <h4>Become a Sponsor</h4>
     </section>
-
-    <section class="inner-page">
-      <div class="container">
-        <section id="audience" class="inner-page">
+    
+    
+      
+        <div class="sponsor-content">
           <div class="container">
-            <h2>Our Audience Breakdown</h2>
-            <p><em>Based on data from previous ISCAS conferences:</em></p>
-            <div class="row mb-4">
-              <div class="col-md-3 text-center mb-3">
-                <div class="h1 mb-2">26%</div>
-                <p>Attendees from Region 8<br>(Africa, Europe & Middle East)</p>
-              </div>
-              <div class="col-md-3 text-center mb-3">
-                <div class="h1 mb-2">46%</div>
-                <p>Attendees from Region 10<br>(Asia and Pacific)</p>
-              </div>
-              <div class="col-md-3 text-center mb-3">
-                <div class="h1 mb-2">21%</div>
-                <p>Attendees from Region 1-6<br>(United States)</p>
-              </div>
-              <div class="col-md-3 text-center mb-3">
-                <div class="h1 mb-2">42%</div>
-                <p>Attendees were Students</p>
-              </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-8">  <!-- Text column -->
+                        <h4>
+                            IEEE International Symposium on Circuits and Systems (ISCAS) is the flagship conference of the IEEE Circuits and Systems Society (CASS). 
+                            This global annual event is one of the world's premiere conferences with a history of 58 Years. ISCAS typically attracts 1,000+ attendees from academia,
+                            research & industry spread across the globe in the fields of theory, design, and implementation of Circuits & Systems. 
+                            <br>The theme of ISCAS 2025 is Technology Disruption and Society, emphasizing the potential 
+                            of technology and integrated electronic systems to finding innovative solutions to challenges facing society today. 
+                            ISCAS 2025 is an ideal platform for your organization to showcase your technical leadership to the global community thereby providing 
+                            an opportunity for future business growth. 
+                            It is also a prominent forum to attract the best of the diverse talent pool for your future expansion. We have created a good set of sponsorship opportunity 
+                            packages to provide the best possible Return on Investment for your business.
+                        </h4>
+                        <div class="sponsor-buttons">
+                            <a href="#" class="view-prospectus-btn">View Prospectus</a>
+                            <a href="#" class="btn-contact">Contact Now</a>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4">  <!-- Image column -->
+                        <div class="sponsor-image">
+                            <img src="assets/sponsor-content-image.png" alt="ISCAS Sponsorship" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+
+        <section id="audience-breakdown">
+            <div class="container">
+                <h2>Our Audience Breakdown</h2>
+                <h3>*Data pulled from the ISCAS 2023 conference.</h3>
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-card">
+                            <i class="bi bi-globe-europe-africa"></i>
+                            <div class="h1 mb-2">26%</div>
+                            <p>Attendees from Region 8<br>(Africa, Europe & Middle East)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-card">
+                            <i class="bi bi-globe-central-south-asia"></i>
+                            <div class="h1 mb-2">46%</div>
+                            <p>Attendees from Region 10<br>(Asia and Pacific)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-card">
+                            <i class="bi bi-globe-americas"></i>
+                            <div class="h1 mb-2">21%</div>
+                            <p>Attendees from Region 1-6<br>(United States)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-card">
+                            <i class="fa-duotone fa-solid fa-graduation-cap"></i>
+                            <div class="h1 mb-2">42%</div>
+                            <p>Attendees were Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="potential" class="inner-page">
+        <section id="explore-opportunities">
           <div class="container">
-            <h2>Maximize your Company's Potential</h2>
-            <div class="row mb-5">
-              <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-header bg-secondary text-white">
-                    <h4 class="my-0">Exhibit Hall Patronships</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>Make advertising easy on and off the floor. Display your company's logo in mass quantities by customizing event resources like readily available literature, water bottles, charging stations, signage, and more.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-header bg-secondary text-white">
-                    <h4 class="my-0">Networking & Education</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>Engage with new and existing attendees at IEEE ISCAS 2026 by becoming a patron for our highly anticipated on or off site opportunities ranging from coffee breaks to gala receptions.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-header bg-secondary text-white">
-                    <h4 class="my-0">Digital Marketing</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>As a patron, your company's logo and branding will be prominently displayed in various promotional materials, including the conference website, marketing collaterals, signage, email and social media channels. This exposure will increase brand visibility and create positive associations with your organization.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="competitive-edge" class="inner-page">
-          <div class="container">
-            <h2>Gain a Competitive Edge</h2>
-            <div class="row mb-5">
-              <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h4>Increase Brand Awareness</h4>
-                    <p>Introduce your brand and values to a new target audience within the circuits and systems industry or keep your brand top-of-mind for existing customers.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h4>Connect with the Industry</h4>
-                    <p>Network with an elite audience at this gathering of academics, engineers and practitioners.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h4>Gain Leads & Long Term Connections</h4>
-                    <p>Drive revenue to your company by connecting with the industry top leaders in the field.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="packages" class="inner-page">
-          <div class="container">
-            <h2>Sponsorship Packages</h2>
+            <h2>Amplify Your Presence and Maximize Your Impact</h2>
+            <h3>Explore Opportunities</h3>
             <div class="table-responsive">
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th>Benefits</th>
-                    <th>Bronze<br>$2,500</th>
-                    <th>Silver<br>$7,500</th>
-                    <th>Gold<br>$15,000</th>
-                    <th>Platinum<br>$20,000</th>
+                    <th></th>
+                    <th>Exhibitor</th>
+                    <th>Gold</th>
+                    <th>Platinum</th>
+                    <th>Diamond</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Company logo on conference website</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                  </tr>
-                  <tr>
-                    <td>Recognition in conference program</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                  </tr>
-                  <tr>
-                    <td>Exhibition space</td>
-                    <td></td>
-                    <td>✓</td>
-                    <td>Premium</td>
-                    <td>Premium + Prime Location</td>
-                  </tr>
-                  <tr>
-                    <td>Complimentary registrations</td>
+                    <td>Number of full registrations included</td>
                     <td>1</td>
                     <td>2</td>
-                    <td>3</td>
+                    <td>4</td>
                     <td>5</td>
                   </tr>
                   <tr>
-                    <td>Advertisement in conference program</td>
+                    <td>Complimentary registrations to the Industry Program</td>
                     <td></td>
-                    <td>Quarter-page</td>
-                    <td>Half-page</td>
-                    <td>Full-page</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>10</td>
                   </tr>
                   <tr>
-                    <td>Promotional material in conference bags</td>
+                    <td>One commercial exhibit booth (10x8)</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Listed as exhibitor/promotional sponsor on the website and printed materials</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Company logo on the final program</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Company logo on the welcome sign</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Company logo on the website</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Company logo on the opening slide of the symposium</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Recognition as sponsor of technical session</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Recognition on the spartphone app</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>One-page advert inserted in delegate bag*</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Recognition as sponsor of coffee break</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  <tr>
+                    <td>Speaking opportunity at one of the following sessions:<br>
+                      Executive Forum; Distinguished Industry Session</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>Recognition as sponsor of the welcome reception</td>
                     <td></td>
                     <td></td>
                     <td>✓</td>
                     <td>✓</td>
                   </tr>
                   <tr>
-                    <td>Recognition during ceremonies</td>
+                    <td>Free-standing banner (max size 2m high x 1m wide) at the<br>registration area*</td>
                     <td></td>
                     <td></td>
-                    <td>Opening</td>
-                    <td>Opening & Closing</td>
+                    <td>✓</td>
+                    <td>✓</td>
                   </tr>
                   <tr>
-                    <td>Company banner at main venue</td>
+                    <td>Recognition as sponsor of gala dinner</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                  </tr>
+                  <tr>
+                    <td>One-minute company video (super Bowl ad) before plenary</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Access to a meeting room (interviews, hospitality)</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>✓</td>
                   </tr>
                   <tr>
-                    <td>Company introduction at opening ceremony</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>5 minutes</td>
+                    <td>$2,500</td>
+                    <td>$7,500</td>
+                    <td>$15,000</td>
+                    <td>$20,000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p class="text-muted mt-3">* Production not included and subject to approval</p>
-
-            <div class="text-center mt-5">
-              <h2>Make a lasting Impression</h2>
-              <p class="lead mb-4">Interested in Exhibiting at IEEE ISCAS 2026?</p>
-              <a href="mailto:sponsorship@iscas2026.org" class="btn btn-primary btn-lg">Contact Us</a>
+             <h5>*Production not included and subject to approval</h5>
+          </section>
+          
+        <section id="explore-opportunities-2">
+          <div class="container">
+            <h2>Maximize your Company's Potential</h2>
+            <h3>Explore Opportunities</h3>
+            <div class="row mb-5">
+              <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <img src="assets/exhibiti-hall-partronships.jpg" alt="Exhibition Hall">
+                  </div>
+                  <h4>Exhibit Hall Patronships</h4>
+                  <p>Make advertising easy on and off the floor. Display your company's logo in mass quantities by customizing event resources like readily available literature, water bottles, charging stations, signage, and more.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <img src="assets/networking-and-education.jpg" alt="Networking">
+                  </div>
+                  <h4>Networking & Education</h4>
+                  <p>Engage with new and existing attendees at IEEE ISCAS 2026 by becoming a patron for our highly anticipated on or off site opportunities ranging from coffee breaks to gala receptions.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <img src="assets\digital-marketing.jpg" alt="Digital Marketing">
+                  </div>
+                  <h4>Digital Marketing</h4>
+                  <p>As a patron, your company's logo and branding will be prominently displayed in various promotional materials, including the conference website, marketing collaterals, signage, email and social media channels.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-      </div>
-    </section>
 
+        <section id="the-benefits">
+          <div class="container">
+            <h2>Gain a Competitive Edge</h2>
+            <div class="row mb-5">
+              <div class="col-md-4 mb-4">
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="fas fa-comment-dots fa-3x"></i>
+                  </div>
+                  <h4>Increase Brand Awareness</h4>
+                  <p>Introduce your brand and values to a new target audience within the circuits and systems industry or keep your brand top-of-mind for existing customers.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="fas fa-handshake fa-3x"></i>
+                  </div>
+                  <h4>Connect with the Industry</h4>
+                  <p>Network with an elite audience at this gathering of academics, engineers and practitioners.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="fas fa-network-wired fa-3x"></i>
+                  </div>
+                  <h4>Gain Leads & Long Term Connections</h4>
+                  <p>Drive revenue to your company by connecting with the industry top leaders in the field.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="trusted-companies">
+          <div class="slide-track"></div>
+            <h2>Trusted by the Industry's Top Companies</h2>
+            <h3>Past Conference Attendees</h3>
+            <div class="logos">
+              <div class="logos-slide">
+                <img src="assets/cadence.png" />
+                <img src="assets/europractice.png" />
+                <img src="assets/google.png" />
+                <img src="assets/huawei.jpg" />
+                <img src="assets/infinera.png" />
+                <img src="assets/mediatek.png" />
+                <img src="assets/qualcomm.png" />
+                <img src="assets/samsung-semi-conductor.jpeg" />
+                <img src="assets/springer-nature.png" />
+                <img src="assets/sypnopsys.png" />
+                <img src="assets/texas-instruments.png" />
+              </div>
+            </div>
+      </section>
+
+      <section id="make-a-lasting-impression">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-6 px-0">
+              <div class="impression-image">
+                <img src="assets/make-a-lasting-impression.jpeg" alt="Make a Lasting Impression">
+              </div>
+            </div>
+            <div class="col-lg-6"> 
+              <div class="impression-content">
+                <h2>Make a Lasting Impression</h2>
+                <h3>Interested in Exhibiting at IEEE <br> ISCAS 2025?</h3>
+                <a href="#" class="view-prospectus-btn">View Prospectus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <script>
-    fetch('../include/footer_1.html')
-            .then(response => response.text())
-            .then(data => {
-              document.querySelector('#footer').innerHTML = data;
-            });
-  </script>
-  <div id="footer"></div>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>ISCAS 2026 Contact</h3>
+            <p>
+              <i class="bi bi-envelope"></i> General Inquiry:<br>
+              <a href="mailto:iscas2024.sec&commat;atenga&period;sg">iscas2024.sec&commat;atenga&period;sg</a>
+              <br><br>
+              <i class="bi bi-envelope"></i> Registration Related Inquiry:<br>
+              <a href="mailto:iscasreg&commat;ieee&period;org">iscasreg&commat;ieee&period;org</a>
+            </p>
+          </div>
 
-  <div id="preloader"></div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>Site Map</h3>
+            <ul> 
+              <li><i class="bi bi-chevron-right"></i> <a href="../about/about-news.php" target="_blank">News Release</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about/about-news.php" target="_blank">News Release</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about/welcome-message.php" target="_blank">Welcome Message</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/ISCAS_2024_Final_Program.pdf?v=20240519" target="_blank">Final Program Book</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/ISCAS_2024_Program_At_a_Glance.pdf?v=20240513" target="_blank">Program At a Glance</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#cta" target="_blank">Call for Participation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#speaker" target="_blank">Keynote Speakers</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/Tutorial.php" target="_blank">Tutorial Overview</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/Embedded_Workshop.php" target="_blank">Embedded Workshops</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/IWCIMU.php" target="_blank">IWCIMU</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/3D-Integration-and-Advanced-Packaging-Workshop.php" target="_blank">3D Integration &amp; Advanced Packaging Workshop</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://ml.ieee-cas.org/mod/page/view.php?id=2153&forceview=1" target="_blank">CASS Blitz 2024 - ISCAS Edition</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program/WiCAS-YP.php" target="_blank">WiCAS-YPCAS Event</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about/about-welcome-reception.php" target="_blank">Welcome Reception</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about/about-farewell-reception.php" target="_blank">Farewell Reception</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="registration/" target="_blank">Registration</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about/about-accommodation.php" target="_blank">Accommodation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://epapers2.org/iscas2024" target="_blank">Submission Site</a></li>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitsingapore.com/travel-guide-tips/getting-around/" target="_blank">Transportation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements" target="_blank">Visa requirement</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitsingapore.com/en/" target="_blank">Local activities</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="http://www.ieee.org/" target="_blank">IEEE</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://ieee-cas.org/" target="_blank">IEEE CASS</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://ieee-cas.org/event/symposium/2024-ieee-international-symposium-circuits-and-systems" target="_blank">ISCAS 2024 (CASS page)</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://2023.ieee-iscas.org" target="_blank">ISCAS 2023</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://2024.ieee-iscas.org" target="_blank">ISCAS 2024</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://2025.ieee-iscas.org" target="_blank">ISCAS 2025</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ieee.org/accessibility-statement.html" target="_blank">IEEE Accessibility Statement</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ieee.org/about/corporate/governance/p9-26.html" target="_blank">IEEE Nondiscrimination Policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://secure.ethicspoint.com/domain/media/en/gui/20410/index.html" target="_blank">IEEE Ethics Reporting</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ieee.org/security-privacy.html" target="_blank">IEEE Privacy Policy</a></li>
+            </ul>
+    
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>Our Social Networks</h3>
+            <p>Follow IEEE CASS on Social Media</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/ieeecassociety" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/pages/IEEE-Circuits-and-Systems-Society/144531238933009" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/ieee-circuits-and-systems-society-cass" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 footer-links">
+                <h3>Held in</h3>
+                <a href="https://www.meet-in-shanghai.net/en/guide/" target="_blank"><img src="../assets/img/clients/logo_shanghai_travel.png" width=200px class="img-fluid" loading="lazy" alt="Shanghai Tourism"></a>
+              </div>
+              <div class="col-lg-6 col-md-6 footer-links">
+                <h3>Supported by</h3>
+                <a href="https://www.visitsingapore.com/mice" target="_blank"><img src="../assets/img/clients/logo_SECB.webp" width=200px class="img-fluid" loading="lazy" alt="SECB"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2024 IEEE</span></strong>. All Rights Reserved. Use of this website signifies your agreement to the <a href="https://www.ieee.org/about/help/site-terms-conditions.html">IEEE Terms and Conditions</a>. A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+      </div>
+      <div class="credits">
+        Powered by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
+  <!-- JS File -->
+  <script src="index.js"></script>
 </body>
 
 </html>
