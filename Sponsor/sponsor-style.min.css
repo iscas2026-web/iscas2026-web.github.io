@@ -1,0 +1,606 @@
+.breadcrumbs.sponsor-header {
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    background: rgb(75, 86, 134) !important;
+}
+
+.breadcrumbs.sponsor-header ol,
+.breadcrumbs.sponsor-header a {
+    padding: 20px 0px 30px;
+    color: #ffffff !important;
+}
+
+.breadcrumbs.sponsor-header h3 {
+    color: #fffffff5;
+    font-size: 25px;
+    padding: 30px 100px 0px;
+}
+
+.breadcrumbs.sponsor-header h2 {
+    color: #fffffff5;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    padding-right: 0px;
+    margin-top: 10px;
+    margin: 0;   
+    padding: 0px 100px 0px;
+}
+
+.breadcrumbs.sponsor-header h4 {
+    color: rgba(255, 255, 255, 0.116);
+    font-size: 65px;
+    font-weight: 700;
+    text-align: left;
+    padding-right: 0px;
+    margin-top: -20px;
+    margin-bottom: -25px;
+    position: relative;
+}
+
+/* class */
+.inner-page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding: 0px 0px 0px;;
+    margin: 0;
+}
+
+/*sponsor content */
+
+.sponsor-content {
+    position: relative;
+    display: flex;
+    padding: 70px 150px 70px;
+}
+
+.content-wrapper {
+    flex: 1;
+    margin-top: 0; 
+}
+
+.sponsor-content h4 {
+    line-height: 1.5;    
+    font-size: 20px; 
+}
+
+.sponsor-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.sponsor-image {
+    padding: 0px 20px 60px;
+    
+}
+
+.sponsor-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.btn-prospectus, .btn-contact {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.view-prospectus-btn-1 {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: #4b5584;  
+    color: #ffffff;  
+}
+
+.view-prospectus-btn-1:hover {
+    background: #9399b5; 
+    border-color: #9399b5; 
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #4b5584;
+    border: 2px solid #4b5584;
+}
+
+.btn-contact:hover {
+    background: #4b5584;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* audience breakdown */
+
+#audience-breakdown {
+    background: #4b5584;
+    padding: 30px 150px 30px;
+    color: #ffffff;
+}
+
+#audience-breakdown h2 {
+    color: #ffffffb7;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#audience-breakdown h3 {
+    color:#ffffffb7;
+    font-size: 18px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+#audience-breakdown > .container > p {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 15px;
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card i {
+    font-size: 50px;
+    color: #4b5584;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.stat-card .h1 {
+    color: #4b5584;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.stat-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 15px;
+}
+
+/*explore opportunities*/
+
+#explore-opportunities .table {
+    padding: 70px 100px 70px;
+    border-radius: 20px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#explore-opportunities .table thead {
+    background-color: #f0f0f0;  /* Grey background for header */
+}
+
+#explore-opportunities .table th,
+#explore-opportunities .table td {
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #dee2e6;  /* Keeps horizontal lines */
+    padding: 10px;
+}
+
+
+#explore-opportunities .table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Rounded corners */
+#explore-opportunities .table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+#explore-opportunities .table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+#explore-opportunities .table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+#explore-opportunities .table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+#explore-opportunities {
+    padding: 50px 0;
+}
+
+#explore-opportunities h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#explore-opportunities h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#explore-opportunities h5 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+/*explore opportunities 2*/
+
+#explore-opportunities-2 {
+    padding: 0px 100px 0px;
+    background-color:#f0f0f0;
+}
+
+#explore-opportunities-2 h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+
+#explore-opportunities-2 h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+}
+
+.feature-icon img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.feature-card h4 {
+    color: #000000;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 400;
+}
+
+/* the benefits */
+#the-benefits {
+    padding: 70px 100px 0px;
+    background-color: #f8f9fa;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow-x: hidden;  /* This prevents horizontal scrolling */
+}
+
+#the-benefits .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#the-benefits h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4b5584;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#the-benefits .benefit-card {
+    text-align: center;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+#the-benefits .benefit-icon {
+    margin-bottom: 20px;
+    color: #4b5584;
+}
+
+#the-benefits .benefit-card h4 {
+    color: #4b5584;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#the-benefits .benefit-card p {
+    color: #000000;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 400;
+}
+
+
+/*Top Companies*/
+
+#trusted-companies {
+    background: #f8f9fa !important;
+    padding: 60px 0 !important;
+    text-align: center !important;
+}
+
+#trusted-companies h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #4b5584;
+}
+
+#trusted-companies h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #4b5584;
+}
+
+  body {
+    background: #f2f2f2;
+    align-items: center;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #f8f9fa;
+    white-space: nowrap;
+    position: relative;
+    align-items: center;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),  #f8f8f8);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),  #f8f8f8);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+
+  .company-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 40px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
+  .carousel-item {
+    flex: 0 0 25%;
+    padding: 0 10px;
+  }
+
+  .company-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .company-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .prev-arrow {
+    left: 0;
+  }
+
+  .next-arrow {
+    right: 0;
+  }
+
+  .carousel-arrow i {
+    font-size: 20px;
+    color: #333;
+  }
+
+/*impression*/
+
+@media (max-width: 991px) {
+    .impression-content {
+        padding-left: 15px;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+#make-a-lasting-impression {
+    padding: 0px 0px 0px;
+    background-color: #ffffff;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#make-a-lasting-impression .col-lg-6:first-child {
+    flex: 0 0 60%;  /* Takes up 70% width */
+
+}
+
+#make-a-lasting-impression .col-lg-6:last-child {
+    flex: 0 0 40%;  /* Takes up 30% width */
+}
+
+.impression-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    clip-path:polygon(0 0, 100% 0, 90% 0%, 100% 100%, 0 100%, 0% 0%);
+       
+}
+
+.impression-content {
+    padding: 50px 70px;  /* Updated padding to be consistent */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Aligns content to the left */
+}
+
+#make-a-lasting-impression h2 {
+    padding: 0;  /* Remove padding since container handles it */
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+#make-a-lasting-impression h3 {
+    padding: 0;  /* Remove padding since container handles it */
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.view-prospectus-btn {
+    background:  #4b5584;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.view-prospectus-btn:hover {
+    background: #9399b5;  /* Same color as registration button hover */
+    color: white;  /* Text color changes to white on hover */
+
+}
+
+#breadcrumbs {
+    margin: 0 !important;
+    padding: 15px 0 !important;
+}

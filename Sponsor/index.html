@@ -17,166 +17,49 @@
     <link href="../bootstrap-icons.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="../style.min.css" rel="stylesheet">
+    <link href="sponsor-style.min.css" rel="stylesheet">
+    <link href="../style.min.css?v=1716692116" rel="stylesheet">
 
     <!-- Hero css -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-      .company-carousel {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        padding: 0 40px;
-      }
 
-      .carousel-container {
-        width: 100%;
-        overflow: hidden;
-      }
-
-      .carousel-track {
-        display: flex;
-        transition: transform 0.5s ease;
-        width: 100%;
-      }
-
-      .carousel-item {
-        flex: 0 0 25%;
-        padding: 0 10px;
-      }
-
-      .company-card {
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .company-card img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-      }
-
-      .carousel-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: white;
-        border: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        cursor: pointer;
-        z-index: 1;
-      }
-
-      .prev-arrow {
-        left: 0;
-      }
-
-      .next-arrow {
-        right: 0;
-      }
-
-      .carousel-arrow i {
-        font-size: 20px;
-        color: #333;
-      }
-    </style>
 </head>
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">      
-      <a href="../" class="logo me-auto"><img src="../logo.jpg" alt="logo.jpg"></a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li class="dropdown"><a href="#about"><span>About</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="../about/about-news.php">News Release</a></li>
-              <li><a href="../about/index.html">About ISCAS</a></li>
-              <li><a href="../about/welcome-message.php">Welcome Message</a></li>
-              <li><a href="https://www.meet-in-shanghai.net/en/" target="_blank">About Shanghai <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="https://ieee-cas.org/" target="_blank">CAS Society <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="https://www.ieee.org/about/corporate/governance/index.html" target="_blank">IEEE Policies <i class="bi bi-link-45deg"></i></a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#services"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="program/ISCAS_2024_Final_Program.pdf?v=20240519" target="_blank">Final Program Book <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="program/ISCAS_2024_Program_At_a_Glance.pdf?v=20240513" target="_blank">Program At a Glance <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="#speaker">Keynote Speakers</a></li>
-              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=1" target="_blank">Lecture Schedule <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=2" target="_blank">Poster Schedule <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="https://epapers2.org/iscas2024/ESR/session_index.php" target="_blank">Session List <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="program/Tutorial.php" target="_blank">Tutorial Overview</a></li>
-              <li><a href="program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop on Digital Healthcare</a></li>
-              <li><a href="program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS</a></li>
-              <li><a href="program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum</a></li>
-              <li><a href="program/WiCAS-YP.php" target="_blank">Event: WiCAS-YPCAS</a></li>
-              <li><a href="about/about-welcome-reception.php">Welcome Reception</a></li>
-              <li><a href="about/about-farewell-reception.php">Farewell Reception</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href=""><span>Authors</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="authors/author-instructions.php">Author Instructions</a></li>
-              <li><a href="authors/journal-special-issue.php">Journal Special Issue</a></li>
-              <li><a href="authors/oral-presentation-guidelines.php">Oral Presentation Guidelines</a></li>
-              <li><a href="authors/poster-guidelines.php">Poster Guidelines</a></li>
-              <li><a href="https://epapers2.org/iscas2024" target="_blank">Submission Site <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="authors/cass-student-travel-grants.php">CASS Student Travel Grants</a></li>
-              <li><a href="authors/iscas-2026-student-travel-grant.php">ISCAS 2026 Student Travel Grants</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#cta"><span>Call for Participation</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="cfp/Call_for_Participation_ISCAS_2024.pdf" target="_blank">Call for Participation (flyer) <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/CFP_ISCAS_2024.pdf" target="_blank">Call for Papers <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/CFP_ISCAS_2024_Tutorial.pdf" target="_blank">Call for Tutorials <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/CFP_ISCAS_2024_Special_Sessions.pdf" target="_blank">Call for Special Sessions <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/ISCAS2024_Flexible_CrossSociety_SS_CallforAbstract_JFlex.pdf" target="_blank">Call for CAS/EDS Cross-Society Special Session Papers <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/Grand_Challenge_on_Neural_Network-based_Video_Coding_ISCAS_2024.pdf" target="_blank">Grand Challenge on Neural Network-based Video Coding <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/CFP_ISCAS_2024_Live_Demos.pdf" target="_blank">Call for Live Demonstrations <i class="bi bi-file-pdf"></i></a></li>
-              <li><a href="cfp/Expo_n_Spnsr_Prospectus_ISCAS_2024.pdf" target="_blank">Exhibition &amp; Sponsorship Prospectus <i class="bi bi-file-pdf"></i></a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#cliens"><span>Sponsors & Exhibitors</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="Sponsor/index.html">Become a Sponsor</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#team"><span>Organizing Committee</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="committee/index.html">List of Committee</a></li>
-            </ul>
-          </li>  
-          <li class="dropdown"><a href="#contact"><span>Contact</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#contact">Conference Venue</a></li>
-              <li><a href="about/about-accommodation.php">Accommodation</a></li>
-              <li><a href="https://www.meet-in-shanghai.net/en" target="_blank">Transportation <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="https://www.visaforchina.org/" target="_blank">Visa Requirement <i class="bi bi-link-45deg"></i></a></li>
-              <li><a href="https://www.meet-in-shanghai.net/en" target="_blank">Local Activities <i class="bi bi-link-45deg"></i></a></li>
-            </ul>
-          </li>
-          <li><a href="../registration/" target="_blank" class="getstarted">Registration</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header>
-
+  <header id="header"></header>
+  <nav id="navbar"></nav>
   <main id="main">
+ 
+
+  <script>
+      // Function to load header content
+      async function loadHeader() {
+          try {
+              const response = await fetch('../include/header_1.html');
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const data = await response.text();
+              document.getElementById('header').innerHTML = data;
+
+              // Load navbar after header is loaded
+              const navResponse = await fetch('../include/menu_1.html');
+              if (!navResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const navData = await navResponse.text();
+              document.getElementById('navbar').innerHTML = navData;
+          } catch (error) {
+              console.error('Error loading header/navbar:', error);
+          }
+      }
+
+      // Load header when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadHeader);
+  </script>
 
     <!-- ======= Breadcrumbs ======= -->
     <section class="inner-page">
@@ -210,14 +93,14 @@
                             packages to provide the best possible Return on Investment for your business.
                         </h4>
                         <div class="sponsor-buttons">
-                            <a href="#" class="view-prospectus-btn">View Prospectus</a>
+                            <a href="#" class="view-prospectus-btn-1">View Prospectus</a>
                             <a href="#" class="btn-contact">Contact Now</a>
                         </div>
                     </div>
                    
                     <div class="col-lg-4">  <!-- Image column -->
                         <div class="sponsor-image">
-                            <img src="assets/sponsor-content-image.png" alt="ISCAS Sponsorship" class="img-fluid rounded shadow">
+                            <img src="../assets/img/sponsor/sponsor-content-image.png" alt="ISCAS Sponsorship" class="img-fluid rounded shadow">
                         </div>
                     </div>
                 </div>
@@ -424,7 +307,7 @@
               <div class="col-md-4 mb-4">
                 <div class="feature-card">
                   <div class="feature-icon">
-                    <img src="assets/exhibiti-hall-partronships.jpg" alt="Exhibition Hall">
+                    <img src="../assets/img/sponsor/exhibition-hall-partronships.jpg" alt="Exhibition Hall">
                   </div>
                   <h4>Exhibit Hall Patronships</h4>
                   <p>Make advertising easy on and off the floor. Display your company's logo in mass quantities by customizing event resources like readily available literature, water bottles, charging stations, signage, and more.</p>
@@ -434,7 +317,7 @@
               <div class="col-md-4 mb-4">
                 <div class="feature-card">
                   <div class="feature-icon">
-                    <img src="assets/networking-and-education.jpg" alt="Networking">
+                    <img src="../assets/img/sponsor/networking-and-education.jpg" alt="Networking">
                   </div>
                   <h4>Networking & Education</h4>
                   <p>Engage with new and existing attendees at IEEE ISCAS 2026 by becoming a patron for our highly anticipated on or off site opportunities ranging from coffee breaks to gala receptions.</p>
@@ -444,7 +327,7 @@
               <div class="col-md-4 mb-4">
                 <div class="feature-card">
                   <div class="feature-icon">
-                    <img src="assets\digital-marketing.jpg" alt="Digital Marketing">
+                    <img src="../assets/img/sponsor/digital-marketing.jpg" alt="Digital Marketing">
                   </div>
                   <h4>Digital Marketing</h4>
                   <p>As a patron, your company's logo and branding will be prominently displayed in various promotional materials, including the conference website, marketing collaterals, signage, email and social media channels.</p>
@@ -497,17 +380,17 @@
             <h3>Past Conference Attendees</h3>
             <div class="logos">
               <div class="logos-slide">
-                <img src="assets/cadence.png" />
-                <img src="assets/europractice.png" />
-                <img src="assets/google.png" />
-                <img src="assets/huawei.jpg" />
-                <img src="assets/infinera.png" />
-                <img src="assets/mediatek.png" />
-                <img src="assets/qualcomm.png" />
-                <img src="assets/samsung-semi-conductor.jpeg" />
-                <img src="assets/springer-nature.png" />
-                <img src="assets/sypnopsys.png" />
-                <img src="assets/texas-instruments.png" />
+                <img src="../assets/img/sponsor/cadence.png" />
+                <img src="../assets/img/sponsor/europractice.png" />
+                <img src="../assets/img/sponsor/google.png" />
+                <img src="../assets/img/sponsor/huawei.jpg" />
+                <img src="../assets/img/sponsor/infinera.png" />
+                <img src="../assets/img/sponsor/mediatek.png" />
+                <img src="../assets/img/sponsor/qualcomm.png" />
+                <img src="../assets/img/sponsor/samsung-semi-conductor.jpeg" />
+                <img src="../assets/img/sponsor/springer-nature.png" />
+                <img src="../assets/img/sponsor/sypnopsys.png" />
+                <img src="../assets/img/sponsor/texas-instruments.png" />
               </div>
             </div>
       </section>
@@ -517,7 +400,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 px-0">
               <div class="impression-image">
-                <img src="assets/make-a-lasting-impression.jpeg" alt="Make a Lasting Impression">
+                <img src="../assets/img/sponsor/make-a-lasting-impression.jpeg" alt="Make a Lasting Impression">
               </div>
             </div>
             <div class="col-lg-6"> 
@@ -534,106 +417,47 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>ISCAS 2026 Contact</h3>
-            <p>
-              <i class="bi bi-envelope"></i> General Inquiry:<br>
-              <a href="mailto:iscas2024.sec&commat;atenga&period;sg">iscas2024.sec&commat;atenga&period;sg</a>
-              <br><br>
-              <i class="bi bi-envelope"></i> Registration Related Inquiry:<br>
-              <a href="mailto:iscasreg&commat;ieee&period;org">iscasreg&commat;ieee&period;org</a>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>Site Map</h3>
-            <ul> 
-              <li><i class="bi bi-chevron-right"></i> <a href="../about/about-news.php" target="_blank">News Release</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about/about-news.php" target="_blank">News Release</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about/welcome-message.php" target="_blank">Welcome Message</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/ISCAS_2024_Final_Program.pdf?v=20240519" target="_blank">Final Program Book</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/ISCAS_2024_Program_At_a_Glance.pdf?v=20240513" target="_blank">Program At a Glance</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#cta" target="_blank">Call for Participation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#speaker" target="_blank">Keynote Speakers</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/Tutorial.php" target="_blank">Tutorial Overview</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/Embedded_Workshop.php" target="_blank">Embedded Workshops</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/IWCIMU.php" target="_blank">IWCIMU</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/3D-Integration-and-Advanced-Packaging-Workshop.php" target="_blank">3D Integration &amp; Advanced Packaging Workshop</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://ml.ieee-cas.org/mod/page/view.php?id=2153&forceview=1" target="_blank">CASS Blitz 2024 - ISCAS Edition</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="program/WiCAS-YP.php" target="_blank">WiCAS-YPCAS Event</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about/about-welcome-reception.php" target="_blank">Welcome Reception</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about/about-farewell-reception.php" target="_blank">Farewell Reception</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="registration/" target="_blank">Registration</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about/about-accommodation.php" target="_blank">Accommodation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://epapers2.org/iscas2024" target="_blank">Submission Site</a></li>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitsingapore.com/travel-guide-tips/getting-around/" target="_blank">Transportation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements" target="_blank">Visa requirement</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitsingapore.com/en/" target="_blank">Local activities</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="http://www.ieee.org/" target="_blank">IEEE</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://ieee-cas.org/" target="_blank">IEEE CASS</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://ieee-cas.org/event/symposium/2024-ieee-international-symposium-circuits-and-systems" target="_blank">ISCAS 2024 (CASS page)</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://2023.ieee-iscas.org" target="_blank">ISCAS 2023</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://2024.ieee-iscas.org" target="_blank">ISCAS 2024</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://2025.ieee-iscas.org" target="_blank">ISCAS 2025</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ieee.org/accessibility-statement.html" target="_blank">IEEE Accessibility Statement</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ieee.org/about/corporate/governance/p9-26.html" target="_blank">IEEE Nondiscrimination Policy</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://secure.ethicspoint.com/domain/media/en/gui/20410/index.html" target="_blank">IEEE Ethics Reporting</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ieee.org/security-privacy.html" target="_blank">IEEE Privacy Policy</a></li>
-            </ul>
-    
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>Our Social Networks</h3>
-            <p>Follow IEEE CASS on Social Media</p>
-            <div class="social-links mt-3">
-              <a href="https://twitter.com/ieeecassociety" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/pages/IEEE-Circuits-and-Systems-Society/144531238933009" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.linkedin.com/company/ieee-circuits-and-systems-society-cass" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <br><br><br>
-            <div class="row">
-              <div class="col-lg-6 col-md-6 footer-links">
-                <h3>Held in</h3>
-                <a href="https://www.meet-in-shanghai.net/en/guide/" target="_blank"><img src="../assets/img/clients/logo_shanghai_travel.png" width=200px class="img-fluid" loading="lazy" alt="Shanghai Tourism"></a>
-              </div>
-              <div class="col-lg-6 col-md-6 footer-links">
-                <h3>Supported by</h3>
-                <a href="https://www.visitsingapore.com/mice" target="_blank"><img src="../assets/img/clients/logo_SECB.webp" width=200px class="img-fluid" loading="lazy" alt="SECB"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>2024 IEEE</span></strong>. All Rights Reserved. Use of this website signifies your agreement to the <a href="https://www.ieee.org/about/help/site-terms-conditions.html">IEEE Terms and Conditions</a>. A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
-      </div>
-      <div class="credits">
-        Powered by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
+  <footer id="footer"></footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+      // Function to load header and footer content
+      async function loadComponents() {
+          try {
+              // Load header
+              const headerResponse = await fetch('../include/header_1.html');
+              if (!headerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${headerResponse.status}`);
+              }
+              const headerData = await headerResponse.text();
+              document.getElementById('header').innerHTML = headerData;
+
+              // Load navbar
+              const navResponse = await fetch('../include/menu_1.html');
+              if (!navResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const navData = await navResponse.text();
+              document.getElementById('navbar').innerHTML = navData;
+
+              // Load footer
+              const footerResponse = await fetch('../include/footer_1.html');
+              if (!footerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${footerResponse.status}`);
+              }
+              const footerData = await footerResponse.text();
+              document.getElementById('footer').innerHTML = footerData;
+          } catch (error) {
+              console.error('Error loading components:', error);
+          }
+      }
+
+      // Load components when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadComponents);
+  </script>
 
   <!-- JS File -->
   <script src="index.js"></script>
 </body>
-
 </html>
