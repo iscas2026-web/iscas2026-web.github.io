@@ -48,19 +48,19 @@
           </li>
           <li class="dropdown"><a href="#services"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="program/ISCAS_2024_Final_Program.pdf?v=20240519" target="_blank">Final Program Book<b>(Coming Soon)</b></a></li>
-              <li><a href="program/ISCAS_2024_Program_At_a_Glance.pdf?v=20240513" target="_blank">Program At a Glance<b>(Coming Soon)</b></a></li>
+              <li><a href="program/ISCAS_2024_Final_Program.pdf?v=20240519" target="_blank">Final Program Book <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="program/ISCAS_2024_Program_At_a_Glance.pdf?v=20240513" target="_blank">Program At a Glance <i class="bi bi-file-pdf"></i></a></li>
               <li><a href="#speaker">Keynote Speakers</a></li>
-              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=1" target="_blank">Lecture Schedule<b>(Coming Soon)</b></a></li>
-              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=2" target="_blank">Poster Schedule<b>(Coming Soon)</b></a></li>
-              <li><a href="https://epapers2.org/iscas2024/ESR/session_index.php" target="_blank">Session List<b>(Coming Soon)</b></a></li>
-              <li><a href="program/Tutorial.php" target="_blank">Tutorial Overview<b>(Coming Soon)</b></a></li>
-              <li><a href="program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop on Digital Healthcare<b>(Coming Soon)</b></a></li>
-              <li><a href="program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS<b>(Coming Soon)</b></a></li>
-              <li><a href="program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum<b>(Coming Soon)</b></a></li>
-              <li><a href="program/WiCAS-YP.php" target="_blank">Event: WiCAS-YPCAS<b>(Coming Soon)</b></a></li>
-              <li><a href="about/about-welcome-reception.php">Welcome Reception<b>(Coming Soon)</b></a></li>
-              <li><a href="about/about-farewell-reception.php">Farewell Reception<b>(Coming Soon)</b></a></li>
+              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=1" target="_blank">Lecture Schedule <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://epapers2.org/iscas2024/ESR/session_sched_view.php?sched_id=2" target="_blank">Poster Schedule <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://epapers2.org/iscas2024/ESR/session_index.php" target="_blank">Session List <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="program/Tutorial.php" target="_blank">Tutorial Overview</a></li>
+              <li><a href="program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop on Digital Healthcare</a></li>
+              <li><a href="program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS</a></li>
+              <li><a href="program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum</a></li>
+              <li><a href="program/WiCAS-YP.php" target="_blank">Event: WiCAS-YPCAS</a></li>
+              <li><a href="about/about-welcome-reception.php">Welcome Reception</a></li>
+              <li><a href="about/about-farewell-reception.php">Farewell Reception</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href=""><span>Authors</span> <i class="bi bi-chevron-down"></i></a>
