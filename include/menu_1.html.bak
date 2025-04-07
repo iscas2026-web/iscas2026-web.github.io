@@ -1,0 +1,80 @@
+  
+  
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+      <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo-horizontal.png" alt="ISCAS 2026 Logo"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="../index.html#about"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../about/welcome-message.php">Welcome Message</a></li>
+              <li><a href="../about/about-news.php">News Release</a></li>
+              <li><a href="../about/about-iscas.php">About ISCAS</a></li>
+              <li><a href="../about/about-ieee-cass.php">About IEEE CASS</a></li>
+              <li><a href="../about/about-shanghai.php">About Shanghai</a></li>
+              <li><a href="../about/about-venue.php">Conference Venue</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../index.html#services"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../program/ISCAS_2026_Program_At_a_Glance.pdf" target="_blank">Program At a Glance <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../program/ISCAS_2026_Final_Program.pdf" target="_blank">Final Program Book <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="https://epapers2.org/iscas2026/ESR/session_index.php" target="_blank">Session List <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="../program/Tutorial.php" target="_blank">Tutorial Overview</a></li>
+              <li><a href="../program/CAS-Standard-Workshop.php" target="_blank">CAS Standard Workshop on Digital Healthcare</a></li>
+              <li><a href="../program/cass-mentoring-program.php" target="_blank">CASS Mentoring Program @ ISCAS</a></li>
+              <li><a href="../program/iscas-phd-forum.php" target="_blank">ISCAS Ph.D. Forum</a></li>
+              <li><a href="../program/WiCAS-YP.php" target="_blank">Event: WiCAS-YPCAS</a></li>
+              <li><a href="../about/about-welcome-reception.php">Welcome Reception</a></li>
+              <li><a href="../about/about-farewell-reception.php">Farewell Reception</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href=""><span>Authors</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../authors/author-instructions.php">Author Instructions</a></li>
+              <li><a href="../authors/journal-special-issue.php">Journal Special Issue</a></li>
+              <li><a href="../authors/oral-presentation-guidelines.php">Oral Presentation Guidelines</a></li>
+              <li><a href="../authors/poster-guidelines.php">Poster Guidelines</a></li>
+              <li><a href="https://epapers2.org/iscas2026" target="_blank">Submission Site <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="../authors/cass-student-travel-grants.php">CASS Student Travel Grants</a></li>
+              <li><a href="../authors/iscas-2026-student-travel-grant.php">ISCAS 2026 Student Travel Grants</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../index.html#cta"><span>Call for Participation</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../cfp/Call_for_Participation_ISCAS_2026.pdf" target="_blank">Call for Participation (flyer) <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/CFP_ISCAS_2026.pdf" target="_blank">Call for Papers <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/CFP_ISCAS_2026_Tutorial.pdf" target="_blank">Call for Tutorials <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/CFP_ISCAS_2026_Special_Sessions.pdf" target="_blank">Call for Special Sessions <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/ISCAS2026_Flexible_CrossSociety_SS_CallforAbstract_JFlex.pdf" target="_blank">Call for CAS/EDS Cross-Society Special Session Papers <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/Grand_Challenge_on_Neural_Network-based_Video_Coding_ISCAS_2026.pdf" target="_blank">Grand Challenge on Neural Network-based Video Coding <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/CFP_ISCAS_2026_Live_Demos.pdf" target="_blank">Call for Live Demonstrations <i class="bi bi-file-pdf"></i></a></li>
+              <li><a href="../cfp/Expo_n_Spnsr_Prospectus_ISCAS_2026.pdf" target="_blank">Exhibition &amp; Sponsorship Prospectus <i class="bi bi-file-pdf"></i></a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../index.html#cliens"><span>Sponsors & Exhibitors</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../Sponsor/index.html">Become a Sponsor</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../index.html#team"><span>Organizing Committee</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../committee/index.html">List of Committee</a></li>
+            </ul>
+          </li>  
+          <li class="dropdown"><a href="../index.html#contact"><span>Contact</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../index.html#contact">Conference Venue</a></li>
+              <li><a href="../about/about-accommodation.php">Accommodation</a></li>
+              <li><a href="https://www.meet-in-shanghai.net/en" target="_blank">Transportation <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://www.visaforchina.org/" target="_blank">Visa Requirement <i class="bi bi-link-45deg"></i></a></li>
+              <li><a href="https://www.meet-in-shanghai.net/en" target="_blank">Local Activities <i class="bi bi-link-45deg"></i></a></li>
+            </ul>
+          </li>
+          <li><a href="../registration/" target="_blank" class="getstarted">Registration</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
