@@ -467,6 +467,11 @@ section {
     overflow: hidden
 }
 
+section-withoutpadding {
+    padding: 0 0;
+    overflow: hidden
+}
+
 .section-bg {
     background-color: #f3f5fa
 }
