@@ -512,13 +512,45 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-      <?php include '../include/footer_1.html';?>
-      <?php include '../include/credit.html';?>
-      <?php include '../include/timestamp.php';?>
-  </footer><!-- End Footer -->
+  <footer id="footer"></footer><!-- End Footer -->
 
-    <?php include '../include/script_1.html';?>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+      // Function to load header and footer content
+      async function loadComponents() {
+          try {
+              // Load header
+              const headerResponse = await fetch('../include/header_1.html');
+              if (!headerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${headerResponse.status}`);
+              }
+              const headerData = await headerResponse.text();
+              document.getElementById('header').innerHTML = headerData;
+
+              // Load navbar
+              const navResponse = await fetch('../include/menu_1.html');
+              if (!navResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const navData = await navResponse.text();
+              document.getElementById('navbar').innerHTML = navData;
+
+              // Load footer
+              const footerResponse = await fetch('../include/footer_1.html');
+              if (!footerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${footerResponse.status}`);
+              }
+              const footerData = await footerResponse.text();
+              document.getElementById('footer').innerHTML = footerData;
+          } catch (error) {
+              console.error('Error loading components:', error);
+          }
+      }
+
+      // Load components when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadComponents);
+  </script>
 
 </body>
 
