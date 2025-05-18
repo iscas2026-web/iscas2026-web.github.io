@@ -3,12 +3,10 @@ Proposed ISCAS 2026 OC:
 General Co-Chairs: 
 •	Yong Lian, York University, Canada, plian@yorku.ca 
 •	Shao-Jun Wei, Tsinghua University, China, wsj@tsinghua.edu.cn 
-•	CAS appointed representative
 
 TPC Co-Chairs
 •	Guoxing Wang, Shanghai Jiao Tong University, China, guoxing@sjtu.edu.cn 
 •	Eduard Alarcon, UPC Barcelona Tech, Spain, eduard.alarcon@upc.edu 
-•	CAS appointed representative
 
 Plenary Co-Chairs
 •	David Allstot, Carnegio Mellon Univeristy, USA, allstot@cmu.edu 
@@ -22,7 +20,6 @@ Finance Co-Chair
 Special Session Co-Chairs
 •	Wei-Sheng Zhao, Beihang University, China, weisheng.zhao@buaa.edu.cn 
 •	Malgorzata Chrzanowska-Jeske, Portland State University, USA, jeske@ece.pdx.edu 
-•	One from Europe 
 
 Tutorial Co-Chairs
 •	Li Li, University Science and Technology of China, China, lil1@ustc.edu.cn 
@@ -39,7 +36,6 @@ WiCAS and YP Co-Chairs
 •	Julia Chung, National Cheng Kung University, Taiwan, pcchung@ee.ncku.edu.tw 
 •	Yoko Uwate, Tokushima University, Japan, uwate@ee.tokushima-u.ac.jp 
 •	Yongfu Li, Shanghai Jiao Tong University, China, yongfu.li@sjtu.edu.cn 
-•	One from Europe
 
 Industry Advisory and Entrepreneurship Co-Chairs
 •	Yen-Kuang Chen, Alibaba T-Head Semiconductor, USA, y.k.chen@ieee.org 

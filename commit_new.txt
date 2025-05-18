@@ -1,0 +1,70 @@
+Proposed ISCAS 2026 OC:
+
+Honorary Chair:
+Junfa Mao, Shenzhen University, China
+
+General Co-Chairs: 
+•	Yong Lian, York University, Canada, plian@yorku.ca 
+•	Ming Liu, Fudan University, China, liuming@fudan.edu.cn 
+•	Shao-Jun Wei, Tsinghua University, China, wsj@tsinghua.edu.cn 
+•	Gianluca Setti, King Abdullah University of Science and Technology, Saudi Arabia, gianluca.setti@kaust.edu.sa 
+
+TPC Co-Chairs
+•	Wei-Sheng Zhao, Beihang University, China, weisheng.zhao@buaa.edu.cn 
+•	Xinmiao Zhang, Ohio State University, USA, zhang.8952@osu.edu  
+•	Eduard Alarcon, UPC Barcelona Tech, Spain, eduard.alarcon@upc.edu 
+•	Yoshifumi Nishio, Tokoshima University, Japan, nishio@ee.tokushima-u.ac.jp 
+
+Plenary Co-Chairs
+•	Zhihua Wang, Tsinghua University, China, zhihua@tsinghua.edu.cn  
+•	Mohamad Sawan, Westlake University, China, sawan@westlake.edu.cn 
+•	David Allstot, Carnegie Mellon University, USA, allstot@cmu.edu 
+
+Finance Co-Chair
+•	Jian Zhao, Shanghai Jiao Tong University, China, zhaojianycc@sjtu.edu.cn 
+•	Di He, Shanghai Jiao Tong University, China, dihe@sjtu.edu.cn 
+
+Special Session Co-Chairs
+•	Yajun Ha, Shanghai Tech University, China, hayj@shanghaitech.edu.cn
+•	Elena Blokhina, University College Dublin, Ireland, elena.blokhina@ucd.ie 
+•	Malgorzata Chrzanowska-Jeske, Portland State University, USA, jeske@ece.pdx.edu
+
+Tutorial Co-Chairs
+•	Li Li, University Science and Technology of China, China, lil1@ustc.edu.cn 
+•	Yang Zhao, Shanghai Jiao Tong University, China, yangzhao90@sjtu.edu.cn 
+•	Patricia Desgreys, Telecom Paris, France, patricia.desgreys@telecom-paris.fr
+•	Shahriar Mirabbasi, University of British Columbia, Canada, shahriar@ece.ubc.ca 
+
+
+Cross Society Session Co-Chairs
+•	Yongfu Li, Shanghai Jiao Tong University, yongfu.li@sjtu.edu.cn 
+•	Xiaojun Guo, Shanghai Jiao Tong University, x.guo@sjtu.edu.cn 
+•	Shouyi Yin, Tsinghua University, yinsy@tsinghua.edu.cn 
+•	Qing Luo, CAS Institute of Microelectronics, luoqing@ime.ac.cn 
+
+Demo Co-Chairs
+•	Peiling Liu, Shanghai Jiao Tong University, China, liupeilin@sjtu.edu.cn 
+•	Philipp Hafliger, University of Oslo, Norway, hafliger@ifi.uio.no 
+•	Xilin Liu, University of Toronto, Canada, xilinliu@ece.utoronto.ca
+
+WiCAS and YP Co-Chairs
+•	Julia Chung, National Cheng Kung University, Taiwan, pcchung@ee.ncku.edu.tw 
+•	Yoko Uwate, Tokushima University, Japan, uwate@ee.tokushima-u.ac.jp 
+
+Industry Advisory and Entrepreneurship Co-Chairs
+•	Howard Yang, Montage Technology, China, howard.yang@montage-tech.com 
+•	Yu Wang, Tsinghua University, China, yu-wang@mail.tsinghua.edu.cn 
+•	Yen-Kuang Chen, Intel, USA, y.k.chen@ieee.org 
+•	Abu Sebastian, IBM Research, Zurich, ASE@zurich.ibm.com 
+
+Publication Co-Chairs
+•	Li Geng, Xi’an Jiao Tong University, China, gengli@xjtu.edu.cn 
+•	Jianjun Zhou, Shanghai Jiao Tong University, China, zhoujianjun@sjtu.edu.cn 
+
+Exhibits Co-Chairs
+•	Jing Jin, Shanghai Jiao Tong University, China, jinjing@sjtu.edu.cn
+•	Yongxin Zhu, CAS Shanghai Advanced Research Institute, China, zhuyongxin@sari.ac.cn 
+
+Local Arrangement Co-Chairs
+•	Yan Liu, Shanghai Jiao Tong University, China, yan.liu06@sjtu.edu.cn 
+•	Liang Qi, Shanghai Jiao Tong University, China, qi.liang@sjtu.edu.cn 
