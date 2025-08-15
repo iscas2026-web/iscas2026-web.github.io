@@ -4,86 +4,90 @@
 <head>
   <title>IEEE ISCAS 2026 | Organizing Committee</title>
   <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">  
-    <meta name="description" content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
-    <meta name="keywords" content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
-    
-    <!-- Favicons -->
-    <link href="../assets/img/favicon.jpg" rel="icon">
-    <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description"
+    content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
+  <meta name="keywords"
+    content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
 
-    <!-- Vendor CSS Files -->
-    <link href="../bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap-icons.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.jpg" rel="icon">
+  <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
 
-    <!-- Template Main CSS File -->
-    <link href="sponsor-style.min.css" rel="stylesheet">
-    <link href="../style.min.css?v=1716692116" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Hero css -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="sponsor-style.min.css" rel="stylesheet">
+  <link href="../style.min.css?v=1716692116" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Hero css -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
   <!-- ======= Header ======= -->
   <header id="header"></header>
   <nav id="navbar"></nav>
   <main id="main">
- 
 
-  <script>
+
+    <script>
       // Function to load header content
       async function loadHeader() {
-          try {
-              const response = await fetch('../include/header_1.html');
-              if (!response.ok) {
-                  throw new Error(`HTTP error! status: ${response.status}`);
-              }
-              const data = await response.text();
-              document.getElementById('header').innerHTML = data;
-
-              // Load navbar after header is loaded
-              const navResponse = await fetch('../include/menu_1.html');
-              if (!navResponse.ok) {
-                  throw new Error(`HTTP error! status: ${navResponse.status}`);
-              }
-              const navData = await navResponse.text();
-              document.getElementById('navbar').innerHTML = navData;
-          } catch (error) {
-              console.error('Error loading header/navbar:', error);
+        try {
+          const response = await fetch('../include/header_1.html');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
           }
+          const data = await response.text();
+          document.getElementById('header').innerHTML = data;
+
+          // Load navbar after header is loaded
+          const navResponse = await fetch('../include/menu_1.html');
+          if (!navResponse.ok) {
+            throw new Error(`HTTP error! status: ${navResponse.status}`);
+          }
+          const navData = await navResponse.text();
+          document.getElementById('navbar').innerHTML = navData;
+        } catch (error) {
+          console.error('Error loading header/navbar:', error);
+        }
       }
 
       // Load header when DOM is ready
       document.addEventListener('DOMContentLoaded', loadHeader);
-  </script>
+    </script>
 
-  <div id="menu"></div>
-  <main id="main">
-      
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-        
-      <div class="container">
-        <ol>
-          <li><a href="../">Home</a></li>
+    <div id="menu"></div>
+    <main id="main">
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+
+        <div class="container">
+          <ol>
+            <li><a href="../">Home</a></li>
             <!-- <li><a href="../#team">Organizing Committee</a></li> -->
-        </ol>
-        <h2>Organizing Committee</h2>
-      </div>
-        
-      <div class="container">
+          </ol>
+          <h2>Organizing Committee</h2>
+        </div>
+
+        <div class="container">
           <div class="team2">
 
             <div class="row">
-              
+
               <!-- ======= Honorary Chair ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Junfa Mao.webp" class="img-fluid" alt="Junfa_Mao.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Junfa Mao.webp" class="img-fluid" alt="Junfa_Mao.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Junfa Mao</h3>
                     <span>Honorary Chair</span>
@@ -98,7 +102,8 @@
               <!-- ======= General Chair ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yong Lian.webp" class="img-fluid" alt="Yong Lian.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yong Lian.webp" class="img-fluid" alt="Yong Lian.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Yong Lian</h3>
                     <span>General Co-Chair</span>
@@ -112,7 +117,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Ming Liu.webp" class="img-fluid" alt="Ming_Liu.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Ming Liu.webp" class="img-fluid" alt="Ming_Liu.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Ming Liu</h3>
                     <span>General Co-Chair</span>
@@ -123,10 +129,11 @@
                   </div>
                 </div>
               </div>
-                
+
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Shao-Jun Wei.webp" class="img-fluid" alt="Shao-Jun Wei.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Shao-Jun Wei.webp" class="img-fluid"
+                      alt="Shao-Jun Wei.webp"></div>
                   <div class="member-info">
                     <h3>Shao-Jun Wei</h3>
                     <span>General Co-Chair</span>
@@ -140,7 +147,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Gianluca Setti.webp" class="img-fluid" alt="Gianluca Setti.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Gianluca Setti.webp" class="img-fluid"
+                      alt="Gianluca Setti.webp"></div>
                   <div class="member-info">
                     <h3>Gianluca Setti</h3>
                     <span>General Co-Chair</span>
@@ -155,7 +163,8 @@
               <!-- ======= TPC Chair ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Wei-Sheng Zhao.webp" class="img-fluid" alt="Wei-Sheng Zhao.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Wei-Sheng Zhao.webp" class="img-fluid"
+                      alt="Wei-Sheng Zhao.webp"></div>
                   <div class="member-info">
                     <h3>Wei-Sheng Zhao</h3>
                     <span>TPC Co-Chair</span>
@@ -169,7 +178,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Xinmiao Zhang.webp" class="img-fluid" alt="Xinmiao Zhang.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Xinmiao Zhang.webp" class="img-fluid"
+                      alt="Xinmiao Zhang.webp"></div>
                   <div class="member-info">
                     <h3>Xinmiao Zhang</h3>
                     <span>TPC Co-Chair</span>
@@ -183,7 +193,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Eduard Alarcon.webp" class="img-fluid" alt="Eduard Alarcon.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Eduard Alarcon.webp" class="img-fluid"
+                      alt="Eduard Alarcon.webp"></div>
                   <div class="member-info">
                     <h3>Eduard Alarcon</h3>
                     <span>TPC Co-Chair</span>
@@ -197,7 +208,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yoshifumi Nishio.webp" class="img-fluid" alt="Yoshifumi Nishio.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yoshifumi Nishio.webp" class="img-fluid"
+                      alt="Yoshifumi Nishio.webp"></div>
                   <div class="member-info">
                     <h3>Yoshifumi Nishio</h3>
                     <span>TPC Co-Chair</span>
@@ -212,7 +224,8 @@
               <!-- ======= Plenary Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Zhihua Wang.webp" class="img-fluid" alt="Zhihua Wang.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Zhihua Wang.webp" class="img-fluid"
+                      alt="Zhihua Wang.webp"></div>
                   <div class="member-info">
                     <h3>Zhihua Wang</h3>
                     <span>Plenary Co-Chair</span>
@@ -226,7 +239,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Mohamad Sawan.webp" class="img-fluid" alt="Mohamad Sawan.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Mohamad Sawan.webp" class="img-fluid"
+                      alt="Mohamad Sawan.webp"></div>
                   <div class="member-info">
                     <h3>Mohamad Sawan</h3>
                     <span>Plenary Co-Chair</span>
@@ -240,7 +254,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/David Allstot.webp" class="img-fluid" alt="David Allstot.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/David Allstot.webp" class="img-fluid"
+                      alt="David Allstot.webp"></div>
                   <div class="member-info">
                     <h3>David Allstot</h3>
                     <span>Plenary Co-Chair</span>
@@ -255,7 +270,8 @@
               <!-- ======= Finance Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Jian Zhao.webp" class="img-fluid" alt="Jian Zhao.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Jian Zhao.webp" class="img-fluid" alt="Jian Zhao.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Jian Zhao</h3>
                     <span>Finance Co-Chair</span>
@@ -284,7 +300,8 @@
               <!-- ======= Special Session Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yajun Ha.webp" class="img-fluid" alt="Yajun Ha.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yajun Ha.webp" class="img-fluid" alt="Yajun Ha.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Yajun Ha</h3>
                     <span>Special Session Co-Chair</span>
@@ -298,7 +315,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Elena Blokhina.webp" class="img-fluid" alt="Elena Blokhina.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Elena Blokhina.webp" class="img-fluid"
+                      alt="Elena Blokhina.webp"></div>
                   <div class="member-info">
                     <h3>Elena Blokhina</h3>
                     <span>Special Session Co-Chair</span>
@@ -312,7 +330,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Malgorzata Chrzanowska-Jeske.webp" class="img-fluid" alt="Malgorzata Chrzanowska-Jeske.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Malgorzata Chrzanowska-Jeske.webp" class="img-fluid"
+                      alt="Malgorzata Chrzanowska-Jeske.webp"></div>
                   <div class="member-info">
                     <h3>Malgorzata Chrzanowska-Jeske</h3>
                     <span>Special Session Co-Chair</span>
@@ -341,7 +360,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yang Zhao.webp" class="img-fluid" alt="Yang Zhao.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yang Zhao.webp" class="img-fluid" alt="Yang Zhao.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Yang Zhao</h3>
                     <span>Tutorial Co-Chair</span>
@@ -355,7 +375,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Patricia Desgreys.webp" class="img-fluid" alt="Patricia Desgreys.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Patricia Desgreys.webp" class="img-fluid"
+                      alt="Patricia Desgreys.webp"></div>
                   <div class="member-info">
                     <h3>Patricia Desgreys</h3>
                     <span>Tutorial Co-Chair</span>
@@ -369,7 +390,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Shahriar Mirabbasi.webp" class="img-fluid" alt="Shahriar Mirabbasi.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Shahriar Mirabbasi.webp" class="img-fluid"
+                      alt="Shahriar Mirabbasi.webp"></div>
                   <div class="member-info">
                     <h3>Shahriar Mirabbasi</h3>
                     <span>Tutorial Co-Chair</span>
@@ -384,7 +406,8 @@
               <!-- ======= Cross Society Session Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yongfu Li.webp" class="img-fluid" alt="Yongfu Li.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yongfu Li.webp" class="img-fluid" alt="Yongfu Li.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Yongfu Li</h3>
                     <span>Cross Society Session Co-Chair</span>
@@ -398,7 +421,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Xiaojun Guo.webp" class="img-fluid" alt="Xiaojun Guo.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Xiaojun Guo.webp" class="img-fluid"
+                      alt="Xiaojun Guo.webp"></div>
                   <div class="member-info">
                     <h3>Xiaojun Guo</h3>
                     <span>Cross Society Session Co-Chair</span>
@@ -412,7 +436,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Shouyi Yin.webp" class="img-fluid" alt="Shouyi Yin.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Shouyi Yin.webp" class="img-fluid"
+                      alt="Shouyi Yin.webp"></div>
                   <div class="member-info">
                     <h3>Shouyi Yin</h3>
                     <span>Cross Society Session Co-Chair</span>
@@ -426,7 +451,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Qing Luo.webp" class="img-fluid" alt="Qing Luo.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Qing Luo.webp" class="img-fluid" alt="Qing Luo.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Qing Luo</h3>
                     <span>Cross Society Session Co-Chair</span>
@@ -441,7 +467,8 @@
               <!-- ======= Demo Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Peiling Liu.webp" class="img-fluid" alt="Peiling Liu.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Peiling Liu.webp" class="img-fluid"
+                      alt="Peiling Liu.webp"></div>
                   <div class="member-info">
                     <h3>Peiling Liu</h3>
                     <span>Demo Co-Chair</span>
@@ -455,7 +482,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Philipp Hafliger.webp" class="img-fluid" alt="Philipp Hafliger.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Philipp Hafliger.webp" class="img-fluid"
+                      alt="Philipp Hafliger.webp"></div>
                   <div class="member-info">
                     <h3>Philipp Hafliger</h3>
                     <span>Demo Co-Chair</span>
@@ -469,7 +497,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Xilin-Liu.webp" class="img-fluid" alt="Xilin_Liu.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Xilin-Liu.webp" class="img-fluid" alt="Xilin_Liu.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Xilin Liu</h3>
                     <span>Demo Co-Chair</span>
@@ -484,7 +513,8 @@
               <!-- ======= WiCAS and YP Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Julia Chung.webp" class="img-fluid" alt="Julia Chung.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Julia Chung.webp" class="img-fluid"
+                      alt="Julia Chung.webp"></div>
                   <div class="member-info">
                     <h3>Julia Chung</h3>
                     <span>WiCAS and YP Co-Chair</span>
@@ -498,7 +528,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yoko Uwate.webp" class="img-fluid" alt="Yoko Uwate.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yoko Uwate.webp" class="img-fluid"
+                      alt="Yoko Uwate.webp"></div>
                   <div class="member-info">
                     <h3>Yoko Uwate</h3>
                     <span>WiCAS and YP Co-Chair</span>
@@ -513,7 +544,8 @@
               <!-- ======= Industry Advisory and Entrepreneurship Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Howard Yang.webp" class="img-fluid" alt="Howard Yang.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Howard Yang.webp" class="img-fluid"
+                      alt="Howard Yang.webp"></div>
                   <div class="member-info">
                     <h3>Howard Yang</h3>
                     <span>Industry Advisory and Entrepreneurship Co-Chair</span>
@@ -527,7 +559,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yu Wang.webp" class="img-fluid" alt="Yu Wang.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yu Wang.webp" class="img-fluid" alt="Yu Wang.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Yu Wang</h3>
                     <span>Industry Advisory and Entrepreneurship Co-Chair</span>
@@ -541,7 +574,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yen-Kuang Chen.webp" class="img-fluid" alt="Yen-Kuang Chen.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yen-Kuang Chen.webp" class="img-fluid"
+                      alt="Yen-Kuang Chen.webp"></div>
                   <div class="member-info">
                     <h3>Yen-Kuang Chen</h3>
                     <span>Industry Advisory and Entrepreneurship Co-Chair</span>
@@ -555,7 +589,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Abu Sebastian.webp" class="img-fluid" alt="Abu Sebastian.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Abu Sebastian.webp" class="img-fluid"
+                      alt="Abu Sebastian.webp"></div>
                   <div class="member-info">
                     <h3>Abu Sebastian</h3>
                     <span>Industry Advisory and Entrepreneurship Co-Chair</span>
@@ -570,7 +605,8 @@
               <!-- ======= Publication Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Li Geng.webp" class="img-fluid" alt="Li Geng.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Li Geng.webp" class="img-fluid" alt="Li Geng.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Li Geng</h3>
                     <span>Publication Co-Chair</span>
@@ -584,7 +620,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Jianjun Zhou.webp" class="img-fluid" alt="Jianjun Zhou.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Jianjun Zhou.webp" class="img-fluid"
+                      alt="Jianjun Zhou.webp"></div>
                   <div class="member-info">
                     <h3>Jianjun Zhou</h3>
                     <span>Publication Co-Chair</span>
@@ -598,7 +635,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Wei Mao.webp" class="img-fluid" alt="Wei Mao.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Wei Mao.webp" class="img-fluid" alt="Wei Mao.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Wei Mao</h3>
                     <span>Publication Co-Chair</span>
@@ -610,10 +648,191 @@
                 </div>
               </div>
 
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Boxiao Liu.webp" class="img-fluid"
+                      alt="Boxiao Liu.webp"></div>
+                  <div class="member-info">
+                    <h3>Boxiao Liu</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>East China Normal University, China</p>
+                    <div class="social">
+                      <a href="mailto:bxliu@ic.ecnu.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Le Ye.webp" class="img-fluid" alt="Le Ye.webp"></div>
+                  <div class="member-info">
+                    <h3>Le Ye</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Peking University, China</p>
+                    <div class="social">
+                      <a href="mailto:yele@pku.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Leibo Liu.webp" class="img-fluid" alt="Leibo Liu.webp">
+                  </div>
+                  <div class="member-info">
+                    <h3>Leibo Liu</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Tsinghua University, China</p>
+                    <div class="social">
+                      <a href="mailto:liulb@tsinghua.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Huaqiang Wu.webp" class="img-fluid"
+                      alt="Huaqiang Wu.webp"></div>
+                  <div class="member-info">
+                    <h3>Huaqiang Wu</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Tsinghua University, China</p>
+                    <div class="social">
+                      <a href="mailto:wuhq@tsinghua.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Yongpan Liu.webp" class="img-fluid"
+                      alt="Yongpan Liu.webp"></div>
+                  <div class="member-info">
+                    <h3>Yongpan Liu</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Tsinghua University, China</p>
+                    <div class="social">
+                      <a href="mailto:pliu@tsinghua.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Xiaokang Yang.webp" class="img-fluid"
+                      alt="Xiaokang Yang.webp"></div>
+                  <div class="member-info">
+                    <h3>Xiaokang Yang</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Shanghai Jiao Tong University, China</p>
+                    <div class="social">
+                      <a href="mailto:xkyang@sjtu.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Jun Zhou.webp" class="img-fluid" alt="Jun Zhou.webp">
+                  </div>
+                  <div class="member-info">
+                    <h3>Jun Zhou</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>University of Electronic Science and Technology of China, China</p>
+                    <div class="social">
+                      <a href="mailto:zhouj@uestc.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Zhongfeng Wang.webp" class="img-fluid"
+                      alt="Zhongfeng Wang.webp"></div>
+                  <div class="member-info">
+                    <h3>Zhongfeng Wang</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Sun Yat-Sen University, China</p>
+                    <div class="social">
+                      <a href="mailto:wangzf83@mail.sysu.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Zhangming Zhu.webp" class="img-fluid"
+                      alt="Zhangming Zhu.webp"></div>
+                  <div class="member-info">
+                    <h3>Zhangming Zhu</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Xidian University, China</p>
+                    <div class="social">
+                      <!-- 邮箱未提供 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Gengquan Han.webp" class="img-fluid"
+                      alt="Gengquan Han.webp"></div>
+                  <div class="member-info">
+                    <h3>Gengquan Han</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Xidian University, China</p>
+                    <div class="social">
+                      <a href="mailto:gqhan@xidian.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Jun Yang.webp" class="img-fluid" alt="Jun Yang.webp">
+                  </div>
+                  <div class="member-info">
+                    <h3>Jun Yang</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Southeast University, China</p>
+                    <div class="social">
+                      <a href="mailto:dragon@seu.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="../assets/img/team/Xiaoyang Zeng.webp" class="img-fluid"
+                      alt="Xiaoyang Zeng.webp"></div>
+                  <div class="member-info">
+                    <h3>Xiaoyang Zeng</h3>
+                    <span>Publication Co-Chair</span>
+                    <p>Fudan University, China</p>
+                    <div class="social">
+                      <a href="mailto:xyzeng@fudan.edu.cn"><i class="bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
               <!-- ======= Exhibits Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Jing Jin.webp" class="img-fluid" alt="Jing Jin.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Jing Jin.webp" class="img-fluid" alt="Jing Jin.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Jing Jin</h3>
                     <span>Exhibits Co-Chair</span>
@@ -627,7 +846,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yongxin Zhu.webp" class="img-fluid" alt="Yongxin Zhu.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yongxin Zhu.webp" class="img-fluid"
+                      alt="Yongxin Zhu.webp"></div>
                   <div class="member-info">
                     <h3>Yongxin Zhu</h3>
                     <span>Exhibits Co-Chair</span>
@@ -642,7 +862,8 @@
               <!-- ======= Local Arrangement Co-Chairs ======= -->
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Yan Liu.webp" class="img-fluid" alt="Yan Liu.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Yan Liu.webp" class="img-fluid" alt="Yan Liu.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Yan Liu</h3>
                     <span>Local Arrangement Co-Chair</span>
@@ -656,7 +877,8 @@
 
               <div class="col-lg-4 mt-4">
                 <div class="member d-flex align-items-start">
-                  <div class="pic"><img src="../assets/img/team/Liang QI.webp" class="img-fluid" alt="Liang Qi.webp"></div>
+                  <div class="pic"><img src="../assets/img/team/Liang QI.webp" class="img-fluid" alt="Liang Qi.webp">
+                  </div>
                   <div class="member-info">
                     <h3>Liang Qi</h3>
                     <span>Local Arrangement Co-Chair</span>
@@ -671,54 +893,55 @@
             </div><!-- End row -->
 
           </div><!-- End team2 -->
-      </div><!-- End container -->
-        
-    </section><!-- End Breadcrumbs -->
-      
+        </div><!-- End container -->
+
+      </section><!-- End Breadcrumbs -->
 
 
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer"></footer><!-- End Footer -->
+    </main><!-- End #main -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- ======= Footer ======= -->
+    <footer id="footer"></footer><!-- End Footer -->
 
-  <script>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <script>
       // Function to load header and footer content
       async function loadComponents() {
-          try {
-              // Load header
-              const headerResponse = await fetch('../include/header_1.html');
-              if (!headerResponse.ok) {
-                  throw new Error(`HTTP error! status: ${headerResponse.status}`);
-              }
-              const headerData = await headerResponse.text();
-              document.getElementById('header').innerHTML = headerData;
-
-              // Load navbar
-              const navResponse = await fetch('../include/menu_1.html');
-              if (!navResponse.ok) {
-                  throw new Error(`HTTP error! status: ${navResponse.status}`);
-              }
-              const navData = await navResponse.text();
-              document.getElementById('navbar').innerHTML = navData;
-
-              // Load footer
-              const footerResponse = await fetch('../include/footer_1.html');
-              if (!footerResponse.ok) {
-                  throw new Error(`HTTP error! status: ${footerResponse.status}`);
-              }
-              const footerData = await footerResponse.text();
-              document.getElementById('footer').innerHTML = footerData;
-          } catch (error) {
-              console.error('Error loading components:', error);
+        try {
+          // Load header
+          const headerResponse = await fetch('../include/header_1.html');
+          if (!headerResponse.ok) {
+            throw new Error(`HTTP error! status: ${headerResponse.status}`);
           }
+          const headerData = await headerResponse.text();
+          document.getElementById('header').innerHTML = headerData;
+
+          // Load navbar
+          const navResponse = await fetch('../include/menu_1.html');
+          if (!navResponse.ok) {
+            throw new Error(`HTTP error! status: ${navResponse.status}`);
+          }
+          const navData = await navResponse.text();
+          document.getElementById('navbar').innerHTML = navData;
+
+          // Load footer
+          const footerResponse = await fetch('../include/footer_1.html');
+          if (!footerResponse.ok) {
+            throw new Error(`HTTP error! status: ${footerResponse.status}`);
+          }
+          const footerData = await footerResponse.text();
+          document.getElementById('footer').innerHTML = footerData;
+        } catch (error) {
+          console.error('Error loading components:', error);
+        }
       }
 
       // Load components when DOM is ready
       document.addEventListener('DOMContentLoaded', loadComponents);
-  </script>
+    </script>
 
 </body>
 
