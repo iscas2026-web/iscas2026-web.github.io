@@ -75,6 +75,83 @@
 }
 
 .navbar .dropdown ul li.has-submenu:hover > a::after {
-  color: #47b2e4;
+  color: #2c4964;
   transform: rotate(-90deg);
+}
+
+/* Mobile navigation fixes */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block !important;
+    color: #2c4964 !important;
+    font-size: 28px !important;
+    cursor: pointer !important;
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 1000 !important;
+  }
+  
+  .navbar ul {
+    display: none;
+  }
+  
+  .navbar-mobile ul {
+    display: block !important;
+  }
+  
+  /* Show submenu by default on mobile */
+  .navbar-mobile .dropdown-submenu {
+    display: block !important;
+    position: static !important;
+    box-shadow: none !important;
+    background: #f8f9fa !important;
+    margin-left: 20px !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  
+  /* Remove hover effects on mobile */
+  .navbar-mobile .has-submenu:hover .dropdown-submenu {
+    display: none !important;
+  }
+  
+  /* Mobile submenu styling */
+  .navbar-mobile .dropdown-submenu a {
+    padding: 8px 15px !important;
+    font-size: 13px !important;
+    color: #666 !important;
+    border-left: 2px solid #2c4964 !important;
+    position: relative !important;
+    padding-left: 35px !important;
+    pointer-events: auto !important;
+    z-index: 999 !important;
+  }
+  
+  /* Add enter icon for mobile submenu items */
+  .navbar-mobile .dropdown-submenu a::before {
+    content: "↵";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    color: #2c4964;
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none !important;
+  }
+}
+
+/* Mobile footer image adjustments */
+@media (max-width: 768px) {
+  .footer-links img {
+    width: 120px !important;
+    max-width: 120px !important;
+  }
+  
+  .footer-links .col-lg-6 {
+    margin-bottom: 15px;
+  }
 }
