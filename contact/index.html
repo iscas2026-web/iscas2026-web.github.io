@@ -62,6 +62,9 @@
 
       // Load header when DOM is ready
       document.addEventListener('DOMContentLoaded', loadHeader);
+      
+      // Make loadHeader available globally for mobile menu
+      window.loadHeader = loadHeader;
     </script>
 
     <div id="menu"></div>
