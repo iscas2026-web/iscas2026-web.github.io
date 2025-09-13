@@ -1,0 +1,18 @@
+/* CSS for disabled dropdown links */
+.disabled-link {
+  color: #999 !important;
+  cursor: not-allowed !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+}
+
+.disabled-link:hover {
+  color: #999 !important;
+  text-decoration: none !important;
+}
+
+.disabled-link:focus {
+  color: #999 !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
