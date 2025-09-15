@@ -586,6 +586,12 @@ a:hover {
         margin-bottom: 20px !important;
     }
 
+    /* Make slider rectangular in mobile (remove trapezoid shape) */
+    .slider-container .slide {
+        clip-path: none !important;
+        -webkit-clip-path: none !important;
+    }
+
     /* Force text to appear second (bottom) in mobile */
     .text-container {
         width: 100% !important;
