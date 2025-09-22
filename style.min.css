@@ -524,6 +524,71 @@ a:hover {
     display: flex;
     gap: 20px;
     margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 大屏幕 (1200px+): 显示3个按钮在一行 */
+@media (min-width: 1200px) {
+    .button-container {
+        justify-content: center;
+    }
+    .contact-button {
+        white-space: nowrap;
+        min-width: 160px;
+    }
+}
+
+/* 中等屏幕 (768px - 1199px): 显示2个按钮在一行，第3个换行 */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .button-container {
+        max-width: 400px;
+        margin: 10px auto 0;
+    }
+    .contact-button {
+        flex: 1;
+        min-width: 180px;
+        white-space: nowrap;
+    }
+    .contact-button:nth-child(3) {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* 小屏幕 (576px - 767px): 显示2个按钮在一行 */
+@media (max-width: 767px) and (min-width: 576px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        max-width: 300px;
+        margin: 10px auto 0;
+    }
+    .contact-button {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+        white-space: nowrap;
+    }
+}
+
+/* 超小屏幕 (575px以下): 每行显示1个按钮 */
+@media (max-width: 575px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 10px auto 0;
+    }
+    .contact-button {
+        width: 100%;
+        max-width: 180px;
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
 }
 
 @media (max-width:991px) {
