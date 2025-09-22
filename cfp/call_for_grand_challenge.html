@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IEEE ISCAS 2026 | Fifth Grand Challenge on Neural Network-based Video Coding</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description"
+    content="Fifth Grand Challenge on Neural Network-based Video Coding at IEEE ISCAS 2026 in Shanghai, China.">
+  <meta name="keywords"
+    content="ISCAS 2026, IEEE, Neural Network, Video Coding, Grand Challenge, Deep Learning, Video Compression">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.jpg" rel="icon">
+  <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../style.min.css?v=1716692116" rel="stylesheet">
+  <link href="../disabled-links.css" rel="stylesheet">
+
+  <!-- Hero css -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Mobile Menu JS File -->
+  <script src="../mobile-menu.js"></script>
+
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header"></header>
+  <nav id="navbar"></nav>
+  <main id="main">
+
+    <script>
+      // Function to load header content
+      async function loadHeader() {
+        try {
+          const response = await fetch('../include/header_1.html');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.text();
+          document.getElementById('header').innerHTML = data;
+
+          // Load navbar after header is loaded
+          const navResponse = await fetch('../include/menu_1.html');
+          if (!navResponse.ok) {
+            throw new Error(`HTTP error! status: ${navResponse.status}`);
+          }
+          const navData = await navResponse.text();
+          document.getElementById('navbar').innerHTML = navData;
+        } catch (error) {
+          console.error('Error loading header/navbar:', error);
+        }
+      }
+
+      // Load header when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadHeader);
+      
+      // Make loadHeader available globally for mobile menu
+      window.loadHeader = loadHeader;
+    </script>
+
+    <div id="menu"></div>
+
+    <main id="main">
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+
+        <div class="container">
+          <ol>
+            <li><a href="../">Home</a></li>
+          </ol>
+          <h2>Fifth Grand Challenge on Neural Network-based Video Coding</h2>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="team4">
+
+            <div class="row">
+
+              <div class="col-lg-12 px-5">
+                <div class="member d-flex align-items-start">
+                  <div class="member-info">
+                    
+                    <!-- Abstract Section -->
+                    <div class="mb-4">
+                      <h3>Abstract</h3>
+                      <p class="text-justify">
+                        Recently, there is increasing interest in neural network-based (NN-based) video coding, including hybrid, end-to-end, and NN enhanced schemes. To foster the research in this emerging field and provide a benchmark, we propose this Grand Challenge (GC). In this GC, different neural network-based coding schemes will be evaluated according to their coding efficiency and innovations in methodologies. Three tracks will be evaluated, including 1) hybrid neural network-based video codec, 2) end-to-end video codec, and 3) neural network enhanced VVC encoder. In the hybrid codec track, deep network-based coding tools shall be used with traditional video coding schemes. In the end-to-end codec track, the whole video codec system shall be built primarily upon deep networks. In the neural network enhanced VVC encoder track, deep network-based encoding algorithms can be applied in a VVC encoder which generates VVC compatible bitstreams.
+                      </p>
+                      <p class="text-justify">
+                        Participants shall express their interest to participate in this Grand Challenge following the participation instruction and are invited to submit their schemes as ISCAS papers. The papers will be regularly reviewed and, if accepted, must be presented at ISCAS 2026. The submission instructions for Grand Challenge papers will be communicated by the organizers. Please contact Dr. Yue Li (<a href="mailto:yue.li@bytedance.com">yue.li@bytedance.com</a>) for more information.
+                      </p>
+                    </div>
+
+                    <!-- Rationale Section -->
+                    <div class="mb-4">
+                      <h3>Rationale</h3>
+                      <p class="text-justify">
+                        In recent years, deep learning-based image/video coding schemes have achieved remarkable progress. As two representative approaches aiming at future video codec schemes, hybrid solutions and end-to-end solutions have both been investigated extensively. Hybrid solutions adopt deep network-based coding tools to enhance traditional video coding schemes while end-to-end solutions build the whole compression scheme based on deep networks. Besides, NN-based methods are also widely studied to optimize or speed up encoders compliant to existing popular standards such as HEVC, VVC. Although great advancement has been observed, there are still numerous challenges remaining to be addressed:
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to exploit long-term temporal dependency in an end-to-end framework for video coding;</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to leverage automated machine learning-based network architecture optimization for higher coding efficiency;</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to perform efficient bit allocation with deep learning frameworks;</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to achieve a better global result in terms of rate-distortion trade-offs, for example, to take the impact of the current step on later frames into account, possibly by using reinforcement learning;</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to achieve better complexity-efficiency trade-offs;</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to train a large-scale model for video coding with a reasonable cost;</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right text-primary"></i> How to speed up a VVC encoder with less coding efficiency loss via NN-based methods or use NN-based preprocessing to enhance the VVC encoding efficiency.</li>
+                      </ul>
+                      <p class="text-justify">
+                        In view of these challenges, several activities towards improving deep learning-based image/video coding schemes have been initiated. For example, a special section on "Learning-based Image and Video Compression" was published in TCSVT, July 2020; a special section on "Optimized Image/Video Coding Based on Deep Learning" was published in OJCAS, December 2021; and the "Challenge on Learned Image Compression (CLIC)" has been organized annually since its inception at the Conference on Computer Vision and Pattern Recognition (CVPR) in 2018 and now was moved to the Data Compression Conference (DCC) from 2024. In hopes of encouraging more innovative contributions towards the aforementioned challenges in the IEEE Circuits and Systems society, we proposed this grand challenge since 2022. It has been successfully held for four years (ISCAS 2022~ ISCAS 2025), attracting outstanding researchers all over the world. As being looked forward by many experts in this area, the grand challenge will be held again for ISCAS 2026, with the same tracks and awards.
+                      </p>
+                    </div>
+
+                    <!-- Awards Section -->
+                    <div class="mb-4">
+                      <h3>Awards</h3>
+                      <div class="alert alert-info">
+                        <p class="mb-2"><strong>ByteDance</strong> will sponsor the awards of this grand challenge. Awards in four tracks are expected to be presented, contingent upon sufficient participants in each category.</p>
+                        <ul class="mb-2">
+                          <li>Three top-performance awards will be granted according to the performance, for the hybrid track, the end-to-end track, and the VVC encoder-only track respectively.</li>
+                          <li>In addition, to foster innovation, a top-creativity award will be given to the most inspiring scheme recommended by a committee group, and it is only applicable to participants with related papers accepted by ISCAS 2026.</li>
+                        </ul>
+                        <p class="mb-0"><strong>The winner of each award (if any) will receive a $4500 USD prize.</strong></p>
+                      </div>
+                    </div>
+
+                    <!-- Requirements and Evaluation Section -->
+                    <div class="mb-4">
+                      <h3>Requirements and Evaluation</h3>
+                      
+                      <h5 class="text-secondary mb-2">Training Data Set</h5>
+                      <p>It is recommended to use the following training data.</p>
+                      <ul>
+                        <li>UVG dataset: <a href="http://ultravideo.cs.tut.fi/" target="_blank">http://ultravideo.cs.tut.fi/</a></li>
+                        <li>CDVL dataset: <a href="https://cdvl.org/" target="_blank">https://cdvl.org/</a></li>
+                      </ul>
+                      <p>Additional training data are also allowed to be used given that they are described in the submitted document.</p>
+
+                      <h5 class="text-secondary mb-2 mt-4"> Test Specifications</h5>
+                      <p>In the test, each scheme will be evaluated with multiple YUV 4:2:0 test sequences in the resolution of 1920x1080.</p>
+                      <p>There is no constraint on the reference structure. Note that the neural network must be used in the decoding process of the hybrid track and the end-to-end track, while the VVC reference software VTM will be utilized for decoding bitstreams in the NN enhanced VVC encoder-only track.</p>
+
+                      <h5 class="text-secondary mb-2 mt-4"> Evaluation Criteria</h5>
+                      <p>The test sequences will be released according to the timeline and the results will be evaluated with the following criteria:</p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-1-circle text-primary"></i> The decoded sequences will be evaluated in the 4:2:0 color format.</li>
+                        <li class="mb-2"><i class="bi bi-2-circle text-primary"></i> PSNR (6*PSNRY + PSNRU + PSNRV)/8 will be used to evaluate the distortion of the decoded pictures.</li>
+                        <li class="mb-2"><i class="bi bi-3-circle text-primary"></i> Average Bjøntegaard delta rates (BD-Rate) [1] for all test sequences will be gathered to compare the coding efficiency.</li>
+                      </ul>
+                      
+                      <p>Anchors of HM 16.22 [2] and VTM-23.2 [3] coded with QPs = {22, 27, 32, 37} under the random access configurations defined in the HM and VTM common test conditions [4, 5] will be provided. Note that the HM anchor is used for the hybrid and end-to-end tracks, while the VTM anchor is used for the VVC encoder-only track. The released anchor data will include the bit-rates corresponding to the four QPs for each sequence.</p>
+                      
+                      <div class="alert alert-warning">
+                        <h6 class="alert-heading">Additional constraints for the first two tracks (i.e., the hybrid NN-based and end-to-end video codec):</h6>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><i class="bi bi-1-circle text-warning"></i> It is required that the proposed method must generate four bit-streams for each sequence, targeting the anchor bit-rates corresponding to the four QPs. For each sequence, the lowest bit-rate point of the proposed method must be in the range of 80% to 120% of the anchor bit-rate at the lowest bit-rate point and the highest bit-rate point of the proposed method must be in the range of 80% to 120% of the anchor bit-rate at the highest bit-rate point;</li>
+                          <li class="mb-2"><i class="bi bi-2-circle text-warning"></i> Only one single decoder shall be utilized to decode all the bitstreams;</li>
+                          <li class="mb-2"><i class="bi bi-3-circle text-warning"></i> The intra period in the proposed submission shall be no larger than that used by the anchor in compressing the validation and test sequences.</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="alert alert-success">
+                        <h6 class="alert-heading">While for the NN enhanced VVC encoder track, the additional requirements are listed as follows:</h6>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><i class="bi bi-1-circle text-success"></i> The docker file shall have the capability of encoding the test sequences to generate VTM-compatible bitstreams;</li>
+                          <li class="mb-2"><i class="bi bi-2-circle text-success"></i> It is required that the proposed method must generate four bit-streams for each sequence, targeting at the anchor bit-rates corresponding to the four QPs. For each test point, the bit-rate of the proposed method must be in the range of 90% to 110% of the anchor bit-rate;</li>
+                          <li class="mb-2"><i class="bi bi-3-circle text-success"></i> The VTM-23.2 decoder is utilized to decode generated bitstreams to get reconstructed YUV files and use those YUV files to calculate the PSNR values. All the generated bitstreams MUST be decoded successfully;</li>
+                          <li class="mb-2"><i class="bi bi-4-circle text-success"></i> The VTM-23.2 encoder is utilized as the anchor encoder. For each test point, denote the encoding time of the proposed encoder as T1, the encoding time of VTM-23.2 encoder as T2, T1 and T2 should satisfy: T1 <= 70% T2. Note that T1 and T2 shall be evaluated on the same platform with single thread (e.g., Intel(R) Xeon(R) Platinum 8336C CPU @ 2.30GHz, NVIDIA A100-SXM4-80GB GPU). Encoding time comparison will be verified by the organizers.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Proposed Documents Section -->
+                    <div class="mb-4">
+                      <h3>Proposed Documents</h3>
+                      <p>A docker container with the executable scheme must be submitted for result generation and cross-check. Each participant is invited to submit an ISCAS paper, which must describe the following items in detail.</p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success"></i> The methodology</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success"></i> The training data set</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Detailed rate-distortion data (comparison with the provided anchor is encouraged)</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Complexity analysis of the proposed solutions is encouraged for the paper submission.</li>
+                      </ul>
+                    </div>
+
+                    <!-- Participation Section -->
+                    <div class="mb-4">
+                      <h3>Participation</h3>
+                      
+                      <h5 class="text-secondary mb-2"> Registration</h5>
+                      <div class="alert alert-warning">
+                        <p>To participate, please indicate your interests by either visiting the registration link, scanning the QR code or contacting Dr. Yue Li. <strong>Please make sure to complete this step by October 15th</strong> to ensure your participation is recorded. If you successfully register, you will receive an acknowledgement via email confirming your participation.</p>
+                        <p class="mb-0"> The registration link: <a href="https://bytedance.us.larkoffice.com/share/base/form/shrusSlTu8D38aTeE9ETM6iYK9f" target="_blank">https://bytedance.us.larkoffice.com/share/base/form/shrusSlTu8D38aTeE9ETM6iYK9f</a></p>
+                        <p class="mb-2"> Registration QR code:</p>
+                        <div class="text-center">
+                          <img src="../assets/img/CALL FOR/gc.jpg" alt="Registration QR Code" class="img-fluid" style="max-width: 200px;">
+                        </div>
+                      </div>
+                      <br>
+                      <h5 class="text-secondary mb-2">Important Dates</h5>
+                      
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td><strong>20 September 2025:</strong></td>
+                              <td>The organizers release the validation set as well as the corresponding test information to those who have expressed interest (for example, frame rates and intra periods) and template for performance reporting (with rate-distortion points for the validation set)</td>
+                            </tr>
+                            <tr>
+                              <td><strong>12 October 2025:</strong></td>
+                              <td>Deadline of paper submission (aligned with Special Sessions) for participants<br>Submission to this Special Session should be through <a style="color: red" class="disabled-link" >ePapers</a><b>(coming soon)</b></td>
+                            </tr>
+                            <tr>
+                              <td><strong>28 December 2025:</strong></td>
+                              <td>Participants upload a docker container for the first two tracks (i.e., the hybrid NN-based and end-to-end video codec) with a decoder, wherein only the single decoder shall be utilized for decoding all the bitstreams; or for the third track (i.e., NN enhanced VVC encoder track) with an encoder, wherein only the single VVC encoder shall be utilized for generating all the bitstreams.</td>
+                            </tr>
+                            <tr>
+                              <td><strong>8 January 2026:</strong></td>
+                              <td>Organizers release the test sequences (including frame rate, corresponding rate-distortion points, etc.)</td>
+                            </tr>
+                            <tr>
+                              <td><strong>19 January 2026:</strong></td>
+                              <td>Paper acceptance notification</td>
+                            </tr>
+                            <tr>
+                              <td><strong>31 January 2026:</strong></td>
+                              <td>Participants upload compressed bitstreams and decoded YUV files</td>
+                            </tr>
+                            <tr>
+                              <td><strong>9 February 2026:</strong></td>
+                              <td>Deadline of fact sheets submission for participants</td>
+                            </tr>
+                            <tr>
+                              <td><strong>9 February 2026:</strong></td>
+                              <td>Camera-ready paper submission deadline</td>
+                            </tr>
+                            <tr>
+                              <td><strong>TBA:</strong></td>
+                              <td>Paper presentation at ISCAS 2026</td>
+                            </tr>
+                            <tr>
+                              <td><strong>TBA:</strong></td>
+                              <td>Awards announcement (at the ISCAS 2026 banquet)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- References Section -->
+                    <div class="mb-4">
+                      <h3>References</h3>
+                      
+                      <p>[1] Bjøntegaard, "Calculation of average PSNR differences between RD-Curves," ITUT SG16/Q6, Doc. VCEG-M33, Austin, Apr. 2001.</p>
+                      <p>[2] <a href="https://vcgit.hhi.fraunhofer.de/jvet/HM/-/tree/HM-16.22" target="_blank">https://vcgit.hhi.fraunhofer.de/jvet/HM/-/tree/HM-16.22</a></p>
+                      <p>[3] <a href="https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM/-/tree/VTM-23.2" target="_blank">https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM/-/tree/VTM-23.2</a></p>
+                      <p>[4] Common Test Conditions and Software Reference Configurations for HM (JCTVC-L1100)</p>
+                      <p>[5] VTM and HM common test conditions and software reference configurations for SDR 4:2:0 10 bit video (JVET-AB2010)</p>
+                    </div>
+
+                    <!-- Organizer Biographies Section -->
+                    <div class="mb-4">
+                      <h3>Organizer Biographies</h3>
+                      <br>
+                      <div class="row">
+                        <div class="col-lg-6 mb-4">
+                          <div class="card h-100">
+                            <div class="card-body">
+                              <h6 class="card-title text-primary">Li Zhang</h6>
+                              <p class="card-text small text-justify">Li Zhang received the Ph.D. degree in Computer Science from the Institute of Computing Technology, Chinese Academy of Sciences, in 2009. She is currently the Lead of the Multimedia Lab at Bytedance Inc., San Diego. Previously, she held research roles at Qualcomm Inc. and Peking University. Dr. Zhang's research interests include 2D/3D image and video coding, processing, and transmission. She has made extensive contributions to major international standards, including H.266/VVC, AVS, IEEE 1857, MPEG G-PCC, JPEG AI, and the 3D extensions of HEVC. She has co-chaired multiple ad hoc groups and core experiments, served as an Editor for AVS, and was the Main Editor of the Software Test Model for 3DV. Her contributions have been recognized with multiple Certificates of Appreciation from the IEEE Standards Association. She has authored over 600 adopted standardization proposals, holds more than 900 granted U.S. patents, and has published over 180 technical papers in journals, conferences, and book chapters. Her work has earned multiple accolades, including Best Paper at ISCAS 2022, Top 15 Best Paper at ICME 2025, and Top 10 Best Paper at IEEE PCS 2021. She has also led teams to 1st place in international challenges such as CVPR CLIC, CVPR NTIRE, and ECCV AIM. Dr. Zhang serves as an Associate Editor for the IEEE Transactions on Circuits and Systems for Video Technology and is a member of the IEEE Multimedia Signal Processing Technical Committee (2025–2027). She is Senior Program Committee for AAAI 2026, Area Chair for ICME 2025, TPC for ICIP 2025 workshop, Sponsorship Co-Chair for MMSP 2024, and Industrial Liaison Chair for PCS 2024. She actively organizes special sessions and grand challenges at leading international conferences and was a panelist in the DCC 2025 discussion on "The Future of Video Coding".</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                          <div class="card h-100">
+                            <div class="card-body">
+                              <h6 class="card-title text-primary">Jizheng Xu</h6>
+                              <p class="card-text small text-justify">Jizheng Xu received a Ph.D. degree in electrical engineering from Shanghai Jiaotong University, China in 2011. He joined Microsoft Research Asia in 2003 and served as a Research Manager and joined ByteDance multimedia lab as a Research Scientist in 2018. He has authored and co-authored over 140 refereed conference and journal refereed papers. His research interests include image and visual signal representation, image/video compression and communication, computer vision, and deep learning. He has been an active contributor to ISO/MPEG and ITU-T video coding standards, including H.264/AVC, H.265/HEVC, and VVC/H.266. He initiated the screen content coding in H.265/HEVC and was a major technical contributor. He chaired and co-chaired the ad-hoc group of exploration on wavelet video coding in MPEG, and various technical ad-hoc groups in JCT-VC, e.g., on screen content coding, on parsing robustness, on lossless coding. He was an Associate Editor for the IEEE Transactions on Circuits and Systems for Video Technology from 2018 to 2020. He served as a Guest Editor for the special issue on Screen Content Video Coding and Applications of the IEEE Journal on Emerging and Selected Topics in Circuits and Systems in 2016. He co-organized and co-chaired special sessions on scalable video coding, directional transform, high-quality video coding at various conferences.</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                          <div class="card h-100">
+                            <div class="card-body">
+                              <h6 class="card-title text-primary">Kai Zhang</h6>
+                              <p class="card-text small text-justify">Kai Zhang received the B.S. degree in computer science from Nankai University, Tianjin, China, in 2004. In 2011, he received the Ph.D. degree in computer science from the Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China. From 2011 to 2012, he worked as a researcher in Tencent Inc. Beijing, China. From 2012 to 2016, he worked as a team manager in Mediatek Inc. Beijing, China, leading a research team to propose novel technologies to emerging video coding standards. From 2016 to 2018, he worked in Qualcomm Inc. San Diego, CA, still focusing on video coding standardization. Now, he is leading the standardization team in Bytedance Inc. San Diego, CA. Dr. Zhang' research interests include video/image compression, coding, processing and communication, especially video coding standardization. From 2006, he has contributed more than 500 proposals to JVT, VCEG, JCT-VC, JCT-3V, JVET and AVS, covering many important aspects of major standards such as H.264/AVC, HEVC, 3D-HEVC, VVC and AVS-1,2,3. He has 800+ granted or pending U.S. patents applications. Most of these patents are essential to popular video coding standards. During the development of VVC, Dr. Zhang co-chaired several core experiments and branch of groups. Currently, Dr. Zhang serves as a coordinator of the reference software known as ECM in JVET, to explore video coding technologies beyond VVC. Dr. Zhang has co-authored 100+ papers and reviewed 80+ papers on top-tier journals/conferences. He was a TPC member for VCIP 2018 and DCC 2024. He was an organizer of the Grand Challenge on Neural Network-based Video Coding in ISCAS 2022/2023/2024. Now he is the AE of IEEE T-CSVT and IET-IP.</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                          <div class="card h-100">
+                            <div class="card-body">
+                              <h6 class="card-title text-primary">Yue Li</h6>
+                              <p class="card-text small text-justify">Yue Li received a B.S. and Ph.D. degrees in electronic engineering from the University of Science and Technology of China, Hefei, China, in 2014 and 2019, respectively. He is currently a Research Scientist with Bytedance Multimedia Lab, San Diego, CA, USA. His research interests include image/video coding and processing. He has authored 50+ neural network-based standardization contributions to the Versatile Video Coding (VVC). He has authored/co-authored 25+ papers on well-known journals/conferences such as T-IP, T-CSVT, CSUR, ICIP, ICME, DCC, etc. He also serves as a reviewer for those journals/conferences.</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                          <div class="card h-100">
+                            <div class="card-body">
+                              <h6 class="card-title text-primary">Junru Li</h6>
+                              <p class="card-text small text-justify">Junru Li received a B.S. degree in telecommunication engineering from Shandong University, Jinan, China, in 2015 and a Ph.D. degree in computer applied technology from Peking University, Beijing, China, in 2021. In 2019, he joined the Department of Computer Science, City University of Hong Kong, as a Research Assistant. He is currently doing research work on image/video coding as a Research Scientist in Bytedance Inc., San Diego. He has been actively participating in the development of VVC and AVS3 standards and contributed over 120+ proposals to JVET, IEEE 1857, and AVS. He served/serves as ad-hoc group co-chairs, software coordinators, and core experiment coordinators for JVET and AVS. He has authored 30+ articles in journals and conferences on video coding, such as TIP, TCSVT, CVPR, and DCC. His research interests include data compression, image/video coding, and multimedia signal processing.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- End row -->
+
+          </div><!-- End team4 -->
+        </div><!-- End container -->
+
+      </section><!-- End Breadcrumbs -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer"></footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+      // Function to load header and footer content
+      async function loadComponents() {
+          try {
+              // Load header
+              const headerResponse = await fetch('../include/header_1.html');
+              if (!headerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${headerResponse.status}`);
+              }
+              const headerData = await headerResponse.text();
+              document.getElementById('header').innerHTML = headerData;
+
+              // Load navbar
+              const navResponse = await fetch('../include/menu_1.html');
+              if (!navResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const navData = await navResponse.text();
+              document.getElementById('navbar').innerHTML = navData;
+
+              // Load footer
+              const footerResponse = await fetch('../include/footer_1.html');
+              if (!footerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const footerData = await footerResponse.text();
+              document.getElementById('footer').innerHTML = footerData;
+          } catch (error) {
+              console.error('Error loading components:', error);
+          }
+      }
+
+      // Load components when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadComponents);
+  </script>
+</body>
+
+</html>
