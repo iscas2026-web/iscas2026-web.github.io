@@ -1,3 +1,4 @@
+
 /* navigation-footer-css */
 .navbar .dropdown ul, .navbar-mobile .dropdown ul {
     z-index: 99;
@@ -1489,7 +1490,19 @@ section {
     border-radius: 50px;
     color: #9399b5;
     transition: .3s;
-    font-size: 16px;
+    font-size: 16px;.news .news-item {
+  margin-bottom: 20px;
+}
+.news .news-item .date {
+  font-weight: bold;
+  color: #4b5584;
+}
+.news .news-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4b5584;
+}
     font-weight: 500;
     border: 1px solid #9399b5
 }
@@ -2018,5 +2031,3 @@ section {
         padding: 0 20px;
     }
 }
-
-
