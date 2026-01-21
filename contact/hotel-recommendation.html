@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IEEE ISCAS 2026 | Hotel Recommendation</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
+  <meta name="keywords" content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.jpg" rel="icon">
+  <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../sponsor/sponsor-style.min.css" rel="stylesheet">
+  <link href="../style.min.css?v=1716692116" rel="stylesheet">
+
+  <!-- Hero css -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .hotel-section {
+      padding: 60px 0;
+    }
+    .hotel-card {
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+    .hotel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .hotel-image-container {
+        height: 250px;
+        overflow: hidden;
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hotel-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hotel-image-container i {
+        font-size: 5rem;
+        color: #dee2e6;
+    }
+    .hotel-info {
+      padding: 25px;
+    }
+    .hotel-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .hotel-price {
+        font-weight: 600;
+        color: #0d6efd;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    .hotel-desc {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .hotel-link {
+      display: inline-block;
+      padding: 8px 20px;
+      background-color: #0d6efd;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .hotel-link:hover {
+      background-color: #0b5ed7;
+      color: #fff;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header"></header>
+  <nav id="navbar"></nav>
+  <main id="main">
+ 
+  <script>
+      // Function to load header content
+      async function loadHeader() {
+          try {
+              const response = await fetch('../include/header_1.html');
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const data = await response.text();
+              document.getElementById('header').innerHTML = data;
+
+              // Load navbar after header is loaded
+              const navResponse = await fetch('../include/menu_1.html');
+              if (!navResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const navData = await navResponse.text();
+              document.getElementById('navbar').innerHTML = navData;
+          } catch (error) {
+              console.error('Error loading header/navbar:', error);
+          }
+      }
+
+      // Load header when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadHeader);
+      
+      // Make loadHeader available globally for mobile menu
+      window.loadHeader = loadHeader;
+  </script>
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="../">Home</a></li>
+          <li><a href="index.html">Travel Information</a></li>
+          <li>Hotel Recommendation</li>
+        </ol>
+        <h2>Hotel Recommendation</h2>
+      </div>
+    </section>
+
+    <section class="hotel-section bg-light">
+      <div class="container">
+        <div class="row">
+            <!-- Hotel 1: Jing An Shangri-La -->
+            <div class="col-lg-6">
+                <div class="hotel-card">
+                    <div class="hotel-image-container">
+                        <img src="../assets/img/hotel/香格里拉.webp" alt="Jing An Shangri-La">
+                    </div>
+                    <div class="hotel-info">
+                        <h3 class="hotel-name">Jing An Shangri-La, Shanghai (上海静安香格里拉大酒店)</h3>
+                        <div class="hotel-price">Price: 1000+ RMB</div>
+                        <p class="hotel-desc">Located in the Jing An Kerry Centre on West Yan'an Road, Jing An Shangri-La is adjacent to the Shanghai Exhibition Centre and just steps away from the Jing An Temple and the shopping paradise of Nanjing Road.<br><br>
+                        The hotel features guestrooms ranging from 43 to 311 sqm. The Horizon Club on the 55th floor offers express check-in/out, buffet breakfast, and cocktails for guests in executive rooms and suites.<br><br>
+                        Dining options include the 1515 West Chophouse & Bar, Summer Palace (Chinese cuisine), and more. Both 1515 West Chophouse & Bar and Summer Palace were listed in the Michelin Guide Shanghai 2017.</p>
+                        <a href="https://hotels.ctrip.com/hotels/detail/?hotelId=469055&checkIn=2026-01-21&checkOut=2026-01-22&cityId=2&minprice=&mincurr=&adult=1&children=0&ages=&crn=1&curr=&fgt=&stand=&stdcode=&hpaopts=&mproom=&ouid=&shoppingid=&roomkey=&highprice=-1&lowprice=0&showtotalamt=&hotelUniqueKey=&listfilter=1" target="_blank" class="hotel-link">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel 2: UrCove by HYATT Shanghai Jing'an -->
+            <div class="col-lg-6">
+                <div class="hotel-card">
+                    <div class="hotel-image-container">
+                        <img src="../assets/img/hotel/上海静安逸扉酒店.webp" alt="UrCove by HYATT Shanghai Jing'an">
+                    </div>
+                    <div class="hotel-info">
+                        <h3 class="hotel-name">UrCove by HYATT Shanghai Jing'an (上海静安逸扉酒店)</h3>
+                        <div class="hotel-price">Price: 400+ RMB</div>
+                        <p class="hotel-desc">Located in the bustling Jing'an Temple business district, this UrCove hotel offers an all-day restaurant, 24-hour gym, meeting rooms, and comfortable guestrooms. You can enjoy city views through the floor-to-ceiling windows from the spiral staircase in the lobby.<br><br>
+                        The hotel is right in front of Exit 2 of Wuding Road Station on Metro Line 14, providing easy access to all parts of the city. It is surrounded by shopping malls, high-end office buildings, and schools. Guests can also walk to historic villas and garden streets to experience the charm of Shanghai under the plane trees.</p>
+                        <a href="https://hotels.ctrip.com/hotels/detail/?hotelId=1064521&checkIn=2026-01-21&checkOut=2026-01-22&cityId=2&minprice=&mincurr=&adult=1&children=0&ages=&crn=1&curr=&fgt=&stand=&stdcode=&hpaopts=&mproom=&ouid=&shoppingid=&roomkey=&highprice=600&lowprice=400&showtotalamt=&hotelUniqueKey=&listfilter=1" target="_blank" class="hotel-link">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- Hotel 3: Rugui Hotel -->
+            <div class="col-lg-6">
+                <div class="hotel-card">
+                    <div class="hotel-image-container">
+                        <img src="../assets/img/hotel/筎归酒店.webp" alt="Rugui Hotel">
+                    </div>
+                    <div class="hotel-info">
+                        <h3 class="hotel-name">Rugui Hotel (筎归酒店)</h3>
+                        <div class="hotel-price">Price: 100+ RMB</div>
+                        <p class="hotel-desc">Adjacent to the Global Harbor shopping center with extremely convenient transportation. It is a 2-minute walk to Jinshajiang Road Station (Metro Lines 3, 4, and 13). A 21-minute metro ride takes you directly to Nanjing East Road Pedestrian Street, People's Square, the Bund, and Yu Garden. It is about a 30-minute drive to Hongqiao Airport/Railway Station.<br><br>
+                        Rooms are equipped with smart systems, premium customized fragrances, and comfortable bedding.</p>
+                        <a href="https://hotels.ctrip.com/hotels/detail/?hotelId=19476850&checkIn=2026-01-21&checkOut=2026-01-22&cityId=2&minprice=&mincurr=&adult=1&children=0&ages=&crn=1&curr=&fgt=&stand=&stdcode=&hpaopts=&mproom=&ouid=&shoppingid=&roomkey=&highprice=200&lowprice=100&showtotalamt=&hotelUniqueKey=&listfilter=1" target="_blank" class="hotel-link">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer"></footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+      // Function to load header and footer content
+      async function loadComponents() {
+          try {
+              // Load header
+              const headerResponse = await fetch('../include/header_1.html');
+              if (!headerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${headerResponse.status}`);
+              }
+              const headerData = await headerResponse.text();
+              document.getElementById('header').innerHTML = headerData;
+
+              // Load navbar
+              const navResponse = await fetch('../include/menu_1.html');
+              if (!navResponse.ok) {
+                  throw new Error(`HTTP error! status: ${navResponse.status}`);
+              }
+              const navData = await navResponse.text();
+              document.getElementById('navbar').innerHTML = navData;
+
+              // Load footer
+              const footerResponse = await fetch('../include/footer_1.html');
+              if (!footerResponse.ok) {
+                  throw new Error(`HTTP error! status: ${footerResponse.status}`);
+              }
+              const footerData = await footerResponse.text();
+              document.getElementById('footer').innerHTML = footerData;
+          } catch (error) {
+              console.error('Error loading components:', error);
+          }
+      }
+
+      // Load components when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadComponents);
+  </script>
+
+  <!-- JS File -->
+  <!-- <script src="index.js"></script> -->
+</body>
+</html>
