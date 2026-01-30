@@ -5,8 +5,10 @@
   <title>IEEE ISCAS 2026 | Hotel Recommendation</title>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
-  <meta name="keywords" content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
+  <meta name="description"
+    content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
+  <meta name="keywords"
+    content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.jpg" rel="icon">
@@ -30,107 +32,202 @@
     .hotel-section {
       padding: 60px 0;
     }
+
     .hotel-card {
       margin-bottom: 30px;
       border: 1px solid #eee;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       background: #fff;
     }
+
     .hotel-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
     }
+
     .hotel-image-container {
-        height: 250px;
-        overflow: hidden;
-        background-color: #f8f9fa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      height: 250px;
+      overflow: hidden;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
     .hotel-image-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .hotel-image-container i {
-        font-size: 5rem;
-        color: #dee2e6;
-    }
+
     .hotel-info {
       padding: 25px;
     }
+
     .hotel-name {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
       margin-bottom: 10px;
       color: #333;
     }
-    .hotel-price {
-        font-weight: 600;
-        color: #0d6efd;
-        font-size: 1.1rem;
-        margin-bottom: 15px;
+
+    .hotel-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 12px;
     }
+
+    .badge-vip {
+      background: linear-gradient(135deg, #FFD700, #FFA500);
+      color: #333;
+    }
+
+    .badge-recommended {
+      background: linear-gradient(135deg, #4CAF50, #45a049);
+      color: #fff;
+    }
+
+    .badge-nearby {
+      background: linear-gradient(135deg, #6c757d, #5a6268);
+      color: #fff;
+    }
+
+    .hotel-link-secondary {
+      background: linear-gradient(135deg, #6c757d, #5a6268);
+    }
+
+    .hotel-link-secondary:hover {
+      background: linear-gradient(135deg, #5a6268, #495057);
+      box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+    }
+
+    .hotel-details {
+      margin-bottom: 15px;
+    }
+
+    .hotel-details p {
+      margin-bottom: 8px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .hotel-details i {
+      width: 20px;
+      color: #0d6efd;
+      margin-right: 8px;
+    }
+
+    .hotel-price {
+      font-weight: 600;
+      color: #0d6efd;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
     .hotel-desc {
       color: #666;
-      line-height: 1.6;
+      line-height: 1.7;
       margin-bottom: 20px;
+      font-size: 0.95rem;
     }
+
     .hotel-link {
       display: inline-block;
-      padding: 8px 20px;
-      background-color: #0d6efd;
+      padding: 10px 24px;
+      background: linear-gradient(135deg, #0d6efd, #0b5ed7);
       color: #fff;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
-      transition: background-color 0.3s;
+      transition: all 0.3s;
     }
+
     .hotel-link:hover {
-      background-color: #0b5ed7;
+      background: linear-gradient(135deg, #0b5ed7, #0a58ca);
       color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+    }
+
+    .hotel-rooms {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .room-type {
+      background: #f8f9fa;
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .room-type strong {
+      color: #333;
+    }
+
+    .section-header {
+      margin-bottom: 30px;
+    }
+
+    .section-header h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 0;
     }
   </style>
 
 </head>
+
 <body>
   <!-- ======= Header ======= -->
   <header id="header"></header>
   <nav id="navbar"></nav>
   <main id="main">
- 
-  <script>
+
+    <script>
       // Function to load header content
       async function loadHeader() {
-          try {
-              const response = await fetch('../include/header_1.html');
-              if (!response.ok) {
-                  throw new Error(`HTTP error! status: ${response.status}`);
-              }
-              const data = await response.text();
-              document.getElementById('header').innerHTML = data;
-
-              // Load navbar after header is loaded
-              const navResponse = await fetch('../include/menu_1.html');
-              if (!navResponse.ok) {
-                  throw new Error(`HTTP error! status: ${navResponse.status}`);
-              }
-              const navData = await navResponse.text();
-              document.getElementById('navbar').innerHTML = navData;
-          } catch (error) {
-              console.error('Error loading header/navbar:', error);
+        try {
+          const response = await fetch('../include/header_1.html');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
           }
+          const data = await response.text();
+          document.getElementById('header').innerHTML = data;
+
+          // Load navbar after header is loaded
+          const navResponse = await fetch('../include/menu_1.html');
+          if (!navResponse.ok) {
+            throw new Error(`HTTP error! status: ${navResponse.status}`);
+          }
+          const navData = await navResponse.text();
+          document.getElementById('navbar').innerHTML = navData;
+        } catch (error) {
+          console.error('Error loading header/navbar:', error);
+        }
       }
 
       // Load header when DOM is ready
       document.addEventListener('DOMContentLoaded', loadHeader);
-      
+
       // Make loadHeader available globally for mobile menu
       window.loadHeader = loadHeader;
-  </script>
+    </script>
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -146,55 +243,125 @@
 
     <section class="hotel-section bg-light">
       <div class="container">
-        <div class="row">
-            <!-- Hotel 1: Jing An Shangri-La -->
-            <div class="col-lg-6">
-                <div class="hotel-card">
-                    <div class="hotel-image-container">
-                        <img src="../assets/img/hotel/香格里拉.webp" alt="Jing An Shangri-La">
-                    </div>
-                    <div class="hotel-info">
-                        <h3 class="hotel-name">Jing An Shangri-La, Shanghai (上海静安香格里拉大酒店)</h3>
-                        <div class="hotel-price">Price: 1000+ RMB</div>
-                        <p class="hotel-desc">Located in the Jing An Kerry Centre on West Yan'an Road, Jing An Shangri-La is adjacent to the Shanghai Exhibition Centre and just steps away from the Jing An Temple and the shopping paradise of Nanjing Road.<br><br>
-                        The hotel features guestrooms ranging from 43 to 311 sqm. The Horizon Club on the 55th floor offers express check-in/out, buffet breakfast, and cocktails for guests in executive rooms and suites.<br><br>
-                        Dining options include the 1515 West Chophouse & Bar, Summer Palace (Chinese cuisine), and more. Both 1515 West Chophouse & Bar and Summer Palace were listed in the Michelin Guide Shanghai 2017.</p>
-                        <a href="https://hotels.ctrip.com/hotels/detail/?hotelId=469055&checkIn=2026-01-21&checkOut=2026-01-22&cityId=2&minprice=&mincurr=&adult=1&children=0&ages=&crn=1&curr=&fgt=&stand=&stdcode=&hpaopts=&mproom=&ouid=&shoppingid=&roomkey=&highprice=-1&lowprice=0&showtotalamt=&hotelUniqueKey=&listfilter=1" target="_blank" class="hotel-link">Book Now</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Hotel 2: UrCove by HYATT Shanghai Jing'an -->
-            <div class="col-lg-6">
-                <div class="hotel-card">
-                    <div class="hotel-image-container">
-                        <img src="../assets/img/hotel/上海静安逸扉酒店.webp" alt="UrCove by HYATT Shanghai Jing'an">
-                    </div>
-                    <div class="hotel-info">
-                        <h3 class="hotel-name">UrCove by HYATT Shanghai Jing'an (上海静安逸扉酒店)</h3>
-                        <div class="hotel-price">Price: 400+ RMB</div>
-                        <p class="hotel-desc">Located in the bustling Jing'an Temple business district, this UrCove hotel offers an all-day restaurant, 24-hour gym, meeting rooms, and comfortable guestrooms. You can enjoy city views through the floor-to-ceiling windows from the spiral staircase in the lobby.<br><br>
-                        The hotel is right in front of Exit 2 of Wuding Road Station on Metro Line 14, providing easy access to all parts of the city. It is surrounded by shopping malls, high-end office buildings, and schools. Guests can also walk to historic villas and garden streets to experience the charm of Shanghai under the plane trees.</p>
-                        <a href="https://hotels.ctrip.com/hotels/detail/?hotelId=1064521&checkIn=2026-01-21&checkOut=2026-01-22&cityId=2&minprice=&mincurr=&adult=1&children=0&ages=&crn=1&curr=&fgt=&stand=&stdcode=&hpaopts=&mproom=&ouid=&shoppingid=&roomkey=&highprice=600&lowprice=400&showtotalamt=&hotelUniqueKey=&listfilter=1" target="_blank" class="hotel-link">Book Now</a>
-                    </div>
+        <!-- Partner Hotels Section -->
+        <div class="section-header">
+          <h3><i class="bi bi-building" style="color: #0d6efd;"></i> ISCAS 2026 Partner Hotel</h3>
+          <p>Special conference rates with complimentary breakfast included</p>
+        </div>
+
+        <div class="row">
+          <!-- Hotel 1: VIP Hotel - Shanghai Oriental Riverside Hotel -->
+          <div class="col-lg-12">
+            <div class="hotel-card">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="hotel-image-container" style="height: 100%; min-height: 300px;">
+                    <img src="../assets/img/hotel/dongfang-binjiang-1.jpg" alt="Shanghai Oriental Riverside Hotel">
+                  </div>
                 </div>
-            </div>
-            
-             <!-- Hotel 3: Rugui Hotel -->
-            <div class="col-lg-6">
-                <div class="hotel-card">
-                    <div class="hotel-image-container">
-                        <img src="../assets/img/hotel/筎归酒店.webp" alt="Rugui Hotel">
+                <div class="col-md-7">
+                  <div class="hotel-info">
+                    <span class="hotel-badge badge-vip"><i class="bi bi-star-fill"></i> Official Partner Hotel</span>
+                    <h3 class="hotel-name">Shanghai Oriental Riverside Hotel (International Convention Center)</h3>
+
+                    <div class="hotel-details">
+                      <p><i class="bi bi-geo-alt"></i> No. 2727 Binjiang Avenue, Pudong New Area, Shanghai 200120</p>
+                      <p><i class="bi bi-signpost-2"></i> <strong>100m</strong> from venue, <strong>2 min</strong> walk
+                      </p>
                     </div>
-                    <div class="hotel-info">
-                        <h3 class="hotel-name">Rugui Hotel (筎归酒店)</h3>
-                        <div class="hotel-price">Price: 100+ RMB</div>
-                        <p class="hotel-desc">Adjacent to the Global Harbor shopping center with extremely convenient transportation. It is a 2-minute walk to Jinshajiang Road Station (Metro Lines 3, 4, and 13). A 21-minute metro ride takes you directly to Nanjing East Road Pedestrian Street, People's Square, the Bund, and Yu Garden. It is about a 30-minute drive to Hongqiao Airport/Railway Station.<br><br>
-                        Rooms are equipped with smart systems, premium customized fragrances, and comfortable bedding.</p>
-                        <a href="https://hotels.ctrip.com/hotels/detail/?hotelId=19476850&checkIn=2026-01-21&checkOut=2026-01-22&cityId=2&minprice=&mincurr=&adult=1&children=0&ages=&crn=1&curr=&fgt=&stand=&stdcode=&hpaopts=&mproom=&ouid=&shoppingid=&roomkey=&highprice=200&lowprice=100&showtotalamt=&hotelUniqueKey=&listfilter=1" target="_blank" class="hotel-link">Book Now</a>
-                    </div>
+
+                    <div class="hotel-price"><i class="bi bi-tag"></i> Special Conference Rate: Market price with
+                      complimentary breakfast included!</div>
+
+
+                    <p class="hotel-desc">
+                      The Shanghai Oriental Riverside Hotel features spacious rooms with stunning panoramic views of the
+                      Huangpu River. The hotel offers various dining options including Cantonese and Huaiyang cuisine,
+                      as well as elegant Western restaurants. The lobby bar and rooftop bar provide perfect relaxation
+                      spots. The hotel boasts a lecture hall for 1,000+ guests, a grand banquet hall for 4,000+ guests,
+                      and 21 meeting rooms accommodating 50-300 people.
+                    </p>
+                    <a href="https://pw-shorh.zhiketong.com/page/room/list?checkInDate=2026-05-18&checkOutDate=2026-05-29&hotel_id=210446&brandCorp=eyJoYXNoIjoiYjZiMjY3NzdiNjFjMmI5NDU1NDAzZDYzZmI2MjllNzNjNjE4YjBjMCIsInBhcmFtcyI6IntcImJyYW5kQ29ycElkXCI6MTc4OTkyLFwiY3JlYXRlVGltZVwiOlwiMjAyNi0wMS0yMCAxMDo1Nzo0MlwiLFwibWVtYmVyTGV2ZWxJZFwiOjQ1MDk1NSxcInVzZXJJZFwiOjIwNTE0NjF9In0="
+                      target="_blank" class="hotel-link"><i class="bi bi-calendar-check"></i> Book Now</a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Other Recommendations Section -->
+        <div class="section-header" style="margin-top: 50px;">
+          <h3><i class="bi bi-building" style="color: #6c757d;"></i> Other Nearby Hotels</h3>
+          <p>Convenient options near the venue (no special conference rates)</p>
+        </div>
+
+        <div class="row">
+          <!-- Hotel 2: CitiGO Hotel -->
+          <div class="col-lg-6">
+            <div class="hotel-card">
+              <div class="hotel-image-container">
+                <img src="../assets/img/hotel/citigo-1.jpg" alt="CitiGO Huange Hotel">
+              </div>
+              <div class="hotel-info">
+                <span class="hotel-badge badge-nearby"><i class="bi bi-geo-alt-fill"></i> Nearby Option</span>
+                <h3 class="hotel-name">CitiGO Hotel Lujiazui Shanghai</h3>
+
+                <div class="hotel-details">
+                  <p><i class="bi bi-geo-alt"></i> No. 357 Shangcheng Road, Pudong New Area (at Pucheng Road)</p>
+                  <p><i class="bi bi-signpost-2"></i> <strong>1.9 km</strong> from venue | <strong>8 min</strong> by car
+                    | <strong>20 min</strong> walk</p>
+                </div>
+
+                <div class="hotel-price"><i class="bi bi-tag"></i> Reference price: ~500 RMB/night (no special rate)
+                </div>
+
+
+                <p class="hotel-desc">
+                  Located in the heart of Lujiazui, close to major landmarks including Oriental Pearl Tower, Shanghai
+                  Tower, and Jin Mao Tower. Just 5 minutes walk to Metro Line 9 Shangcheng Road Station and Babaiban
+                  Shopping Center, 8 minutes walk to Metro Line 2 Dongchang Road Station.
+                </p>
+                <a href="https://www.trip.com/hotels/detail/?cityEnName=Shanghai&cityId=2&hotelId=28706116&checkIn=2026-05-18&checkOut=2026-05-29&adult=2&children=0&crn=1&ages=&curr=USD&barcurr=USD&hoteluniquekey=H4sIAAAAAAAA_-Ni4mKQkjc0MDAwNTQ2NdU1SLRMtEgyStM1sTQ0tbTUNTc1M7bUOP3167sDxkaypxilDM3NLM1NjYxNLI0szPUszExT083NjA39fJ09uIPYTA0tHc3Mo_ikmEODXRRfTd3EU3hG2iGJNTVPNzQ4o00UAH8zbZ5vAAAA&masterhotelid_tracelogid=100051355-0a9a8b2f-491599-75639&detailFilters=17%7C1~17~1*31%7C28706116~31~28706116*80%7C0%7C1~80~0*29%7C1~29~1%7C2&hotelType=normal&display=exavg&subStamp=330&isCT=true&isFlexible=F&locale=en-US"
+                  target="_blank" class="hotel-link hotel-link-secondary"><i class="bi bi-search"></i> View on
+                  Trip.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel 3: Crystal Orange Hotel -->
+          <div class="col-lg-6">
+            <div class="hotel-card">
+              <div class="hotel-image-container">
+                <img src="../assets/img/hotel/crystal-orange-1.jpg" alt="Crystal Orange Hotel">
+              </div>
+              <div class="hotel-info">
+                <span class="hotel-badge badge-nearby"><i class="bi bi-geo-alt-fill"></i> Nearby Option</span>
+                <h3 class="hotel-name">Crystal Orange (Shanghai Oriental Pearl Binjiang)</h3>
+
+                <div class="hotel-details">
+                  <p><i class="bi bi-geo-alt"></i> No. 8 Dongfang Road, Pudong New Area, Shanghai</p>
+                  <p><i class="bi bi-signpost-2"></i> <strong>2.0 km</strong> from venue | <strong>10 min</strong> by
+                    car | <strong>26 min</strong> walk</p>
+                </div>
+
+                <div class="hotel-price"><i class="bi bi-tag"></i> Reference price: ~550 RMB/night (no special rate)
+                </div>
+
+
+                <p class="hotel-desc">
+                  Surrounded by excellent amenities including Shanghai No.1 Yaohan, Pudong Food City, 96 Plaza, and
+                  Shangyue Bay Shopping Center. Close to Oriental Pearl TV Tower, Shanghai Tower, World Financial
+                  Center, and Jin Mao Tower. The beautiful Binjiang Avenue is just a left turn from the hotel entrance -
+                  perfect for evening walks.
+                </p>
+                <a href="https://www.trip.com/hotels/detail/?cityEnName=Shanghai&cityId=2&hotelId=2302358&checkIn=2026-05-18&checkOut=2026-05-29&adult=2&children=0&crn=1&ages=&curr=USD&barcurr=USD&hoteluniquekey=H4sIAAAAAAAA_-Ni4mKQkjc0MDAwNTQ2NdU1SLRMNDVJNtc1sTQ0tbTUtTAyNTTUuPqt5f0BYyPZU4xShuZmluamRsYmlkYW5noWZqap6eZmxoZ-vs4e3EFsbqZursauUXxSzKHBLoqvpm7iKTwj7ZDEmpqnGxqc0SYKAAECmhhvAAAA&masterhotelid_tracelogid=100051355-0a9a54c7-491599-82511&detailFilters=17%7C1~17~1*31%7C2302358~31~2302358*80%7C0%7C1~80~0*29%7C1~29~1%7C2&hotelType=normal&display=exavg&subStamp=500&isCT=true&isFlexible=F&locale=en-US"
+                  target="_blank" class="hotel-link hotel-link-secondary"><i class="bi bi-search"></i> View on
+                  Trip.com</a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -205,45 +372,47 @@
   <!-- ======= Footer ======= -->
   <footer id="footer"></footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <script>
-      // Function to load header and footer content
-      async function loadComponents() {
-          try {
-              // Load header
-              const headerResponse = await fetch('../include/header_1.html');
-              if (!headerResponse.ok) {
-                  throw new Error(`HTTP error! status: ${headerResponse.status}`);
-              }
-              const headerData = await headerResponse.text();
-              document.getElementById('header').innerHTML = headerData;
+    // Function to load header and footer content
+    async function loadComponents() {
+      try {
+        // Load header
+        const headerResponse = await fetch('../include/header_1.html');
+        if (!headerResponse.ok) {
+          throw new Error(`HTTP error! status: ${headerResponse.status}`);
+        }
+        const headerData = await headerResponse.text();
+        document.getElementById('header').innerHTML = headerData;
 
-              // Load navbar
-              const navResponse = await fetch('../include/menu_1.html');
-              if (!navResponse.ok) {
-                  throw new Error(`HTTP error! status: ${navResponse.status}`);
-              }
-              const navData = await navResponse.text();
-              document.getElementById('navbar').innerHTML = navData;
+        // Load navbar
+        const navResponse = await fetch('../include/menu_1.html');
+        if (!navResponse.ok) {
+          throw new Error(`HTTP error! status: ${navResponse.status}`);
+        }
+        const navData = await navResponse.text();
+        document.getElementById('navbar').innerHTML = navData;
 
-              // Load footer
-              const footerResponse = await fetch('../include/footer_1.html');
-              if (!footerResponse.ok) {
-                  throw new Error(`HTTP error! status: ${footerResponse.status}`);
-              }
-              const footerData = await footerResponse.text();
-              document.getElementById('footer').innerHTML = footerData;
-          } catch (error) {
-              console.error('Error loading components:', error);
-          }
+        // Load footer
+        const footerResponse = await fetch('../include/footer_1.html');
+        if (!footerResponse.ok) {
+          throw new Error(`HTTP error! status: ${footerResponse.status}`);
+        }
+        const footerData = await footerResponse.text();
+        document.getElementById('footer').innerHTML = footerData;
+      } catch (error) {
+        console.error('Error loading components:', error);
       }
+    }
 
-      // Load components when DOM is ready
-      document.addEventListener('DOMContentLoaded', loadComponents);
+    // Load components when DOM is ready
+    document.addEventListener('DOMContentLoaded', loadComponents);
   </script>
 
   <!-- JS File -->
   <!-- <script src="index.js"></script> -->
 </body>
+
 </html>
