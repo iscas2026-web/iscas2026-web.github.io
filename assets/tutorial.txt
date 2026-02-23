@@ -1,0 +1,181 @@
+1.	From Circuits to Startups: Translating Innovation into Impact
+Sunday | May 24, 2026 | 8:30 - 12:00
+This tutorial aims to equip researchers, engineers, and students in the circuits and systems (CAS) community with practical entrepreneurial skills to identify, validate, and subsequently translate technical innovation into real-world impact. While ISCAS provides a premier platform for advancing scientific and engineering knowledge, there is a growing need for guidance on identifying commercialization opportunities, developing sustainable business models, and navigating funding and startup ecosystems. The session will cover key aspects of technology entrepreneurship - including opportunity recognition, intellectual property strategy, market validation, and venture creation - illustrated through case studies relevant to circuits and systems innovations. Participants will gain not only foundational frameworks but also actionable insights to bridge the gap between research excellence and entrepreneurial success. The participants will also receive a checklist and relevant large language model (LLM) prompts.
+Jie Chen; Professor, Fudan University, China
+Michael Friebe; Professor, AGH University of Krakow, Poland
+Fakhrul Zaman Rokhani; Associate Professor, University of Minnesota, USA
+
+2.	AI-Enhanced Implementation of High-Efficiency Delta-Sigma ADCs
+Sunday | May 24, 2026 | 8:30 - 12:00
+High-efficiency oversampling analog-digital converters (ADCs) are still at the forefront of integrated circuits and very popular when it comes to research and development, both in industry and academia. While their implementation as noise-shaping SAR ADCs comes with the drawback of driving a large sampling capacitor merged with the capacitive DAC, the delta sigma modulator (DSM) based converter omits this. Their application range is huge, from wideband wireless communications to the data acquisition in IoT sensor nodes that demands
+an ultra-high resolution with very low power consumption. Due to the available high integrator gain within the signal bandwidth and the feedback established by the oversampling converters, they can achieve a relatively high signal-to-noise-and-distortion ratio (SNDR) and spurious-free-dynamic-range (SFDR), within the signal band of interest. The ability to shape the unwanted noise and errors to the out-of-the-band gains a substantial design degree of freedom to the oversampling converters compared to their Nyquist counterparts. DSM is found in two basic categories: Discrete-Time (DT) DSM with excellent accuracy and also excellent power efficiency in recent dynamic implementations. Continuous-Time (CT) DSM comes with important benefits of inherent anti-aliasing filtering, easier drivability, and power-efficient implementation due to the continuous-time signal processing. Moreover, the architectural diversity of DSM has steadily increased over the last decades, beyond others employing various kinds of multi-stage designs, and incremental DSM have recently again gained an increasing attention. Circuit designers should understand the underlying trade-offs in detail before they can make the correct design decisions.
+This tutorial will provide a detailed review of the fundamentals, important decision-making factors, recent trends and advanced design techniques, and future perspectives on the state-of-the-art oversampling delta-sigma converters, spanning a range from DT to CT, free-running and incremental one. Moreover, regarding the practical implementation, we will go through the classical methods, covering the optimization-based loop-filter design, and then guide the audience through the most recent advances of AI-based synthesis and implementation of DSMs, both on systems and circuitry levels.
+Prof. Liang Qi, 
+Shanghai Jiao Tong University, Shanghai, China
+URL: https://bicasl.sjtu.edu.cn/info/1017/1075.htm
+
+
+Prof. José M. de la Rosa
+University of Seville, Seville, Spain
+URL: http://www2.imse-cnm.csic.es/~jrosa/
+
+
+3.	Smarter Chips: AI for Hardware and Hardware for AI
+Sunday | May 24, 2026 | 8:30 - 12:00
+The explosive growth of artificial intelligence is transforming the way hardware systems are designed, optimized, and verified. This tutorial explores the dynamic interplay between AI for hardware and hardware for AI, presenting a unified framework that demonstrates how artificial intelligence can both drive and depend on advances in hardware design automation. Led by Professor Sri Parameswaran (University of Sydney) and Professor Soumya Joshi (BITS Pilani), the tutorial bridges state-of-the-art research and practical implementations in AI-native design flows, reinforcement learning for optimization, verification acceleration, and FPGA-based prototyping for edge AI systems. Participants will gain a holistic understanding of how AI is redefining every stage of the hardware design cycle - from specification and synthesis to verification and deployment.
+Professor Sri Parameswaran; IEEE Fellow; University of Sydney, Australia
+Associate Professor Soumya Joshi; BITS Pilani, Hyderabad Campus, India
+
+4.	Towards 6G UWB Signal Processing Chain Design
+Sunday | May 24, 2026 | 8:30 - 12:00
+The evolution toward 6G networks is driven by the demand for extreme bandwidth to support machine-type communications, holographic experiences, and immersive reality. Achieving this requires energy-efficient transceiver architectures capable of handling ultra-wideband signals well beyond the limits of 5G. A central challenge lies in data converters, where higher sampling rates lead to an increase in both noise and power consumption.
+This half-day tutorial, “Towards 6G UWB Signal Processing Chain Design,” presents advances in interleaved architectures and frequency-domain approaches based on Walsh transformations. It covers the design of interleaved data converters, Walsh-based transceivers, and AI-driven applications, including spectrum sensing and interference mitigation. Participants will gain a comprehensive understanding of the signal processing chain from core principles to advanced circuit-level solutions, focusing on energy efficiency, parallelization, and system-level performance.
+
+Dr. Abdel Martinez Alonso
+Tech Idea Co., Ltd., Kanagawa, Japan
+https://sciprofiles.com/profile/3260071
+
+
+
+Prof. Dr. Francois Rivet 
+IMS Laboratory, University of Bordeaux, Bordeaux, France
+https://www.ims-bordeaux.fr/researchers-and-publications/rivet-franeois/
+
+
+
+Dr. Rodney Martinez Alonso 
+WaveCore Arenberg, KULEUVEN, Leuven, Belgium
+https://www.esat.kuleuven.be/wavecorearenberg/people-of-wavecore-arenberg/00156568
+
+
+5.	CoDeCAS: Co-designing Devices, Circuits, Systems and Algorithms for Uncertainty aware Multimodal Artificial Intelligence at the Edge
+Sunday | May 24, 2026 | 8:30 - 12:00
+Uncertainty awareness in language and vision AI models are essential for robust decision making in critical real-time tasks at the Edge such as autonomous drone surveillance, and AR/VR-assisted healthcare. Model predictions often suffer from data, sensor and environmental imperfections leading to inaccurate decision making that is unacceptable in safety critical tasks. Various probabilistic AI techniques such as Monte-Carlo Dropout, Variational inference, Deep ensembles and Conformal predictions enable uncertainty awareness in the AI model predictions. However, challenges to deep learning inference at the Edge further aggravates with incorporation of prediction uncertainties due to multifold increase in compute and power requirements. We uniquely address these challenges all the way from novel device technology to circuits, architectures and co-designed algorithms, thus navigating the audience to the full stack research techniques and
+hardware/software co-design frameworks towards building sustainable as well as robust circuits and systems for modern AI processing.
+Amit Ranjan Trivedi; Associate Professor, University of Illinois at Chicago, IL, USA
+Priyesh Shukla; Assistant Professor, International Institute of Information Technology, Hyderabad, India
+
+6.	Power electronic circuits-based safety enhancement techniques for lithium-ion batteries
+Sunday | May 24, 2026 | 8:30 - 12:00
+Safety enhancement for lithium-ion batteries (LIBs) has received a lot of attention
+from academic and industrial fields. However, there is a lack of attention from the
+perspective of the application power electronics (PEs) in the systems. This tutorial
+gives a presentation about PE-based safety enhancement technologies for LIBs,
+mainly focusing on battery management. It introduces the latest advances in
+battery protection, balancing, monitoring, and lifetime improvement, all based on
+PE technologies. Detailed discussion and future research opportunities are given.
+This tutorial aims to provide a reference for PE researchers who want to make
+some efforts in LIB safety.
+Zhaoyang Zhao; Southwest Jiaotong University, Chengdu, China
+Herbert Ho-Ching Iu; The University of Western Australia, Crawley, WA, Australia
+Lizhou Liu; Sichuan University, Chengdu, China
+
+7.	High-Throughput Neural Signal Acquisition: Hardware Implementation and Bio-Inspired Approaches
+Sunday | May 24, 2026 | 8:30 - 12:00
+This tutorial session explores cutting-edge advancements in neural signal sensing and neuromorphic engineering, with a focus on hardware implementation and bio-inspired design principles. The session will discuss the challenges and solutions for high-throughput neural signal wireless sensing, emphasizing circuit design methodologies and ultra-low-power implementations, as well as the evolution of neuromorphic engineering from strict brain mimicry to bio-inspired designs, with a vision for copy-and-paste approaches that map functional synaptic connectivity onto silicon circuits. This session will provide attendees with a comprehensive understanding of how hardware innovations are driving advancements in neural signal processing and neuromorphic systems, enabling applications in low-power computing, adaptive learning, and cognitive systems.  
+Milin Zhang, Tsinghua University, Beijing, China
+Donhee Ham, Harvard University, USA
+
+8.	Advancing Spatial Intelligence —— Geometric Modeling, Representation Learning, and 3D Compression
+Sunday | May 24, 2026 | 8:30 - 12:00
+3D spatial intelligence - the capacity to perceive, reason about, and manipulate geometric data - is increasingly vital for advancing artificial intelligence applications across various domains, including robotics, metaverse, immersive telepresence, and autonomous systems. This tutorial aims to provide a comprehensive overview of recent advancements in the field, covering critical aspects from geometric modeling to 3D representation learning and 3D compression (especially 3D Gaussian compression) techniques.
+
+Prof. Junhui Hou, City University of Hong Kong, Hong Kong SAR, China.
+https://www.cityu.edu.hk/stfprofile/csjhhou.htm 
+
+
+
+Prof. Weiyao Lin, Shanghai Jiao Tong University, China
+https://weiyaolin.github.io/ 
+
+
+
+
+
+9.	From SNNs to Silicon: Automated hardware deployment of spiking neural networks
+Sunday | May 24, 2026 | 8:30 - 12:00
+Brain-inspired spiking neural networks promise 3–4 orders of magnitude energy savings compared to conventional neural network implementations. SNNs combine continuous neuron dynamics with discrete spike communication, enabling rich temporal computation with efficient, event-driven information transfer—these are among the key ingredients allowing the human brain to operate on approximately 20 watts.
+This tutorial provides an overview of unrolling SNNs defined in a collection of simulators into FPGA bitstreams via a customisable, open-source toolchain. We introduce a direct compilation framework that translates SNN models into FPGA bitstreams: participants will convert an existing spiking convolutional network to hardware, then train and optimise their own architecture. Participants will learn to program FPGA accelerators for SNNs and gain practical skills in mapping conventional network architectures into the spiking domain. This toolchain also serves as a stepping stone toward open-source neuromorphic ASIC development.
+Michail Rontionov; University of Southampton, UK
+Dr. Jens Egholm Pedersen; Technical University of Denmark, DK
+
+
+
+
+ 1.	Low-voltage frequency generation, modulation, and demodulation circuits for mobile IoT
+Sunday | May 24, 2026 | 13:30 - 17:00
+As future wireless systems leveraging advanced CMOS technologies demand not only low-power but also low-voltage design, robust frequency generation, modulation and demodulation have become more critical than ever. In particular, sub-0.5V frequency synthesis and modulation are essential to enable battery-free operation in mobile IoT devices, as they can be directly powered by energy harvesters without requiring additional DC-DC converters. However, designing a low-voltage fractional-N PLL is highly challenging, since both matching and linearity degrade significantly as the supply voltage is scaled down. 
+This half-day tutorial reviews the state-of-the-art PLL architectures and presents fully voltage-mode PLL and transceiver architectures that operate under a 0.5V supply voltage. In addition, the extensive use of single-bit modulation and demodulation techniques for the robust design of ultra-low-voltage transmitters and receivers will be discussed.
+
+Prof. Woogeun Rhee, IEEE Fellow
+Dept. of Semiconductor Convergence Engr., Sungkyunkwan University (SKKU), Suwon, Korea
+Adjunct Chair Professor, School of Integrated Circuits, Tsinghua University, Beijing, China
+https://sites.google.com/g.skku.edu/ic2l
+
+
+2.	Visual Signal Processing from Human to Embodied Intelligence
+Sunday | May 24, 2026 | 13:30 - 17:00
+This tutorial explores the cutting-edge intersection of human visual perception and embodied intelligence, bridging the gap between biological Human Visual System (HVS) and Robotic Visual System (RVS). We will examine how visual signal processing principles derived from human can be adapted and enhanced for embodied intelligence, such as image compression, restoration, and quality assessment, enabling more efficient embodied task execution. The tutorial covers fundamental concepts in visual perception, advanced signal processing techniques, and practical applications in embodied intelligence, with particular focus on how large language models can be integrated with visual processing for enhanced embodied capabilities.
+Chunyi Li; Center of AI Evaluation, Shanghai AI Laboratory, China
+Weisi Lin; Nanyang Technological University, Singapore
+Zicheng Zhang, Shanghai AI Lab, China, https://zzc1998.github.io
+Huiyu Duan, Shanghai Jiao Tong University, China, https://duanhuiyu.github.io
+Jianbo Zhang, Xinjiang University, China, https://scholar.google.com/citations?user=Eru2-TYAAAAJ
+Guangtao Zhai, Shanghai Jiao Tong University, China, https://faculty.sjtu.edu.cn/zhaiguangtao/en/index.htm
+
+
+3.	Intelligent Design of Wireless Power Transfer: From Fundamentals to AI-Driven Frameworks 
+Sunday | May 24, 2026 | 13:30 - 17:00
+Wireless Power Transfer (WPT) has attracted significant attention as an innovative technology enabling a wide range of applications, from consumer electronics and electric vehicles to industrial robotics. The development of efficient and reliable WPT systems, particularly in the MHz frequency range, requires the integrated consideration of circuits, magnetic coupling, electric-field coupling, and control. Conventional design approaches, largely dependent on expert knowledge and trial-and-error prototyping, face inherent limitations: they struggle to address fundamental challenges such as output fluctuation and efficiency degradation caused by load variation and coil misalignment, thereby restricting scalability and innovation.
+This tutorial will provide both the fundamentals and the latest advancements in WPT, with a special focus on methods that fundamentally overcome these challenges. Beginning with the principles of inductive and electric-field (capacitive) coupling, the tutorial will cover advanced load-independent topologies and our uniquely developed AI-driven design methodologies, characterized by fully numerical optimization, high-accuracy modeling, and the integrated design of physical coil models with circuit component values. Beyond serving as a powerful design tool, these approaches represent a novel framework for principle-driven analysis and knowledge discovery in WPT system design. Practical case studies, including MHz-range GaN inverters and robotic applications, will demonstrate the effectiveness of these methods. Future directions such as Simultaneous Wireless Power and Data Transfer (SWPDT) will also be briefly discussed.
+Hiroo Sekiya; Chiba University, Japan
+Xiuqin Wei; Chiba Institute of Technology, Japan
+
+4.	Optical Biotelemetry Systems: Basics and Advances for Wireless Data and Power Transmission in Biomedical Implants
+Sunday | May 24, 2026 | 13:30 - 17:00
+This tutorial introduces to the design of wireless communication systems for biomedical implants by making a detailed focus on the basics and advances of the optical biotelemetry. In particular, the design of new architectures of biomedical systems is demanding to fulfill the need to acquire and process biological/neural
+signals providing high-quality healthcare to sick people. Therefore, the following key-points are required: design of novel biomedical apparatus for prosthetic devices, diagnostic and therapeutic instrumentations, neural systems, etc., as well as guaranteeing the capability to transmit-receive data from inside and outside of the human body by means of high-efficiency implantable wireless data link solutions. Therefore, it is needed to develop implantable (transcutaneous) wireless biotelemetry systems achieving high data rate transmission, high efficiency characteristics (low-voltage/low-power), small Si area and low Bit Error Ratio.
+Andrea De Marcellis; University of L'Aquila, L'Aquila, Italy
+Guido Di Patrizio Stanchieri; University of L'Aquila, L'Aquila, Italy
+
+5.	Leveraging IEEE DataPort and IEEE Data Descriptions for Enhanced Research Impact and Student Engagement
+Sunday | May 24, 2026 | 13:30 - 17:00
+This tutorial will provide an in-depth exploration of IEEE DataPort and IEEE Data Descriptions, emphasizing how to open-source datasets and write impactful academic papers. Additionally, we will discuss strategies for organizing and leveraging IEEE CAS Student Design Competitions to increase the visibility of research through the IEEE community. By attending, participants will learn how to enhance their work’s discoverability, impact, and citation potential while engaging students in research competitions.
+Yongfu Li; Shanghai Jiao Tong University, China
+
+6.	Modern Power Amplifier Design: From Classical Principles to AI-Assisted Optimization  
+Sunday | May 24, 2026 | 13:30 - 17:00
+Modern wireless and sensing systems demand power amplifiers (PAs) that perform efficiently across an ever-widening frequency range, from sub-GHz to sub-THz. Designing PAs over such diverse regimes is challenging: designers must balance efficiency, linearity, and integration constraints, all of which vary with the semiconductor platform. CMOS, SOI, SiGe, and III-V technologies each bring different strengths and limitations, influencing achievable performance, power handling, and manufacturability.
+This tutorial walks through PA design from fundamentals to advanced techniques. We start with classical PA architectures and key performance metrics at lower frequencies, then move to millimeter-wave and sub-terahertz designs, discussing power-combining methods, Doherty-inspired architectures, parasitic effects, and layout considerations. Process-specific trade-offs are highlighted, illustrated with real-world case studies that show how design choices impact performance across different technologies and frequency bands.
+Finally, we look ahead to emerging trends and challenges in PA design, including integration, scalability, and design automation. By the end of the session, participants will have a clear understanding of the frequency- and process-dependent trade-offs that define modern PA design and practical guidance for building efficient, high-performance amplifiers for next-generation wireless and sensing systems.
+
+Prof. Xi Forest Zhu
+University of Technology Sydney, Ultimo, New South Wales, Australia.
+https://profiles.uts.edu.au/Xi.Zhu 
+
+
+
+Dr. Lang Chen
+Sydnicon RF Microelectronics, Suzhou, Jiangsu Province, China.
+https://ieeexplore.ieee.org/author/37088848237
+
+
+
+
+
+7.	Mm-Wave to THz Signal Generation in CMOS: An Injection Locking Approach
+Sunday | May 24, 2026 | 13:30 - 17:00
+Moving to higher frequencies become a consensus in communication and radar society for wider bandwidth and smaller form factor, thereby gestating new applications spread from mm-wave to THz frequency bands, including 5G new radio (NR), 6G communication, automotive radar, and THz sensing. Unlike the traditional high-frequency signal generation in vacuum tube, which inherently has high power and low phase noise, new demands on power, size, and cost force the
+signal generation to be fully integrated on a silicon chip, but with sacrificed performances.
+In this tutorial, we focus on the fundamental limitations of signal generation in CMOS from mm-wave to THz frequencies, and the design trade-offs among operating frequencies, bandwidth, phase noise, and power consumption. We will introduce new signal generation topologies based on an injection-locking technique and discuss the design methodology of high-frequency signal generators. This tutorial includes discussion of fundamental problems on silicon-based high-frequency signal generation, design of silicon-based oscillators and phase-locked loops (PLL), introduction of the injection-locking technique and how does it benefit for high-frequency signal generations, design examples of mm-wave and THz injection-locked signal sources, and their applications in communication and radar systems.
+Jingzhi Zhang, University of Electronic Science and Technology of China, China Xiaolong Liu, Southern University of Science and Technology, China
+
+8.	Efficient Learning-based Models for Multimodal Data Compression
+Sunday | May 24, 2026 | 13:30 - 17:00
+This tutorial surveys recent advances in learning-based data compression, focusing on achieving high performance with low computational complexity. While neural compression now rivals traditional codecs, its computational cost remains a barrier to practical deployment. This tutorial is structured into two interconnected parts to address this challenge. The first part establishes a foundational understanding of state-of-the-art learned compression for images and video. Then we’ll explore efficient strategies including: (1) linear attention models (Mamba, RWKV) as alternatives of transformer and convolutions; (2) knowledge distillation for compact models; and (3) integrated restoration techniques for enhanced rate-distortion performance. The second part extends these principles to diverse modalities, covering sequential data (text, speech, tactile), multi-view representations (Gaussian Splatting, NeRF), and joint frameworks that share coding tools across data types to enable hardware savings. We conclude with key challenges and future directions for multimodal data handling and lightweight architectures.
+Li Song; Shanghai Jiao Tong University, China
+Chuanmin Jia; Peking University, China
+Zhengxue Cheng; Shanghai Jiao Tong University, China 
+
+
+

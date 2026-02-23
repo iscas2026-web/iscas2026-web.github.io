@@ -35,30 +35,41 @@
     <style>
         .breadcrumbs {
             background-color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
+        .section-label {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #333;
+            font-style: italic;
+            border-bottom: 2px solid #4b5584;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .crop-top {
+            object-position: top !important;
+        }
+        
+        .abstract-text, .bio-text {
+            text-align: justify;
+            line-height: 1.7;
+        }
+        
+        /* Ensure the pic container forces object fit for different ratios */
         .team3 .member .pic2 img {
             width: 100%;
             height: auto;
-            border-radius: 4px;
-        }
-
-        /* Helper class for abstract titles */
-        .section-label {
-            font-size: 16px;
-            font-weight: 700;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #333;
-            font-style: italic;
-            border-bottom: 1px solid #4b5584;
-            display: inline-block;
+            object-fit: cover;
+            border-radius: 5px;
         }
         
-        /* Make background match the reference page */
-        body {
-            background-color: #f3f5fa;
+        #main {
+            background-color: #f8f9fc; /* Light background to make white cards pop */
+            padding-bottom: 60px;
         }
     </style>
 </head>
@@ -108,147 +119,142 @@
                 <p><a href="../#speaker"><i class="bi bi-arrow-up-right-square"></i> Back to Keynote Speakers overview</a></p>
                 <br>
             </div>
-            
-            <div class="container" id="keynote-pan">
+        </section><!-- End Breadcrumbs -->
+
+
+        <!-- ======= Keynote 4: Dr. Jian-Wei Pan ======= -->
+        <section id="keynote-pan" class="team section-bg" style="padding: 20px 0; background: transparent;">
+            <div class="container">
                 <div class="team3">
                     <div class="row">
-                        <div class="col-lg-12 px-5 mb-5">
+                        <div class="col-lg-12 px-5">
                             <div class="member d-flex align-items-start">
                                 <div class="pic2"><img src="../assets/img/speaker/Jian-Wei%20Pan.jpg" class="img-fluid" alt="Dr. Jian-Wei Pan"></div>
                                 <div class="member-info">
-                                    <h3 style="color: #4b5584;">Quantum Network: Quantum Communication, Computation, and Metrology</h3>
+                                    <h3 style="color: #4b5584;">Keynote Speech by Dr. Jian-Wei Pan</h3>
+                                    <h4 style="font-size: 18px; font-weight: 600; color: #28a745; margin-bottom: 20px;">Quantum Network: Quantum Communication, Computation, and Metrology</h4>
                                     <p>
-                                        <br>
-                                        <b><i>Dr. Jian-Wei Pan</i></b>
-                                        <br>
-                                        Professor of Physics
-                                        <br>
+                                        <b><i>Dr. Jian-Wei Pan</i></b><br>
+                                        Professor of Physics<br>
                                         University of Science and Technology of China
                                     </p>
                                     
-                                    <br>
-                                    <span class="section-label"><b><i>Abstract</i></b></span>
-                                    <p style="text-align: justify;">With the continued development of quantum information science, it is anticipated that large-scale quantum networks will be established. Such networks are expected to enable ultra-precise information sensing through quantum metrology, secure and efficient information exchange via quantum key distribution (QKD) and quantum teleportation, and rapid information processing through quantum computing.</p>
-                                    <p style="text-align: justify;">However, turning quantum networks from theoretical concepts into practical reality still faces numerous technical challenges. Achieving secure long-distance quantum communication requires addressing security issues under realistic conditions and overcoming the inherent loss in optical fibers, while building quantum computers demands solving the challenge of scalable and precise manipulation of qubits.</p>
-                                    <p style="text-align: justify;">In this talk, I review our two-decade efforts toward quantum networks, including: developing decoy-state QKD and measurement-device-independent (MDI) QKD to close device imperfections loopholes; progressing quantum repeaters and satellites to extend communication range; using photon coherent manipulation techniques developed from quantum communication to demonstrate quantum computational advantage; employing ultracold atoms in optical lattices for quantum simulations of complex systems, advancing near-term quantum computing applications; surpassing the surface code quantum error correction threshold; and developing high-precision optical lattice clocks using ultracold atom technology.</p>
-                                    <p style="text-align: justify;">Future prospects include building a global quantum communication network using efficient constellations and geostationary orbit (GEO) satellites. This will also support advanced quantum metrology, potentially redefining the SI second. In quantum computation, our five-year plan targets practical quantum simulators to study high-temperature superconductivity, quantum Hall effect, etc. Over the next 10–15 years, scaling to millions of qubits with quantum error correction may lay the foundation for universal quantum computers.</p>
+                                    <span class="section-label">Abstract</span>
+                                    <p class="abstract-text">With the continued development of quantum information science, it is anticipated that large-scale quantum networks will be established. Such networks are expected to enable ultra-precise information sensing through quantum metrology, secure and efficient information exchange via quantum key distribution (QKD) and quantum teleportation, and rapid information processing through quantum computing.</p>
+                                    <p class="abstract-text">However, turning quantum networks from theoretical concepts into practical reality still faces numerous technical challenges. Achieving secure long-distance quantum communication requires addressing security issues under realistic conditions and overcoming the inherent loss in optical fibers, while building quantum computers demands solving the challenge of scalable and precise manipulation of qubits.</p>
+                                    <p class="abstract-text">In this talk, I review our two-decade efforts toward quantum networks, including: developing decoy-state QKD and measurement-device-independent (MDI) QKD to close device imperfections loopholes; progressing quantum repeaters and satellites to extend communication range; using photon coherent manipulation techniques developed from quantum communication to demonstrate quantum computational advantage; employing ultracold atoms in optical lattices for quantum simulations of complex systems, advancing near-term quantum computing applications; surpassing the surface code quantum error correction threshold; and developing high-precision optical lattice clocks using ultracold atom technology.</p>
+                                    <p class="abstract-text">Future prospects include building a global quantum communication network using efficient constellations and geostationary orbit (GEO) satellites. This will also support advanced quantum metrology, potentially redefining the SI second. In quantum computation, our five-year plan targets practical quantum simulators to study high-temperature superconductivity, quantum Hall effect, etc. Over the next 10–15 years, scaling to millions of qubits with quantum error correction may lay the foundation for universal quantum computers.</p>
 
-                                    <br>
-                                    <span class="section-label"><b><i>Speaker's Bio</i></b></span>
-                                    <p style="text-align: justify;">Prof. Jian-Wei Pan, born in Mar, 1970, is a full professor of physics at the University of Science and Technology of China. He obtained his Ph.D. degree in 1999 from the University of Vienna. In 2011, he was elected as the academician of Chinese Academy of Sciences. He is also a foreign member of the Austrian Academy of Sciences, the Royal Society (London), and a TWAS Fellow.</p>
-                                    <p style="text-align: justify;">Prof. Jian-Wei Pan’s research fields focus on quantum foundations, quantum optics and quantum information. As one of pioneers in experimental quantum information science, he has accomplished a series of profound achievements including: constructing the first integrated space-ground quantum communication network by combining the Micius quantum satellite with optical fiber backbones; demonstrating quantum computational advantage; realizing quantum simulations of multiple complex systems using ultracold atoms; and surpassing the surface code quantum error correction threshold. He has authored more than 460 peer-reviewed publications including 3 in Rev. Mod. Phys. and 41 in Nature/Science, with more than 98,000 citations.</p>
-                                    <p style="text-align: justify;">He has received numerous honors, including the Fresnel Prize of the European Physical Society, the Qiu Shi Outstanding Scientist Award, the International Quantum Award from the International Conference for Quantum Communication, Measurement and Computing (QCMC), the Ho Leung Ho Lee Prize for Scientific and Technological Achievement, the First Class Prize of the State Natural Science Award, the Future Science Prize in Physical Sciences, the R. W. Wood Prize from the OSA, the Micius Quantum Prize, and the Zeiss Research Award, the Tengchong Science Award, the UNESCO Mendeleev International Prize in the Basic Sciences, among others.</p>
+                                    <span class="section-label">Speaker's Bio</span>
+                                    <p class="bio-text">Prof. Jian-Wei Pan, born in Mar, 1970, is a full professor of physics at the University of Science and Technology of China. He obtained his Ph.D. degree in 1999 from the University of Vienna. In 2011, he was elected as the academician of Chinese Academy of Sciences. He is also a foreign member of the Austrian Academy of Sciences, the Royal Society (London), and a TWAS Fellow.</p>
+                                    <p class="bio-text">Prof. Jian-Wei Pan’s research fields focus on quantum foundations, quantum optics and quantum information. As one of pioneers in experimental quantum information science, he has accomplished a series of profound achievements including: constructing the first integrated space-ground quantum communication network by combining the Micius quantum satellite with optical fiber backbones; demonstrating quantum computational advantage; realizing quantum simulations of multiple complex systems using ultracold atoms; and surpassing the surface code quantum error correction threshold. He has authored more than 460 peer-reviewed publications including 3 in Rev. Mod. Phys. and 41 in Nature/Science, with more than 98,000 citations.</p>
+                                    <p class="bio-text">He has received numerous honors, including the Fresnel Prize of the European Physical Society, the Qiu Shi Outstanding Scientist Award, the International Quantum Award from the International Conference for Quantum Communication, Measurement and Computing (QCMC), the Ho Leung Ho Lee Prize for Scientific and Technological Achievement, the First Class Prize of the State Natural Science Award, the Future Science Prize in Physical Sciences, the R. W. Wood Prize from the OSA, the Micius Quantum Prize, and the Zeiss Research Award, the Tengchong Science Award, the UNESCO Mendeleev International Prize in the Basic Sciences, among others.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="container" id="keynote-deen">
+        </section>
+
+        <!-- ======= Keynote 1: Dr. M. Jamal Deen ======= -->
+        <section id="keynote-deen" class="team section-bg" style="padding: 20px 0; background: transparent;">
+            <div class="container">
                 <div class="team3">
                     <div class="row">
-                        <div class="col-lg-12 px-5 mb-5">
+                        <div class="col-lg-12 px-5">
                             <div class="member d-flex align-items-start">
                                 <div class="pic2"><img src="../assets/img/speaker/M.%20Jamal%20Deen.jpeg" class="img-fluid" alt="Dr. M. Jamal Deen"></div>
                                 <div class="member-info">
-                                    <h3 style="color: #4b5584;">Unprecedented Vision -- From Single photon Detectors and Pixels to Engineering and Health Systems</h3>
+                                    <h3 style="color: #4b5584;">Plenary Speech by Dr. M. Jamal Deen</h3>
+                                    <h4 style="font-size: 18px; font-weight: 600; color: #28a745; margin-bottom: 20px;">Unprecedented Vision -- From Single photon Detectors and Pixels to Engineering and Health Systems</h4>
                                     <p>
-                                        <br>
-                                        <b><i>Dr. M. Jamal Deen</i></b>
-                                        <br>
-                                        Distinguished University Professor, Dr. Haykin Distinguished Engineering Professor
-                                        <br>
-                                        Director of the Micro- and Nano-Systems Laboratory (MNSL)
-                                        <br>
+                                        <b><i>Dr. M. Jamal Deen</i></b><br>
+                                        Distinguished University Professor, Dr. Haykin Distinguished Engineering Professor<br>
+                                        Director of the Micro- and Nano-Systems Laboratory (MNSL)<br>
                                         McMaster University, Canada
                                     </p>
                                     
-                                    <br>
-                                    <span class="section-label"><b><i>Abstract</i></b></span>
-                                    <p style="text-align: justify;">Unprecedented vision systems capable of sensing, timing, and interpreting individual photons are rapidly reshaping applications that span engineering, autonomy, and healthcare. At the core of this transformation are single-photon avalanche diodes (SPADs) and their tight integration with advanced silicon circuits, modeling frameworks, and system architectures. This presentation will trace a trajectory from device-level physics and pixel engineering to large-scale sensing and health systems enabled by single-photon technologies. We first highlight recent advances in physics-based SPAD modeling, including compact Verilog-A descriptions of noise and calibrated photon detection probability models that accurately capture process, optical stack, and variability effects. These models provide predictive, simulator-compatible tools essential for noise-aware co-design of SPADs and readout circuits. We then examine circuit and pixel innovations, such as high-speed quench and reset schemes, time-gated and clock-driven operation, and integrated time-to-digital converters that push timing resolution into the picosecond regime while mitigating dead time, afterpulsing, and intersymbol interference. Building on these foundations, we discuss system-level realizations, including SPAD-based optical wireless communication receivers, automotive LiDAR sensors, and time-resolved biomedical imagers, where single-photon sensitivity translates directly into extended range, improved robustness, and enhanced diagnostic capability. By unifying device physics, compact modeling, circuit architectures, and application-driven system design, this work illustrates how single-photon detectors are evolving from isolated pixels into enabling platforms for next-generation engineering and health systems, offering unprecedented vision across scales, ranging from individual photons to complex real-world environments.</p>
+                                    <span class="section-label">Abstract</span>
+                                    <p class="abstract-text">Unprecedented vision systems capable of sensing, timing, and interpreting individual photons are rapidly reshaping applications that span engineering, autonomy, and healthcare. At the core of this transformation are single-photon avalanche diodes (SPADs) and their tight integration with advanced silicon circuits, modeling frameworks, and system architectures. This presentation will trace a trajectory from device-level physics and pixel engineering to large-scale sensing and health systems enabled by single-photon technologies. We first highlight recent advances in physics-based SPAD modeling, including compact Verilog-A descriptions of noise and calibrated photon detection probability models that accurately capture process, optical stack, and variability effects. These models provide predictive, simulator-compatible tools essential for noise-aware co-design of SPADs and readout circuits. We then examine circuit and pixel innovations, such as high-speed quench and reset schemes, time-gated and clock-driven operation, and integrated time-to-digital converters that push timing resolution into the picosecond regime while mitigating dead time, afterpulsing, and intersymbol interference. Building on these foundations, we discuss system-level realizations, including SPAD-based optical wireless communication receivers, automotive LiDAR sensors, and time-resolved biomedical imagers, where single-photon sensitivity translates directly into extended range, improved robustness, and enhanced diagnostic capability. By unifying device physics, compact modeling, circuit architectures, and application-driven system design, this work illustrates how single-photon detectors are evolving from isolated pixels into enabling platforms for next-generation engineering and health systems, offering unprecedented vision across scales, ranging from individual photons to complex real-world environments.</p>
 
-                                    <br>
-                                    <span class="section-label"><b><i>Speaker's Bio</i></b></span>
-                                    <p style="text-align: justify;">Dr. M. Jamal Deen is a Distinguished University Professor, Dr. Haykin Distinguished Engineering Professor and Director of the Micro- and Nano-Systems Laboratory (MNSL), McMaster University. As an educator, he won the SM Sze Education Award from IEEE Electron Devices Society (inaugural winner), the Ham Education Medal from IEEE Canada, the McMaster University President's Award for Excellence in Graduate Supervision, and MSU Macademics' Lifetime Achievement Award for his exceptional dedication to teaching and significant contribution to student life, the community at large, and academia.</p>
-                                    <p style="text-align: justify;">Dr. Deen served as the elected President of the Academy of Science, The Royal Society of Canada in 2015-2017. Currently, he is serving as the inaugural elected Vice President (North) of The World Academy of Sciences, representing the developed countries. His current research interests are nanoelectronics, optoelectronics, nanotechnology, data analytics and their emerging applications to health and environmental sciences. Dr. Deen's research record includes more than 930 peer-reviewed articles (about 20% are invited), two textbooks on "Silicon Photonics- Fundamentals and Devices" and "Fiber Optic Communications: Fundamentals and Applications", 13 awarded patents of which 7 are/were extensively used in industry, and twenty-seven best paper/poster/presentation awards.</p>
-                                    <p style="text-align: justify;">As an undergraduate student at the University of Guyana, Dr. Deen was the top ranked mathematics and physics student and the second ranked student at the university, winning the Irving Adler prize and the Chancellor's gold medal, respectively. As a graduate student, he was a Fulbright-Laspau Scholar and an American Vacuum Society Scholar. He is a Distinguished Lecturer of the IEEE Electron Device Society for more than two decades now. His awards and honors include the Callinan Award as well as the Electronics and Photonics Award from the Electrochemical Society; a Humboldt Research Award from the Alexander von Humboldt Foundation; the Eadie Medal from the Royal Society of Canada; McNaughton Gold Medal, the Fessenden Medal and the Gotlieb Computer Medal, all from IEEE Canada. In addition, he was awarded the five honorary doctorate degrees in recognition of his exceptional research, scholarly and educational accomplishments, exemplary professionalism and valued services.</p>
-                                    <p style="text-align: justify;">Dr. Deen has been elected by his peers as Fellow/Academician of fourteen national academies and professional societies including The Royal Society of Canada; Academician (Foreign Member) of The Chinese Academy of Sciences; The World Academy of Sciences, National Academy of Sciences India; The African Academy of Sciences; The American Physical Society; and The Electrochemical Society (FECS). He was also elected to the Order of Canada, the highest civilian honor awarded by the Government of Canada.</p>
+                                    <span class="section-label">Speaker's Bio</span>
+                                    <p class="bio-text">Dr. M. Jamal Deen is a Distinguished University Professor, Dr. Haykin Distinguished Engineering Professor and Director of the Micro- and Nano-Systems Laboratory (MNSL), McMaster University. As an educator, he won the SM Sze Education Award from IEEE Electron Devices Society (inaugural winner), the Ham Education Medal from IEEE Canada, the McMaster University President's Award for Excellence in Graduate Supervision, and MSU Macademics' Lifetime Achievement Award for his exceptional dedication to teaching and significant contribution to student life, the community at large, and academia.</p>
+                                    <p class="bio-text">Dr. Deen served as the elected President of the Academy of Science, The Royal Society of Canada in 2015-2017. Currently, he is serving as the inaugural elected Vice President (North) of The World Academy of Sciences, representing the developed countries. His current research interests are nanoelectronics, optoelectronics, nanotechnology, data analytics and their emerging applications to health and environmental sciences. Dr. Deen's research record includes more than 930 peer-reviewed articles (about 20% are invited), two textbooks on "Silicon Photonics- Fundamentals and Devices" and "Fiber Optic Communications: Fundamentals and Applications", 13 awarded patents of which 7 are/were extensively used in industry, and twenty-seven best paper/poster/presentation awards.</p>
+                                    <p class="bio-text">As an undergraduate student at the University of Guyana, Dr. Deen was the top ranked mathematics and physics student and the second ranked student at the university, winning the Irving Adler prize and the Chancellor's gold medal, respectively. As a graduate student, he was a Fulbright-Laspau Scholar and an American Vacuum Society Scholar. He is a Distinguished Lecturer of the IEEE Electron Device Society for more than two decades now. His awards and honors include the Callinan Award as well as the Electronics and Photonics Award from the Electrochemical Society; a Humboldt Research Award from the Alexander von Humboldt Foundation; the Eadie Medal from the Royal Society of Canada; McNaughton Gold Medal, the Fessenden Medal and the Gotlieb Computer Medal, all from IEEE Canada. In addition, he was awarded the five honorary doctorate degrees in recognition of his exceptional research, scholarly and educational accomplishments, exemplary professionalism and valued services.</p>
+                                    <p class="bio-text">Dr. Deen has been elected by his peers as Fellow/Academician of fourteen national academies and professional societies including The Royal Society of Canada; Academician (Foreign Member) of The Chinese Academy of Sciences; The World Academy of Sciences, National Academy of Sciences India; The African Academy of Sciences; The American Physical Society; and The Electrochemical Society (FECS). He was also elected to the Order of Canada, the highest civilian honor awarded by the Government of Canada.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="container" id="keynote-demicheli">
+        </section>
+
+        <!-- ======= Keynote 2: Dr. Giovanni De Micheli ======= -->
+        <section id="keynote-demicheli" class="team section-bg" style="padding: 20px 0; background: transparent;">
+            <div class="container">
                 <div class="team3">
                     <div class="row">
-                        <div class="col-lg-12 px-5 mb-5">
+                        <div class="col-lg-12 px-5">
                             <div class="member d-flex align-items-start">
-                                <div class="pic2"><img src="../assets/img/speaker/Giovanni%20De%20Micheli.jpg" class="img-fluid" alt="Dr. Giovanni De Micheli"></div>
+                                <div class="pic2"><img src="../assets/img/speaker/Giovanni%20De%20Micheli.jpg" class="img-fluid crop-top" alt="Dr. Giovanni De Micheli"></div>
                                 <div class="member-info">
-                                    <h3 style="color: #4b5584;">Taming the Dragon: Circuits and Systems for Energy-efficient and Secure Computation</h3>
+                                    <h3 style="color: #4b5584;">Keynote Speech by Dr. Giovanni De Micheli</h3>
+                                    <h4 style="font-size: 18px; font-weight: 600; color: #28a745; margin-bottom: 20px;">Taming the Dragon: Circuits and Systems for Energy-efficient and Secure Computation</h4>
                                     <p>
-                                        <br>
-                                        <b><i>Dr. Giovanni De Micheli</i></b>
-                                        <br>
-                                        Scientific Director, EcoCloud Center
-                                        <br>
+                                        <b><i>Dr. Giovanni De Micheli</i></b><br>
+                                        Scientific Director, EcoCloud Center<br>
                                         EPFL Lausanne, Switzerland
                                     </p>
                                     
-                                    <br>
-                                    <span class="section-label"><b><i>Abstract</i></b></span>
-                                    <p style="text-align: justify;">The unprecedented increase in computation requirements by AI/ML applications, and its cost in term of electrical energy and heat disposal, create a formidable challenge in view of the non-negotiable protection of our planet. At the same time, the data deluge and the proliferation of smart software systems in everyday and everyone's life pose another challenge in view of the required protection of our privacy.</p>
-                                    <p style="text-align: justify;">The design of new computation and communication systems has to address these needs by leveraging devices, circuits and architectures within a comprehensive vision to fulfill the growth a sustainable planet and a respectful society.</p>
+                                    <span class="section-label">Abstract</span>
+                                    <p class="abstract-text">The unprecedented increase in computation requirements by AI/ML applications, and its cost in term of electrical energy and heat disposal, create a formidable challenge in view of the non-negotiable protection of our planet. At the same time, the data deluge and the proliferation of smart software systems in everyday and everyone's life pose another challenge in view of the required protection of our privacy.</p>
+                                    <p class="abstract-text">The design of new computation and communication systems has to address these needs by leveraging devices, circuits and architectures within a comprehensive vision to fulfill the growth a sustainable planet and a respectful society.</p>
 
-                                    <br>
-                                    <span class="section-label"><b><i>Speaker's Bio</i></b></span>
-                                    <p style="text-align: justify;">Giovanni De Micheli is a research scientist in electronics and computer science. He is credited for the invention of the Network on Chip design automation paradigm and for the creation of algorithms and design tools for Electronic Design Automation (EDA). Prof. De Micheli is the Scientific Director of the EcoCloud center at EPFL Lausanne, Switzerland. Previously, he was Professor of Electrical Engineering at Stanford University, Director of the EPFL LSI Laboratory, Director of EPFL Electrical Engineering Institute at EPFL and leader of the Swiss Federal Nano-Tera.ch program. He is a Fellow of ACM, AAAS and IEEE, a member of the Academia Europaea, of the Swiss Academy of Engineering Sciences (SATW) and International Honorary member of the American Academy of Arts and Sciences. He is the recipient of the 2025 IEEE Gustav Kirchhoff Award, the 2022 ESDA-IEEE/CEDA Phil Kaufman Award, and several other awards.</p>
+                                    <span class="section-label">Speaker's Bio</span>
+                                    <p class="bio-text">Giovanni De Micheli is a research scientist in electronics and computer science. He is credited for the invention of the Network on Chip design automation paradigm and for the creation of algorithms and design tools for Electronic Design Automation (EDA). Prof. De Micheli is the Scientific Director of the EcoCloud center at EPFL Lausanne, Switzerland. Previously, he was Professor of Electrical Engineering at Stanford University, Director of the EPFL LSI Laboratory, Director of EPFL Electrical Engineering Institute at EPFL and leader of the Swiss Federal Nano-Tera.ch program. He is a Fellow of ACM, AAAS and IEEE, a member of the Academia Europaea, of the Swiss Academy of Engineering Sciences (SATW) and International Honorary member of the American Academy of Arts and Sciences. He is the recipient of the 2025 IEEE Gustav Kirchhoff Award, the 2022 ESDA-IEEE/CEDA Phil Kaufman Award, and several other awards.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="container" id="keynote-yang">
+        </section>
+
+        <!-- ======= Keynote 3: Dr. Howard C. Yang ======= -->
+        <section id="keynote-yang" class="team section-bg" style="padding: 20px 0; background: transparent;">
+            <div class="container">
                 <div class="team3">
                     <div class="row">
-                        <div class="col-lg-12 px-5 mb-5">
+                        <div class="col-lg-12 px-5">
                             <div class="member d-flex align-items-start">
                                 <div class="pic2"><img src="../assets/img/speaker/Howard%20C.%20Yang.jpg" class="img-fluid" alt="Dr. Howard C. Yang"></div>
                                 <div class="member-info">
-                                    <h3 style="color: #4b5584;">From Memory-Constrained to Memory-Optimized: How Engram Conditional Memory + MRDIMM/CXL Reshapes Sparse AI Architectures</h3>
+                                    <h3 style="color: #4b5584;">Keynote Speech by Dr. Howard C. Yang</h3>
+                                    <h4 style="font-size: 18px; font-weight: 600; color: #28a745; margin-bottom: 20px;">From Memory-Constrained to Memory-Optimized: How Engram Conditional Memory + MRDIMM/CXL Reshapes Sparse AI Architectures</h4>
                                     <p>
-                                        <br>
-                                        <b><i>Dr. Howard C. Yang</i></b>
-                                        <br>
-                                        Chairman and CEO
-                                        <br>
+                                        <b><i>Dr. Howard C. Yang</i></b><br>
+                                        Chairman and CEO<br>
                                         Montage Technology, China
                                     </p>
                                     
-                                    <br>
-                                    <span class="section-label"><b><i>Abstract</i></b></span>
-                                    <p style="text-align: justify;">At the dawn of 2026, DeepSeek-AI published the engram module which marks the birth of the memory-dominant large language models. Traditional Transformers with attention and MoE lack efficient native knowledge lookup, forcing repeated expensive recomputation of static patterns (common phrases, entities, local dependencies) and wasting depth and cycles.</p>
-                                    <p style="text-align: justify;">Engram introduces conditional memory as a new sparsity axis: modernized N-gram embeddings enable O(1) deterministic lookups, offloading static knowledge to scalable parameterized tables (100B+ parameters). The Transformer backbone focuses solely on dynamic global reasoning and long-range dependencies. Its infrastructure-aware design achieves near-zero-overhead DRAM prefetching follows a U-shaped scaling law, and delivers outsized gains: Engram-27B outperforms MoE baselines at matched FLOPs with power-law "infinite memory" scaling.</p>
-                                    <p style="text-align: justify;">This exposes AI's next bottleneck: memory access patterns, tail latency, and organization -- no longer peak FLOPS. MRDIMM delivers a bandwidth uplift and lower latency for Engram's random, high-concurrency accesses, enabling robust O(1) lookups in demanding inference scenarios. CXL provides disaggregated, pooled, coherent memory pools across nodes, allowing massive Engram tables to reside in shared memory -- eliminating replication, bypassing HBM limits, and (with compression) doubling effective capacity at lower TCO.</p>
-                                    <p style="text-align: justify;">Together, Engram + MRDIMM + CXL forge a genuinely memory-first sparse AI paradigm: computation specializes in deep reasoning, while memory specializes in high-speed storage and retrieval of knowledge -- finally circumventing the GPU memory wall and unlocking the next phase of efficient, scalable intelligence.</p>
+                                    <span class="section-label">Abstract</span>
+                                    <p class="abstract-text">At the dawn of 2026, DeepSeek-AI published the engram module which marks the birth of the memory-dominant large language models. Traditional Transformers with attention and MoE lack efficient native knowledge lookup, forcing repeated expensive recomputation of static patterns (common phrases, entities, local dependencies) and wasting depth and cycles.</p>
+                                    <p class="abstract-text">Engram introduces conditional memory as a new sparsity axis: modernized N-gram embeddings enable O(1) deterministic lookups, offloading static knowledge to scalable parameterized tables (100B+ parameters). The Transformer backbone focuses solely on dynamic global reasoning and long-range dependencies. Its infrastructure-aware design achieves near-zero-overhead DRAM prefetching follows a U-shaped scaling law, and delivers outsized gains: Engram-27B outperforms MoE baselines at matched FLOPs with power-law "infinite memory" scaling.</p>
+                                    <p class="abstract-text">This exposes AI's next bottleneck: memory access patterns, tail latency, and organization -- no longer peak FLOPS. MRDIMM delivers a bandwidth uplift and lower latency for Engram's random, high-concurrency accesses, enabling robust O(1) lookups in demanding inference scenarios. CXL provides disaggregated, pooled, coherent memory pools across nodes, allowing massive Engram tables to reside in shared memory -- eliminating replication, bypassing HBM limits, and (with compression) doubling effective capacity at lower TCO.</p>
+                                    <p class="abstract-text">Together, Engram + MRDIMM + CXL forge a genuinely memory-first sparse AI paradigm: computation specializes in deep reasoning, while memory specializes in high-speed storage and retrieval of knowledge -- finally circumventing the GPU memory wall and unlocking the next phase of efficient, scalable intelligence.</p>
 
-                                    <br>
-                                    <span class="section-label"><b><i>Speaker's Bio</i></b></span>
-                                    <p style="text-align: justify;">Dr. Howard C. Yang co-founded Montage Technology in 2004 and has served as its Chairman and CEO since its inception. From 1990 to 1994, Dr. Yang was engaged in integrated circuit (IC) R&D and design at National Semiconductor Corp. and other Silicon Valley companies. In 1994, he returned to China and established the country's first IC design center employing modern design methodologies. In 1997, he co-founded Newave Semiconductor Corp., China's first venture capital-backed IC design company, which later merged with a major U.S. semiconductor firm in 2001 -- a transaction ranked among China's top ten mergers of the year.</p>
-                                    <p style="text-align: justify;">Dr. Yang is an IEEE Life Fellow and has received several distinguished awards, including the IEEE CAS Industrial Pioneer Award, the JEDEC Distinguished Executive Leadership Award, and the Magnolia Gold Award from the Shanghai Municipal Government. He holds M.S. and Ph.D. degrees in Electrical and Computer Engineering from Oregon State University and was inducted into its Engineering Hall of Fame in 2024.</p>
+                                    <span class="section-label">Speaker's Bio</span>
+                                    <p class="bio-text">Dr. Howard C. Yang co-founded Montage Technology in 2004 and has served as its Chairman and CEO since its inception. From 1990 to 1994, Dr. Yang was engaged in integrated circuit (IC) R&D and design at National Semiconductor Corp. and other Silicon Valley companies. In 1994, he returned to China and established the country's first IC design center employing modern design methodologies. In 1997, he co-founded Newave Semiconductor Corp., China's first venture capital-backed IC design company, which later merged with a major U.S. semiconductor firm in 2001 -- a transaction ranked among China's top ten mergers of the year.</p>
+                                    <p class="bio-text">Dr. Yang is an IEEE Life Fellow and has received several distinguished awards, including the IEEE CAS Industrial Pioneer Award, the JEDEC Distinguished Executive Leadership Award, and the Magnolia Gold Award from the Shanghai Municipal Government. He holds M.S. and Ph.D. degrees in Electrical and Computer Engineering from Oregon State University and was inducted into its Engineering Hall of Fame in 2024.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </section><!-- End Breadcrumbs -->
+        </section>
 
     </main><!-- End #main -->
 
