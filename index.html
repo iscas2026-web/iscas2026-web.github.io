@@ -44,7 +44,23 @@
       margin-bottom: 5px;
       color: #4b5584;
     }
+  
+    .speaker-pic {
+      width: 150px !important;
+      height: 150px !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+    }
+    
+    .crop-top {
+      object-position: top !important; /* Forces crop to start from top, preserving the head */
+    }
+    
+    #speaker .pic {
+      height: 150px; /* Fix the wrapper height to prevent oval shape */
+    }
   </style>
+
 
 </head>
 
@@ -116,7 +132,7 @@
                     Soon)</b></a></li>
               <li><a class="disabled-link">Program At a
                   Glance<b>(Coming Soon)</b></a></li>
-              <li><a class="disabled-link">Keynote Speakers<b>(Coming Soon)</b></a></li>
+              <li><a href="./program/keynote.html">Keynote Speakers</a></li>
               <li><a href="https://epapers2.org/iscas2026/ESR/session_sched_view.php?sched_id=1" target="_blank">Lecture
                   Schedule <i class="bi bi-link-45deg"></i></a></li>
               <li><a href="https://epapers2.org/iscas2026/ESR/session_sched_view.php?sched_id=2" target="_blank">Poster
@@ -375,8 +391,91 @@
       </div>
   </section><!-- End News Highlights Section -->
 
+  <!-- ======= Keynote Speakers Section ======= -->
+  <section id="speaker" class="team section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Keynote Speakers</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/speaker/Jian-Wei%20Pan.jpg" class="speaker-pic" loading="lazy" alt="Dr. Jian-Wei Pan"></div>
+            <div class="member-info">
+              <h3>Jian-Wei Pan</h3>
+              <span>USTC, China</span>
+            </div>
+          </div>
+          <div class="member d-flex align-items-start mt-2">
+            <p>
+              <i><b>Quantum Network: Quantum Communication, Computation, and Metrology</b></i>
+              <br>
+              <a href="./program/keynote.html#keynote-pan">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/speaker/M.%20Jamal%20Deen.jpeg" class="speaker-pic" loading="lazy" alt="Dr. M. Jamal Deen"></div>
+            <div class="member-info">
+              <h3>M. Jamal Deen</h3>
+              <span>McMaster University, Canada</span>
+            </div>
+          </div>
+          <div class="member d-flex align-items-start mt-2">
+            <p>
+              <i><b>Unprecedented Vision -- From Single Photon Detectors and Pixels to Engineering and Health Systems</b></i>
+              <br>
+              <a href="./program/keynote.html#keynote-deen">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/speaker/Giovanni%20De%20Micheli.jpg" class="speaker-pic crop-top" loading="lazy" alt="Dr. Giovanni De Micheli"></div>
+            <div class="member-info">
+              <h3>Giovanni De Micheli</h3>
+              <span>EPFL, Switzerland</span>
+            </div>
+          </div>
+          <div class="member d-flex align-items-start mt-2">
+            <p>
+              <i><b>Taming the Dragon: Circuits and Systems for Energy-Efficient and Secure Computation</b></i>
+              <br>
+              <a href="./program/keynote.html#keynote-demicheli">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/speaker/Howard%20C.%20Yang.jpg" class="speaker-pic" loading="lazy" alt="Dr. Howard C. Yang"></div>
+            <div class="member-info">
+              <h3>Howard C. Yang</h3>
+              <span>Montage Technology, China</span>
+            </div>
+          </div>
+          <div class="member d-flex align-items-start mt-2">
+            <p>
+              <i><b>From Memory-Constrained to Memory-Optimized: How Engram Conditional Memory + MRDIMM/CXL Reshapes Sparse AI Architectures</b></i>
+              <br>
+              <a href="./program/keynote.html#keynote-yang">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Keynote Speakers Section -->
+
   <!-- ======= About Us Section ======= -->
-  <section id="about" class="about section-bg">
+  <section id="about" class="about">
     <div class="container">
 
       <div class="section-title">
@@ -473,7 +572,7 @@
               </li>
               <li><i class="bi bi-chevron-right"></i> <a class="disabled-link" target="_blank">Call for
                   Participation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a class="disabled-link" target="_blank">Keynote Speakers</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="./program/keynote.html" target="_blank">Keynote Speakers</a></li>
               <li><i class="bi bi-chevron-right"></i> <a class="disabled-link" target="_blank">Tutorial
                   Overview</a></li>
               <li><i class="bi bi-chevron-right"></i> <a class="disabled-link" target="_blank">Embedded
