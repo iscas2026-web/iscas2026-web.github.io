@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="900" viewBox="0 0 700 900">
+  <rect width="700" height="900" fill="#f0f2f5"/>
+  <rect x="70" y="90" width="560" height="720" rx="24" fill="#e0e5ec"/>
+  <circle cx="350" cy="360" r="120" fill="#c3cbd6"/>
+  <rect x="230" y="520" width="240" height="180" rx="90" fill="#c3cbd6"/>
+  <text x="350" y="820" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#7a8796">
+    Photo Coming Soon
+  </text>
+</svg>

@@ -59,6 +59,25 @@
     #speaker .pic {
       height: 150px; /* Fix the wrapper height to prevent oval shape */
     }
+
+    #speaker .speaker-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #speaker .speaker-column .member {
+      width: 100%;
+    }
+
+    #speaker .speaker-summary {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    #speaker .speaker-summary p {
+      margin-bottom: 0;
+    }
   </style>
 
 
@@ -434,7 +453,7 @@
 
       <div class="row">
 
-        <div class="col-lg-4 mt-4">
+        <div class="col-lg-4 mt-4 speaker-column">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="assets/img/speaker/Jian-Wei%20Pan.jpg" class="speaker-pic" loading="lazy" alt="Dr. Jian-Wei Pan"></div>
             <div class="member-info">
@@ -442,16 +461,16 @@
               <span>USTC, China</span>
             </div>
           </div>
-          <div class="member d-flex align-items-start mt-2">
+          <div class="member d-flex align-items-start mt-2 speaker-summary">
             <p>
-              <i><b>Quantum Network: Quantum Communication, Computation, and Metrology</b></i>
+              <i><b>Quantum Network: quantum communication, computation, and metrology</b></i>
               <br>
               <a href="./program/keynote.html#keynote-pan">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
             </p>
           </div>
         </div>
 
-        <div class="col-lg-4 mt-4">
+        <div class="col-lg-4 mt-4 speaker-column">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="assets/img/speaker/M.%20Jamal%20Deen.jpeg" class="speaker-pic" loading="lazy" alt="Dr. M. Jamal Deen"></div>
             <div class="member-info">
@@ -459,16 +478,16 @@
               <span>McMaster University, Canada</span>
             </div>
           </div>
-          <div class="member d-flex align-items-start mt-2">
+          <div class="member d-flex align-items-start mt-2 speaker-summary">
             <p>
-              <i><b>Unprecedented Vision -- From Single Photon Detectors and Pixels to Engineering and Health Systems</b></i>
+              <i><b>Unprecedented Vision - From Single photon Detectors and Pixels to Engineering and Health Systems</b></i>
               <br>
               <a href="./program/keynote.html#keynote-deen">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
             </p>
           </div>
         </div>
 
-        <div class="col-lg-4 mt-4">
+        <div class="col-lg-4 mt-4 speaker-column">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="assets/img/speaker/Giovanni%20De%20Micheli.jpg" class="speaker-pic crop-top" loading="lazy" alt="Dr. Giovanni De Micheli"></div>
             <div class="member-info">
@@ -476,7 +495,7 @@
               <span>EPFL, Switzerland</span>
             </div>
           </div>
-          <div class="member d-flex align-items-start mt-2">
+          <div class="member d-flex align-items-start mt-2 speaker-summary">
             <p>
               <i><b>Taming the Dragon: Circuits and Systems for Energy-Efficient and Secure Computation</b></i>
               <br>
@@ -485,7 +504,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 mt-4">
+        <div class="col-lg-4 mt-4 speaker-column">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="assets/img/speaker/Howard%20C.%20Yang.jpg" class="speaker-pic" loading="lazy" alt="Dr. Howard C. Yang"></div>
             <div class="member-info">
@@ -493,11 +512,28 @@
               <span>Montage Technology, China</span>
             </div>
           </div>
-          <div class="member d-flex align-items-start mt-2">
+          <div class="member d-flex align-items-start mt-2 speaker-summary">
             <p>
               <i><b>From Memory-Constrained to Memory-Optimized: How Engram Conditional Memory + MRDIMM/CXL Reshapes Sparse AI Architectures</b></i>
               <br>
               <a href="./program/keynote.html#keynote-yang">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 speaker-column">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/speaker/Tingbo%20He.jpg" class="speaker-pic" loading="lazy" alt="Tingbo He"></div>
+            <div class="member-info">
+              <h3>Tingbo He</h3>
+              <span>Huawei, China</span>
+            </div>
+          </div>
+          <div class="member d-flex align-items-start mt-2 speaker-summary">
+            <p>
+              <i><b>Envisioning the Evolution of Semiconductor Technology Grounded in Practical Exploration</b></i>
+              <br>
+              <a href="./program/keynote.html#keynote-he">Abstract&nbsp;&amp;&nbsp;Speaker's&nbsp;Bio</a>
             </p>
           </div>
         </div>
