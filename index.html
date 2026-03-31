@@ -78,6 +78,97 @@
     #speaker .speaker-summary p {
       margin-bottom: 0;
     }
+
+    /* Sponsors Section Styles */
+    .sponsors {
+      padding: 60px 0;
+    }
+
+    .sponsors .section-title p {
+      text-align: center;
+      color: #666;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .sponsor-tier {
+      margin-bottom: 50px;
+    }
+
+    .sponsor-tier .tier-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #6c757d;
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .sponsor-tier .tier-title::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #6c757d;
+      display: block;
+      margin: 15px auto 0;
+    }
+
+    .sponsor-tier .tier-title.gold {
+      color: #d4af37;
+    }
+
+    .sponsor-tier .tier-title.gold::after {
+      background: #d4af37;
+    }
+
+    .sponsor-tier .tier-title.basic {
+      color: #4b5584;
+    }
+
+    .sponsor-tier .tier-title.basic::after {
+      background: #4b5584;
+    }
+
+    .sponsor-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .sponsor-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 220px;
+      min-height: 140px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sponsor-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .sponsor-item img {
+      max-width: 100%;
+      max-height: 100px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .sponsor-item {
+        min-width: 100%;
+      }
+    }
   </style>
 
 
@@ -604,6 +695,58 @@
 
     </div>
   </section><!-- End About Us Section -->
+
+  <!-- ======= Sponsors Section ======= -->
+  <section id="sponsors" class="sponsors section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Sponsors</h2>
+        <p>We thank our sponsors for their generous support of ISCAS 2026</p>
+      </div>
+
+      <!-- Platinum Elite Sponsors -->
+      <div class="sponsor-tier">
+        <h3 class="tier-title">Platinum Elite Sponsors</h3>
+        <div class="sponsor-logos">
+          <a href="#" target="_blank" class="sponsor-item">
+            <img src="assets/img/sponsor/sponsor/东方算芯.png" alt="东方算芯" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <!-- Gold Premium Sponsors -->
+      <div class="sponsor-tier">
+        <h3 class="tier-title gold">Gold Premium Sponsors</h3>
+        <div class="sponsor-logos">
+          <a href="https://www.giga-da.com/" target="_blank" class="sponsor-item">
+            <img src="assets/img/sponsor/sponsor/鸿芯微纳.png" alt="鸿芯微纳" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <!-- Basic Professional Sponsors -->
+      <div class="sponsor-tier">
+        <h3 class="tier-title basic">Basic Professional Sponsors</h3>
+        <div class="sponsor-logos">
+          <a href="http://www.physyn.com.cn/" target="_blank" class="sponsor-item">
+            <img src="assets/img/sponsor/sponsor/复芯智感.jpg" alt="复芯智感" loading="lazy">
+          </a>
+          <a href="https://www.springernature.com/gp" target="_blank" class="sponsor-item">
+            <img src="assets/img/sponsor/springer-nature.jpg" alt="Springer Nature" loading="lazy">
+          </a>
+          <a href="https://ieee-dataport.org/" target="_blank" class="sponsor-item">
+            <img src="assets/img/sponsor/DataPort logo.svg" alt="IEEE DATAPORT" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="./sponsor/sponsor-list.html" class="btn-learn-more">View All Sponsors</a>
+      </div>
+
+    </div>
+  </section><!-- End Sponsors Section -->
 
   </main><!-- End #main -->
 
