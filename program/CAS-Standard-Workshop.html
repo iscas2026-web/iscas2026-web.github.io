@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IEEE ISCAS 2026 | IEEE CAS Standards Workshop</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description"
+    content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 held in Shanghai, China. ">
+  <meta name="keywords"
+    content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, IEEE International Symposium on Circuits and Systems">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.jpg" rel="icon">
+  <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="sponsor-style.min.css" rel="stylesheet">
+  <link href="../style.min.css?v=1716692116" rel="stylesheet">
+  <link href="../disabled-links.css" rel="stylesheet">
+
+  <!-- Hero css -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Mobile Menu JS File -->
+  <script src="../mobile-menu.js"></script>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header"></header>
+  <nav id="navbar"></nav>
+
+  <script>
+    // Function to load header content
+    async function loadHeader() {
+      try {
+        const response = await fetch('../include/header_1.html');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.text();
+        document.getElementById('header').innerHTML = data;
+
+        // Load navbar after header is loaded
+        const navResponse = await fetch('../include/menu_1.html');
+        if (!navResponse.ok) {
+          throw new Error(`HTTP error! status: ${navResponse.status}`);
+        }
+        const navData = await navResponse.text();
+        document.getElementById('navbar').innerHTML = navData;
+      } catch (error) {
+        console.error('Error loading header/navbar:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeader);
+    window.loadHeader = loadHeader;
+  </script>
+
+  <div id="menu"></div>
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="../">Home</a></li>
+          <li><a href="#">IEEE CAS Standards Workshop</a></li>
+        </ol>
+        <h2>IEEE CAS Standards Workshop</h2>
+        <br>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Content Section ======= -->
+    <section class="team section-bg" style="padding: 20px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="member-info">
+              <h3 style="color: #4b5584;">The 5<sup>th</sup> Jointed Workshop between IEEE Standards Association and IEEE CAS - Secure Circuits and Systems: Standards for AI, Chiplets, and Healthcare</h3>
+
+              <h4 style="color: #4b5584; margin-top: 30px;">Abstract</h4>
+              <p style="text-align: justify; line-height: 1.7;">
+                As AI acceleration, chiplet architectures, and next-generation healthcare technologies rapidly redefine the hardware landscape, mastering secure, interoperable design has never been more critical. We invite you to the IEEE Circuits and Systems Standards Workshop, co-hosted with the IEEE Standards Association, featuring a distinguished lineup of speakers from the IEEE SA, leading industry innovators, and current Working Group and Study Group chairs. These experts will deliver timely insights into the latest IEEE standards for hardware security, healthcare electronics, and advanced circuits, with a focused mission to elevate standards awareness across the IEEE Circuits and Systems Society. Through dynamic presentations and interactive discussions, you will deepen your understanding of secure, interoperable frameworks tailored for AI and chiplet-based systems, while forging stronger, actionable partnerships between academia, industry, and standards organizations. Your attendance will not only expand your engagement in IEEE CASS initiatives but also position you to directly influence and participate in the global standardization efforts shaping tomorrow's technology. Join us to connect with pioneers, bridge the gap between innovation and compliance, and help architect a more secure, collaborative future for circuits and systems—register today and step into the forefront of standards-driven design.
+              </p>
+
+              <h4 style="color: #4b5584; margin-top: 30px;">Agenda</h4>
+              <div style="overflow-x: auto;">
+                <table class="table table-bordered table-striped" style="margin-top: 20px;">
+                  <thead style="background-color: #4b5584; color: white;">
+                    <tr>
+                      <th>Time</th>
+                      <th>Topic</th>
+                      <th>Speaker</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>08:30 – 09:00am</td>
+                      <td>Registration & Welcome Coffee</td>
+                      <td>All</td>
+                    </tr>
+                    <tr>
+                      <td>09:00 – 09:10am</td>
+                      <td>Opening Remarks</td>
+                      <td>Yi (Estelle) Wang (Global Head of Product Cybersecurity Consulting & Engineering, AUMOVIO)</td>
+                    </tr>
+                    <tr>
+                      <td>09:10 – 10:00am</td>
+                      <td>IEEE SA: Standardization Driven Technologies</td>
+                      <td>Sri Chandrasekaran (APAC Foundational Technologies Practice Lead, IEEE SA)</td>
+                    </tr>
+                    <tr>
+                      <td>10:00 – 10:30am</td>
+                      <td>IEEE SA PM: Best Practices for IEEE standards development</td>
+                      <td>Christian Orlando IEEE SA PM</td>
+                    </tr>
+                    <tr>
+                      <td>10:30 – 10:50am</td>
+                      <td>Break</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10:50 – 11:30pm</td>
+                      <td>WG updates, SG updates</td>
+                      <td>WG Chairs/SG Chair</td>
+                    </tr>
+                    <tr>
+                      <td>11:30 – 12:10pm</td>
+                      <td>Panelist: Bridging the Gap: Turning CAS Research into IEEE SA Standards</td>
+                      <td>Shafi Syed (Senior Direction, GF), Sri Chandrasekaran (IEEE SA), WG Chairs, Ang Boon Chong (SASD Chair), Moderator: Yi (Estelle) Wang (Global head of CE, Aumovio)</td>
+                    </tr>
+                    <tr>
+                      <td>12:10 - 02:00pm</td>
+                      <td>Lunch</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>02:00 – 02:50PM</td>
+                      <td>Minimally invasive implantable flexible BCI sensors and medical applications</td>
+                      <td>Bowen Ji, Professor, Northwestern Polytechnical University</td>
+                    </tr>
+                    <tr>
+                      <td>02:50 – 03:40PM</td>
+                      <td>Energy-Efficient mixed-signal designs for implantable devices</td>
+                      <td>Hong Zhang, Professor, Xi'an Jiaotong University</td>
+                    </tr>
+                    <tr>
+                      <td>03:40 – 04:00PM</td>
+                      <td>Break</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>04:00 – 04:30PM</td>
+                      <td>Brain-computer interface assisted visual restoration</td>
+                      <td>Bing Liu, CEO of Mindrix</td>
+                    </tr>
+                    <tr>
+                      <td>04:30 – 05:00PM</td>
+                      <td>Progress update and call for participating: Wearable Implantable ExG Interface Circuits Working Group</td>
+                      <td>Yang Zhao Secretary of CASS/FW-SC/WIExGICWG</td>
+                    </tr>
+                    <tr>
+                      <td>05:00 – 06:00</td>
+                      <td>Panelist discussion</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h4 style="color: #4b5584; margin-top: 40px;">Downloads</h4>
+              <p style="margin-top: 20px;">
+                <a href="../assets/img/SA/SACAS_speakers.pptx" class="btn btn-primary" download>
+                  <i class="bi bi-download"></i> Download Workshop Program (PPTX)
+                </a>
+              </p>
+
+              <h4 style="color: #4b5584; margin-top: 40px;">Workshop Poster</h4>
+              <div style="margin-top: 20px; text-align: center;">
+                <img src="../assets/img/SA/ISCAS2026_SA_Workshop.jpg" alt="IEEE CAS Standards Workshop Poster" class="img-fluid" style="max-width: 100%; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer"></footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+    async function loadComponents() {
+      try {
+        // Load header
+        const headerResponse = await fetch('../include/header_1.html');
+        if (!headerResponse.ok) {
+          throw new Error(`HTTP error! status: ${headerResponse.status}`);
+        }
+        const headerData = await headerResponse.text();
+        document.getElementById('header').innerHTML = headerData;
+
+        // Load navbar
+        const navResponse = await fetch('../include/menu_1.html');
+        if (!navResponse.ok) {
+          throw new Error(`HTTP error! status: ${navResponse.status}`);
+        }
+        const navData = await navResponse.text();
+        document.getElementById('navbar').innerHTML = navData;
+
+        // Load footer
+        const footerResponse = await fetch('../include/footer_1.html');
+        if (!footerResponse.ok) {
+          throw new Error(`HTTP error! status: ${footerResponse.status}`);
+        }
+        const footerData = await footerResponse.text();
+        document.getElementById('footer').innerHTML = footerData;
+      } catch (error) {
+        console.error('Error loading components:', error);
+      }
+    }
+
+    // Load components when DOM is ready
+    document.addEventListener('DOMContentLoaded', loadComponents);
+  </script>
+</body>
+
+</html>
