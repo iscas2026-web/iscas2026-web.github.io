@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IEEE ISCAS 2026 | Final Author Instructions</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description"
+    content="IEEE International Symposium on Circuits and Systems (ISCAS) 2026 final author instructions.">
+  <meta name="keywords"
+    content="ISCAS 2026, IEEE, ISCAS, 2026, Shanghai, China, final author instructions, lecture presentations, poster presentations">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.jpg" rel="icon">
+  <link href="../assets/img/favicon.jpg" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../sponsor/sponsor-style.min.css" rel="stylesheet">
+  <link href="../style.min.css?v=1716692116" rel="stylesheet">
+  <link href="../disabled-links.css" rel="stylesheet">
+
+  <!-- Hero css -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Mobile Menu JS File -->
+  <script src="../mobile-menu.js"></script>
+
+  <style>
+    h3 {
+      color: #4b5584 !important;
+      margin-top: 28px;
+    }
+
+    h4 {
+      color: #4b5584;
+      margin-top: 24px;
+      font-weight: 700;
+    }
+
+    .instruction-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      line-height: 1.7;
+    }
+
+    .instruction-card li {
+      margin-bottom: 8px;
+    }
+
+    .template-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      margin-bottom: 18px;
+    }
+
+    .template-button {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 6px;
+      background: #4b5584;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .template-button:hover {
+      color: #fff;
+      background: #343c63;
+      text-decoration: none;
+    }
+
+    .template-button.disabled-template {
+      background: #adb5bd;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .notice-text {
+      color: #dc3545;
+      font-weight: 700;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header"></header>
+  <nav id="navbar"></nav>
+  <main id="main">
+
+    <script>
+      async function loadHeader() {
+        try {
+          const response = await fetch('../include/header_1.html');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.text();
+          document.getElementById('header').innerHTML = data;
+
+          const navResponse = await fetch('../include/menu_1.html');
+          if (!navResponse.ok) {
+            throw new Error(`HTTP error! status: ${navResponse.status}`);
+          }
+          const navData = await navResponse.text();
+          document.getElementById('navbar').innerHTML = navData;
+        } catch (error) {
+          console.error('Error loading header/navbar:', error);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', loadHeader);
+      window.loadHeader = loadHeader;
+    </script>
+
+    <div id="menu"></div>
+    <main id="main">
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../">Home</a></li>
+            <li><a href="#">Final Author Instructions</a></li>
+          </ol>
+          <h2>ISCAS 2026 Final Author Instructions</h2>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="team4">
+            <div class="row">
+              <div class="col-lg-12 px-5">
+                <div class="instruction-card">
+                  <h3>Final Submission Procedure</h3>
+                  <ul>
+                    <li><b>MANDATORY:</b> You must pay for conference registration before you will be allowed to upload your final paper. You will need your registration code in order to proceed.</li>
+                    <li>Pay for conference registration through the <a href="http://iscas.meeting666.com/EnUserCentral/Index/Login" target="_blank">ISCAS 2026 registration site</a>.</li>
+                    <li>Final submission is required.</li>
+                    <li>Read the <a href="author-instructions.html">ISCAS 2026 Author Information</a> page to ensure that your submission meets the guidelines.</li>
+                    <li>Prepare your final paper in PDF format using the required templates.</li>
+                    <li><b>MANDATORY:</b> Make sure your PDF file meets IEEE Xplore compliance by following the instructions on the PDF Express page.</li>
+                    <li>Log in using the same username and password you created during your initial submission. You may then edit your submission information and/or resubmit your paper.</li>
+                  </ul>
+
+                  <p class="notice-text">IEEE takes the protection of intellectual property seriously. Accordingly, all submissions will be screened for plagiarism. By submitting your work you agree to allow IEEE to screen your work.</p>
+                  <p class="notice-text">IEEE reserves the right to exclude any accepted paper from distribution after the conference, including removal from IEEE Xplore, if the accepted paper is not presented at the conference.</p>
+
+                  <h3>Presentation Information</h3>
+
+                  <h4>Lecture Presentations</h4>
+                  <p>The duration of a presentation slot is 18 minutes. You will have 15 minutes for the presentation itself and 3 minutes for questions from the audience.</p>
+                  <p>An LCD projector and computer will be available in every session room for regular presentations.</p>
+                  <div class="template-actions">
+                    <span class="template-button disabled-template">Lecture presentation template: To be updated</span>
+                  </div>
+
+                  <h4>Preparation of Visuals</h4>
+                  <ul>
+                    <li><b>Please bring a memory stick containing your presentation file.</b></li>
+                    <li>Files can be uploaded to the local PCs in the lecture rooms before the initial morning session, during coffee breaks, or at lunch.</li>
+                    <li>To avoid software compatibility problems, speakers are advised to embed all fonts in the PowerPoint file and bring a backup PDF version of the presentation.</li>
+                    <li>Speakers should arrive in their session room 15 minutes before the start of the session to report to the session chair.</li>
+                    <li>Limit the number of words per visual to no more than 20.</li>
+                    <li>Leave space, at least the height of a capital letter, between lines of text.</li>
+                    <li>All fonts, including those on graphs, should be 18 point or larger.</li>
+                    <li>Graphs and charts should have bold lines and symbols that contrast sharply with the background.</li>
+                  </ul>
+
+                  <h4>Poster Presentations</h4>
+                  <p>The recommended poster format is portrait A0 (84.1 cm wide x 118.9 cm height). Double-sided adhesive tape and/or pins will be available in the poster area to put the posters on the panels.</p>
+                  <p>Authors are required to print their own poster and are responsible for hanging up their poster before the start of the session and removing it after the session ends.</p>
+                  <p>Each poster board onsite will be marked with a number that directly correlates with each poster in the program. Please place your poster on the assigned board.</p>
+                  <p><b>Please use your four-digit Epapers ID in the Poster No. slot.</b></p>
+                  <div class="template-actions">
+                    <a href="../assets/iscas26-poster-temp.pptx" target="_blank" class="template-button">Download Poster Template</a>
+                  </div>
+
+                  <h4>Live Demo Presentations</h4>
+                  <p>Live demo presenters at ISCAS 2026 should plan to be on site and available for interaction during the assigned live demo sessions. Presenters should arrive in time for each live demo session, engage with attendees, answer questions, and remain available for discussion during the assigned presentation period.</p>
+                </div>
+              </div>
+            </div><!-- End row -->
+          </div><!-- End team4 -->
+        </div><!-- End container -->
+      </section><!-- End Breadcrumbs -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer"></footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script>
+      async function loadComponents() {
+        try {
+          const headerResponse = await fetch('../include/header_1.html');
+          if (!headerResponse.ok) {
+            throw new Error(`HTTP error! status: ${headerResponse.status}`);
+          }
+          const headerData = await headerResponse.text();
+          document.getElementById('header').innerHTML = headerData;
+
+          const navResponse = await fetch('../include/menu_1.html');
+          if (!navResponse.ok) {
+            throw new Error(`HTTP error! status: ${navResponse.status}`);
+          }
+          const navData = await navResponse.text();
+          document.getElementById('navbar').innerHTML = navData;
+
+          const footerResponse = await fetch('../include/footer_1.html');
+          if (!footerResponse.ok) {
+            throw new Error(`HTTP error! status: ${footerResponse.status}`);
+          }
+          const footerData = await footerResponse.text();
+          document.getElementById('footer').innerHTML = footerData;
+        } catch (error) {
+          console.error('Error loading components:', error);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', loadComponents);
+    </script>
+  </main>
+</body>
+
+</html>
