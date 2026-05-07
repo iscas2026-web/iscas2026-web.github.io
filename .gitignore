@@ -2,3 +2,4 @@ AGENTS.md
 *.skill
 SKILL.md
 /.DS_Store
+/.playwright-mcp
