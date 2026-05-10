@@ -319,6 +319,31 @@ a:hover {
     display: block
 }
 
+.mobile-app-link {
+    margin: 10px 15px;
+    padding: 8px 0;
+    border-top: 1px solid rgba(75, 85, 132, 0.2);
+}
+
+.mobile-app-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #4b5584;
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.mobile-app-link a:hover {
+    background: #3b4584;
+    color: #fff !important;
+}
+
 #header.header-inner-pages, 
 #header.header-scrolled, 
 .navbar-mobile {
