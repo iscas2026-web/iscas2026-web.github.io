@@ -1,5 +1,11 @@
 AGENTS.md
 *.skill
 SKILL.md
-/.DS_Store
+**/.DS_Store
 /.playwright-mcp
+.opencode/
+.claude/
+.gemini/
+node_modules/
+package.json
+package-lock.json
